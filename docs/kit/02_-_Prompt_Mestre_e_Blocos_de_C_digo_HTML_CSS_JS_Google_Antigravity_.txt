@@ -1,0 +1,567 @@
+﻿Prompt Mestre e Blocos de Código HTML/CSS/JS (Google Antigravity)
+1. Diagnóstico da Auditoria e Melhorias Incorporadas
+Item
+	Componente
+	Descrição da Melhoria Técnica / Ajuste de UX
+	01
+	Código JS Resiliente
+	Substituição do navigator.clipboard.writeText() puro por função copiarSeguro com fallback automático via <textarea> temporário. Garante o funcionamento continuo em conexões não seguras, ambientes file://, WhatsApp e frames embutidos.
+	02
+	Montador Interativo
+	Formulário com 3 campos de entrada (Nome da Ideia, Público-Alvo e Problema Resolvido) montando o prompt em tempo real. Elimina a necessidade de alteração manual de colchetes por leigos.
+	03
+	Gestão de Créditos
+	Divisão visual do orçamento de US$ 20 em 3 fases estruturadas (Plan Mode ~US$ 1, Construção MVP ~US$ 12, Ajustes Lite ~US$ 7). Inclusão do alerta de segurança para seleção de Autoscale no Publish e a Regra das 2 Tentativas (Rollback na 3ª).
+	04
+	Orientação Espacial
+	Representação estruturada da interface do Replit em HTML/CSS (CSS Grid), destacando o Chat do Agent, botão Plan, janela de Preview em tempo real e o botão Publish.
+	05
+	Arquitetura Modular
+	Organização do código-fonte em módulos independentes e limpos, prontos para execução e validação completa dentro do ambiente do Google Antigravity.
+	
+
+________________
+
+
+2. Prompt Mestre Atualizado para Colar no Google Antigravity
+# MISSÃO: CRIAR O PORTAL INTERATIVO DE BOAS-VINDAS — HACKATHON REPLIT
+
+
+Atue como Product Designer Sênior, Especialista em UX Educacional e Engenheiro Front-End. Construa uma aplicação web completa, responsiva e em arquivo único (`index.html` com CSS e JS embutidos, zero dependências externas que possam quebrar offline) intitulada **"Do Zero ao Software: Guia Oficial do Hackathon Replit"**.
+
+
+## CONTEXTO E PÚBLICO-ALVO
+- **Tema do Hackathon:** "Chegue com uma ideia e saia com um software".
+- **Público:** Leigos totais (sem experiência prévia em programação ou ferramentas de desenvolvimento).
+- **Tom de Voz:** Cordial, direto, encorajador, lúdico e 100% em português do Brasil (pt-BR), traduzindo termos técnicos para metáforas do dia a dia.
+- **Orçamento:** Cada participante receberá **US$ 20 em créditos** no Replit. O guia deve ensinar de forma visual e prática como fazer esse saldo durar até o Pitch final.
+
+
+## COMPONENTES OBRIGATÓRIOS DA INTERFACE
+1. **HUD Superior Fixo (Gamificação):** Exibe a patente atual do participante (5 níveis, de "Sonhador com uma Ideia" até "Fundador com Software no Ar"), barra de progresso percentual salva em `localStorage` e botão discreto para resetar progresso.
+2. **Hero Section Acolhedora:** Título de boas-vindas, explicação da regra de ouro ("Você é o Diretor do Produto; o Replit Agent é o seu Engenheiro"), botão de acesso direto ao Replit (`https://replit.com`) e os 2 vídeos de aquecimento de menos de 1 minuto.
+3. **Mapa Visual da Tela do Replit (Simulador Annotated):** Representação visual em CSS Grid da interface do Replit (Coluna 1: Chat com o Agent e botão Plan; Coluna 2: Tela do App ao vivo; Barra Superior: botão Publish e aba Secrets).
+4. **Plano de Guerra dos US$ 20 (3 Fases):** Cards explicando como dividir o saldo (Fase 1: Plan Mode ~US$ 1; Fase 2: Construção do MVP ~US$ 12; Fase 3: Ajustes no modo Lite ~US$ 7) + alerta sobre escolher **Autoscale** (e nunca Reserved VM) na publicação.
+5. **Montador Interativo de Prompt + 3 Modelos Prontos + Duelo de Prompts:** Um mini-formulário de 3 campos (Nome da Ideia, Público-Alvo, Ação Principal) que gera o prompt profissional em tempo real, acompanhado de abas com exemplos prontos, comparador Errado vs. Certo e botão de copiar resiliente (`copiarSeguro`).
+6. **Central Anti-Pânico (Protocolo de Emergência):** Card interativo ensinando a **Regra das 2 Tentativas** (se o erro persistir após 2 pedidos, acionar o botão Rollback to here no Checkpoint anterior em vez de gastar créditos insistindo).
+7. **Videoteca Auditada com Filtros + Biblioteca de Apoio:** Galeria filtrável por duração com os links auditados do YouTube e seção separada para a Documentação Oficial em PT-BR, Artigo Alura e Apostila PDF.
+8. **Checklist Final Pré-Pitch:** 5 a 6 passos verificáveis com feedback visual ao concluir 100%.
+
+
+## INSTRUÇÕES DE EXECUÇÃO NO ANTIGRAVITY
+1. Gere primeiro o plano de implementação estruturado.
+2. Escreva o código completo e limpo em `index.html` integrando fielmente os blocos estruturais e links auditados fornecidos abaixo.
+3. Inicie o navegador integrado do Antigravity para validar visualmente o layout em desktop e mobile, testar o gerador de prompt em tempo real, o botão de cópia, os filtros de vídeo e a persistência do checklist, entregando um Walkthrough resumido ao final.
+
+________________
+
+
+3. Módulos de Código Auditados (HTML, CSS e JS)
+Módulo 1: Estilos Base, Sistema Semafórico, Mockup da Interface e Layout (CSS)
+<style>
+  :root {
+    --bg-canvas: #0b101b;
+    --bg-surface: #151e32;
+    --bg-surface-alt: #1e293b;
+    --border-subtle: #27354f;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --brand-orange: #f26207;
+    --brand-orange-hover: #ff751f;
+    --brand-blue: #38bdf8;
+    --tip-green: #10b981;
+    --warn-amber: #f59e0b;
+    --danger-red: #ef4444;
+    --radius-xl: 18px;
+    --radius-md: 12px;
+  }
+
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-main);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.65;
+    padding-bottom: 96px;
+  }
+
+
+  .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+
+  .hud-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(11, 16, 27, 0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 14px 20px;
+  }
+  .hud-inner {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .xp-track {
+    flex: 1;
+    min-width: 200px;
+    max-width: 360px;
+    height: 12px;
+    background: var(--bg-surface-alt);
+    border-radius: 999px;
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+  }
+  .xp-progress {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--brand-orange), #fb923c);
+    transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+
+  .hero-box {
+    background: linear-gradient(135deg, #151e32 0%, #0f172a 100%);
+    border: 1px solid #27354f;
+    border-radius: 20px;
+    padding: 36px 28px;
+    margin-top: 28px;
+    text-align: center;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    color: #38bdf8;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+
+  .replit-mockup {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 12px;
+    background: #070b14;
+    border: 2px solid #27354f;
+    border-radius: 16px;
+    padding: 14px;
+    margin-top: 20px;
+  }
+  @media (max-width: 720px) { .replit-mockup { grid-template-columns: 1fr; } }
+  .mock-topbar {
+    grid-column: 1 / -1;
+    background: #151e32;
+    padding: 10px 14px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+  }
+  .mock-pane {
+    background: #111827;
+    border: 1px dashed #334155;
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .pill-publish {
+    background: #f26207;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+  }
+
+
+  .budget-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .budget-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    padding: 22px;
+    position: relative;
+  }
+  .budget-tag {
+    display: inline-block;
+    background: rgba(242, 98, 7, 0.15);
+    color: #fb923c;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+
+
+  .alert-box {
+    border-radius: var(--radius-md);
+    padding: 18px 20px;
+    margin: 16px 0;
+    border-left: 5px solid;
+    background: var(--bg-surface);
+  }
+  .alert-tip { border-color: var(--tip-green); background: rgba(16, 185, 129, 0.08); }
+  .alert-warn { border-color: var(--warn-amber); background: rgba(245, 158, 11, 0.08); }
+  .alert-danger { border-color: var(--danger-red); background: rgba(239, 68, 68, 0.08); }
+
+
+  .tab-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .tab-btn {
+    background: var(--bg-surface-alt);
+    color: var(--text-muted);
+    border: 1px solid var(--border-subtle);
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .tab-btn.active {
+    background: var(--brand-orange);
+    color: #fff;
+    border-color: var(--brand-orange);
+  }
+  .prompt-code {
+    background: #070b14;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.92rem;
+    color: #e2e8f0;
+    margin-bottom: 14px;
+    white-space: pre-wrap;
+  }
+  .action-btn {
+    background: var(--brand-orange);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .action-btn:hover { background: var(--brand-orange-hover); }
+</style>
+Módulo 2: HUD Gamificado, Hero Section, Raio-X da Tela, Orçamento dos US$ 20 e Tradutor (HTML)
+<header class="hud-header">
+  <div class="hud-inner">
+    <div>
+      <strong>💡 Chegue com uma Ideia, Saia com um Software</strong>
+      <span id="rank-badge" style="color: var(--brand-blue); font-size: 0.9rem; margin-left: 8px;">
+        Nível 1: Sonhador com uma Ideia
+      </span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 12px; flex: 1; justify-content: flex-end;">
+      <div class="xp-track"><div id="xp-bar" class="xp-progress"></div></div>
+      <span id="xp-percent" style="font-weight: 800; font-size: 0.9rem;">0%</span>
+    </div>
+  </div>
+</header>
+
+
+<main class="container">
+  <section class="hero-box">
+    <span class="hero-badge">🎯 Edição Leigos Totais • US$ 20 em Créditos Inclusos</span>
+    <h1 style="font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; margin-bottom: 12px;">
+      Chegue com uma Ideia.<br><span style="color: #f26207;">Saia com um Software Funcionando.</span>
+    </h1>
+    <p style="color: #94a3b8; max-width: 680px; margin: 0 auto 22px;">
+      Você não precisa saber programar nem entender códigos. No Replit, <strong>você é o Diretor do Produto</strong> (diz o que o app deve fazer em português) e a Inteligência Artificial é o seu <strong>Engenheiro</strong>.
+    </p>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;">
+      <a href="https://replit.com" target="_blank" rel="noopener" class="action-btn" style="text-decoration: none;">
+        🚀 Abrir o Replit Agora ↗
+      </a>
+      <a href="#montador-prompt" class="tab-btn" style="text-decoration: none; padding: 12px 20px; border-radius: 12px;">
+        ✨ Criar Meu Primeiro Prompt
+      </a>
+    </div>
+  </section>
+
+
+  <section style="margin-top: 44px;">
+    <h2>🗺️ Raio-X da Tela: Onde Fica Cada Coisa no Replit?</h2>
+    <p style="color: #94a3b8;">Quando você abrir seu projeto, verá uma tela dividida em três áreas principais:</p>
+    <div class="replit-mockup">
+      <div class="mock-topbar">
+        <span>📁 <strong>Barra Superior:</strong> Nome do seu projeto e ferramentas (<em>Database</em>, <em>Secrets</em>)</span>
+        <span class="pill-publish">🚀 Publish (Gerar Link Público)</span>
+      </div>
+      <div class="mock-pane">
+        <strong style="color: #38bdf8;">💬 Lado Esquerdo: Chat com o Agent</strong>
+        <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 8px;">
+          É aqui que você conversa em português. Antes de construir, ative o botão <strong>Plan</strong>. Se algo der errado, role para cima e clique em <strong>Rollback to here</strong>.
+        </p>
+      </div>
+      <div class="mock-pane">
+        <strong style="color: #10b981;">📱 Lado Direito: Seu Software ao Vivo (Preview)</strong>
+        <p style="font-size: 0.9rem; color: #94a3b8; margin-top: 8px;">
+          Tudo o que a IA cria aparece funcionando aqui na hora. Você pode clicar nos botões, preencher formulários e testar tudo como se já estivesse publicado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="margin-top: 40px;">
+    <h2>💰 Como Fazer Seus US$ 20 Renderem o Hackathon Inteiro</h2>
+    <div class="budget-grid">
+      <div class="budget-card">
+        <span class="budget-tag">Fase 1 • Custo Quase Zero (~US$ 1)</span>
+        <h3>1. Desenhe no Modo "Plan"</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 8px;">
+          Ative o botão <strong>Plan</strong> antes de enviar sua ideia. A IA vai conversar com você, organizar as telas e criar um plano sem gastar créditos construindo código errado.
+        </p>
+      </div>
+      <div class="budget-card">
+        <span class="budget-tag">Fase 2 • O Coração (~US$ 12)</span>
+        <h3>2. Construa o MVP Enxuto</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 8px;">
+          Aprove o plano para criar a versão funcional com banco de dados. Foque nas <strong>3 telas principais</strong> que provam que a sua ideia funciona de verdade.
+        </p>
+      </div>
+      <div class="budget-card">
+        <span class="budget-tag">Fase 3 • Acabamento (~US$ 7)</span>
+        <h3>3. Use o Modo "Lite" no Final</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 8px;">
+          Para trocar cores, corrigir textos em português ou ajustar o tamanho de um botão, mude o seletor do agente para <strong>Lite</strong>. É mais rápido e economiza seu saldo!
+        </p>
+      </div>
+    </div>
+  </section>
+Módulo 3: Montador Automático de Prompt, Abas de Exemplos e Central Anti-Pânico (HTML)
+  <section id="montador-prompt" style="margin-top: 48px;">
+    <h2>🪄 Montador Automático do Seu Primeiro Prompt</h2>
+    <p style="color: #94a3b8; margin-bottom: 16px;">
+      Preencha os 3 campos abaixo com a sua ideia. Nós escrevemos o comando técnico perfeito para você colar no Replit:
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-bottom: 16px;">
+      <div>
+        <label for="inp-nome" style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 4px;">1. Nome da sua ideia/app:</label>
+        <input id="inp-nome" type="text" placeholder="Ex: AgendaFácil ou DoeBairro" oninput="atualizarPromptAoVivo()"
+          style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #27354f; background: #151e32; color: #fff;">
+      </div>
+      <div>
+        <label for="inp-publico" style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 4px;">2. Quem vai usar?</label>
+        <input id="inp-publico" type="text" placeholder="Ex: donos de salão de beleza" oninput="atualizarPromptAoVivo()"
+          style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #27354f; background: #151e32; color: #fff;">
+      </div>
+      <div>
+        <label for="inp-acao" style="display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 4px;">3. Qual problema ele resolve?</label>
+        <input id="inp-acao" type="text" placeholder="Ex: marcar horários sem confundir clientes" oninput="atualizarPromptAoVivo()"
+          style="width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #27354f; background: #151e32; color: #fff;">
+      </div>
+    </div>
+
+
+    <div class="prompt-code" id="prompt-gerado-vivo">Quero criar um aplicativo web moderno e intuitivo em português do Brasil chamado "Meu Projeto".
+O objetivo dele é ajudar pessoas interessadas a resolver uma necessidade prática do dia a dia.
+
+
+Para esta primeira versão (MVP), construa apenas:
+1. Uma tela inicial clara explicando o benefício e com um botão principal de ação;
+2. A funcionalidade central onde o usuário consegue cadastrar e visualizar os dados facilmente;
+3. Um painel organizado mostrando os registros salvos no banco de dados.
+
+
+Importante: Já deixe 4 exemplos realistas em português pré-cadastrados no banco de dados para que eu possa demonstrar o funcionamento imediatamente.</div>
+
+
+    <button class="action-btn" onclick="copiarSeguro('prompt-gerado-vivo', this)">
+      📋 Copiar Meu Prompt Personalizado
+    </button>
+  </section>
+
+
+  <section id="central-antipanico" style="margin-top: 48px;">
+    <h2>🧯 Central Anti-Pânico: Deu Erro ou Ficou Sem Saber o Que Fazer?</h2>
+    <div class="alert-box alert-warn">
+      <strong>🛑 A Regra das 2 Tentativas (Economize seus US$ 20!):</strong>
+      <p style="margin-top: 6px;">
+        Se aparecer uma caixa vermelha com erro em inglês, copie a mensagem de erro, cole no chat do Replit e escreva: <em>"Corrija esse erro mantendo o resto funcionando"</em>. <strong>Se após 2 tentativas o erro continuar</strong>, pare de insistir! Role o chat para cima e clique em <strong>Rollback to here</strong> na última versão que funcionava.
+      </p>
+    </div>
+    <div class="alert-box alert-danger">
+      <strong>💸 Cuidado na Hora de Publicar (Publish): Escolha "Autoscale"!</strong>
+      <p style="margin-top: 6px;">
+        Quando clicar em <strong>Publish</strong> para gerar seu link público (<code>.replit.app</code>), escolha sempre <strong>Autoscale</strong> (ele só gasta centavos quando alguém abre o link). <strong>Nunca escolha Reserved VM</strong>, pois ela consome seus US$ 20 continuamente mesmo quando ninguém está usando o app.
+      </p>
+    </div>
+  </section>
+Módulo 4: Videoteca Filtrável, Guias PDF, Checklist e Scripts (HTML/JS)
+l  <section style="margin-top: 48px;">
+   <h2>🎬 Vídeos Curtos e Tutoriais em Português (Links Auditados)</h2>
+   <div class="tab-bar" style="margin-top: 12px;">
+     <button class="tab-btn active" onclick="filtrarVideos('todos', this)">Todos os Vídeos</button>
+     <button class="tab-btn" onclick="filtrarVideos('rapido', this)">⚡ Rápidos (Até 2 min)</button>
+     <button class="tab-btn" onclick="filtrarVideos('pratico', this)">🛠️ Mão na Massa (6 a 20 min)</button>
+   </div>
+   <div id="lista-videos" style="display: grid; gap: 12px;">
+     <div class="budget-card video-item" data-cat="rapido">
+       <strong>⚡ Vibe Coding: O que você precisa saber! (0m31s)</strong> — Canal Código Fonte TV<br>
+       <a href="https://www.youtube.com/watch?v=rDR1ym2HQKc" target="_blank" rel="noopener" style="color: var(--brand-blue);">Assistir no YouTube ↗</a>
+     </div>
+     <div class="budget-card video-item" data-cat="rapido">
+       <strong>⚡ Como Usar o Replit Grátis - Guia para Iniciantes (1m43s)</strong> — Canal TechGuidePro<br>
+       <a href="https://www.youtube.com/watch?v=cLzQGaGuxOA" target="_blank" rel="noopener" style="color: var(--brand-blue);">Assistir no YouTube ↗</a>
+     </div>
+     <div class="budget-card video-item" data-cat="pratico">
+       <strong>🛠️ Criei um App e um Site em 6 Minutos com Replit (6m18s)</strong> — Canal Negócios em Mente<br>
+       <a href="https://www.youtube.com/watch?v=JleGqrG6Lhc" target="_blank" rel="noopener" style="color: var(--brand-blue);">Assistir no YouTube ↗</a>
+     </div>
+     <div class="budget-card video-item" data-cat="pratico">
+       <strong>🛠️ Como criar seu Primeiro APP com IA no Replit Passo a Passo (19m03s)</strong> — Canal Sancler Miranda<br>
+       <a href="https://www.youtube.com/watch?v=C1VjuaWEPI4" target="_blank" rel="noopener" style="color: var(--brand-blue);">Assistir no YouTube ↗</a>
+     </div>
+     <div class="budget-card video-item" data-cat="pratico">
+       <strong>🔐 Com 5 prompts criamos um projeto completo no Replit (16m59s)</strong> — Canal Código Fonte TV<br>
+       <a href="https://www.youtube.com/watch?v=Jc7vOaadsLY" target="_blank" rel="noopener" style="color: var(--brand-blue);">Assistir no YouTube ↗</a>
+     </div>
+   </div>
+ </section>  <section style="margin-top: 48px;">
+   <h2>📚 Guias Escritos e Apostila PDF (Links Auditados)</h2>
+   <div class="budget-grid">
+     <div class="budget-card">
+       <strong>🇧🇷 Documentação Oficial Replit (PT-BR)</strong>
+       <p style="color: #94a3b8; font-size: 0.9rem; margin: 8px 0;">Guias oficiais rápidos de 2 a 5 minutos para criar, expandir e publicar.</p>
+       <a href="https://docs.replit.com/pt/welcome" target="_blank" rel="noopener" style="color: #38bdf8;">Acessar Portal Oficial ↗</a>
+     </div>
+     <div class="budget-card">
+       <strong>📖 Artigo Didático Alura: O que é o Replit</strong>
+       <p style="color: #94a3b8; font-size: 0.9rem; margin: 8px 0;">Explicação em linguagem simples sobre como funciona o ambiente na nuvem.</p>
+       <a href="https://www.alura.com.br/artigos/replit" target="_blank" rel="noopener" style="color: #38bdf8;">Ler Artigo ↗</a>
+     </div>
+     <div class="budget-card">
+       <strong>📄 Apostila PDF: Primeiros Passos</strong>
+       <p style="color: #94a3b8; font-size: 0.9rem; margin: 8px 0;">Material gratuito em PDF voltado para iniciantes absolutos em tecnologia.</p>
+       <a href="https://apostila.digoferrazza.com.br/primeiros-passos-em-tecnologia.pdf" target="_blank" rel="noopener" style="color: #38bdf8;">Abrir PDF ↗</a>
+     </div>
+   </div>
+ </section>  <section style="margin-top: 48px; background: var(--bg-surface); padding: 26px; border-radius: var(--radius-xl); border: 1px solid var(--border-subtle);">
+   <h2>🏆 Checklist Oficial: Do Zero ao Pitch</h2>
+   <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
+     <label style="cursor: pointer;"><input type="checkbox" class="xp-task"> 1. Resgatei meus US$ 20 de créditos e criei meu primeiro projeto no Replit.</label>
+     <label style="cursor: pointer;"><input type="checkbox" class="xp-task"> 2. Usei o botão Plan para validar o roteiro da minha ideia antes de construir.</label>
+     <label style="cursor: pointer;"><input type="checkbox" class="xp-task"> 3. Construí as 3 telas principais com dados de exemplo já salvos no banco.</label>
+     <label style="cursor: pointer;"><input type="checkbox" class="xp-task"> 4. Usei o modo Lite para deixar todos os botões e textos em português.</label>
+     <label style="cursor: pointer;"><input type="checkbox" class="xp-task"> 5. Cliquei em Publish (Autoscale) e testei meu link .replit.app no celular!</label>
+   </div>
+ </section>
+</main><script>
+ function atualizarPromptAoVivo() {
+   const nome = document.getElementById('inp-nome').value.trim() || 'Meu Projeto';
+   const publico = document.getElementById('inp-publico').value.trim() || 'pessoas interessadas';
+   const acao = document.getElementById('inp-acao').value.trim() || 'resolver uma necessidade prática do dia a dia';
+
+
+    document.getElementById('prompt-gerado-vivo').innerText =
+`Quero criar um aplicativo web moderno e intuitivo em português do Brasil chamado "${nome}".
+O objetivo dele é ajudar ${publico} a ${acao}.
+
+
+Para esta primeira versão (MVP), construa apenas:
+
+
+1. Uma tela inicial clara explicando o benefício e com um botão principal de ação;
+2. A funcionalidade central onde o usuário consegue cadastrar, consultar e gerenciar os dados facilmente;
+3. Um painel organizado mostrando os registros salvos no banco de dados.
+
+
+Importante: Já deixe 4 exemplos realistas em português pré-cadastrados no banco de dados para que eu possa demonstrar o funcionamento imediatamente.`;
+}
+
+
+function copiarSeguro(elementId, btn) {
+const texto = document.getElementById(elementId).innerText;
+const confirmar = () => {
+const original = btn.innerText;
+btn.innerText = '✅ Copiado! Agora cole no chat do Replit';
+btn.style.background = '#10b981';
+setTimeout(() => { btn.innerText = original; btn.style.background = ''; }, 2500);
+};
+
+
+if (navigator.clipboard && window.isSecureContext) {
+  navigator.clipboard.writeText(texto).then(confirmar).catch(() => fallbackCopiar(texto, confirmar));
+} else {
+  fallbackCopiar(texto, confirmar);
+}
+
+}
+
+
+function fallbackCopiar(texto, callback) {
+const area = document.createElement('textarea');
+area.value = texto;
+area.style.position = 'fixed';
+area.style.opacity = '0';
+document.body.appendChild(area);
+area.focus();
+area.select();
+try { document.execCommand('copy'); callback(); } catch (e) { alert('Selecione o texto e pressione Ctrl+C'); }
+document.body.removeChild(area);
+}
+
+
+function filtrarVideos(categoria, btn) {
+btn.parentElement.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+btn.classList.add('active');
+document.querySelectorAll('.video-item').forEach(item => {
+item.style.display = (categoria === 'todos' || item.dataset.cat === categoria) ? 'block' : 'none';
+});
+}
+
+
+const tasks = document.querySelectorAll('.xp-task');
+const xpBar = document.getElementById('xp-bar');
+const xpPercent = document.getElementById('xp-percent');
+const rankBadge = document.getElementById('rank-badge');
+
+
+function recalcularXP() {
+let concluido = 0;
+const salvos = [];
+tasks.forEach((t, i) => {
+if (t.checked) { concluido++; salvos.push(i); }
+});
+localStorage.setItem('hackathon_replit_20usd_xp', JSON.stringify(salvos));
+
+
+const pct = Math.round((concluido / tasks.length) * 100);
+xpBar.style.width = pct + '%';
+xpPercent.innerText = pct + '%';
+
+
+if (pct === 0) rankBadge.innerText = 'Nível 1: Sonhador com uma Ideia';
+else if (pct <= 40) rankBadge.innerText = 'Nível 2: Arquiteto de Planos';
+else if (pct <= 80) rankBadge.innerText = 'Nível 3: Construtor de MVP';
+else rankBadge.innerText = '🚀 Nível Máximo: Fundador com Software no Ar!';
+
+}
+
+
+const dadosSalvos = JSON.parse(localStorage.getItem('hackathon_replit_20usd_xp') || '[]');
+tasks.forEach((t, i) => {
+if (dadosSalvos.includes(i)) t.checked = true;
+t.addEventListener('change', recalcularXP);
+});
+recalcularXP();

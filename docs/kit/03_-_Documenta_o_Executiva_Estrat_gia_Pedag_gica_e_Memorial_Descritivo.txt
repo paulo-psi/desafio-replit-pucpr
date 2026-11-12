@@ -1,0 +1,58 @@
+﻿Documentação Executiva, Estratégia Pedagógica e Memorial Descritivo — Kit Hackathon Replit
+A concepção do Kit e Portal de Boas-Vindas para o Hackathon Replit foi estruturada como uma operação de engenharia pedagógica, desenho de experiência do usuário (UX) e proteção de recursos financeiros. Este documento reúne três memoriais complementares: Visão Executiva e Estratégica, Memorial Descritivo de Produto e Especificação de Auditoria e Engenharia Agêntica.
+Documento 1: Visão Executiva, Contexto e Estratégia Pedagógica
+1. O Contexto do Desafio
+O projeto nasceu para atender a um hackathon com uma premissa de alta ambição e forte inclusão digital: "Chegue com uma ideia e saia com um software". O público-alvo é composto por leigos totais — pessoas que possuem conhecimento sobre problemas reais de mercado, negócios ou comunidade, mas que não dominam lógica de programação, arquitetura de sistemas ou o uso da plataforma Replit. Para viabilizar a construção durante o evento, cada participante recebe um incentivo de 20 dólares em créditos de processamento na plataforma.
+2. O Diagnóstico do Problema Real
+Em maratonas de inovação tradicionais, o principal gargalo técnico é a escrita do código. Com a chegada do Vibe Coding (programação orientada por inteligência artificial via Replit Agent), a barreira sintática desaparece, mas surgem três novos riscos críticos que paralisam iniciantes absolutos:
+
+
+* Ansiedade Espacial e Cognitiva: Ao abrir um ambiente de desenvolvimento pela primeira vez, o usuário leigo se depara com painéis, árvores de arquivos, console e jargões em inglês (Deploy, Secrets, Checkpoint, Database), gerando paralisia por medo de clicar no lugar errado.
+* Síndrome do Pedido Megalomaníaco: Sem noção de escopo de engenharia, o iniciante tende a pedir um sistema gigantesco em uma única frase vaga, o que leva a IA a tomar decisões confusas, gerar telas incompletas e produzir erros em cascata.
+* Queima Precoce dos 20 Dólares: Sem orientação sobre os modos de operação da IA e os tipos de hospedagem, um participante leigo pode esgotar seus 20 dólares na primeira hora de evento tentando corrigir um mesmo erro repetidamente no modo mais caro ou ativando servidores dedicados por engano.
+3. A Estratégia Central: Mudança de Papel Mental
+Para neutralizar esses três riscos, a estratégia pedagógica abandonou o formato de "curso de informática" e adotou uma mudança de identidade: o participante não é tratado como um aprendiz de programador, mas como o Diretor de Produto, enquanto o Replit Agent é posicionado como seu Engenheiro Contratado. Todo o vocabulário técnico foi traduzido para metáforas do mundo físico (oficina, planta baixa, máquina do tempo e fita de inauguração), transformando uma ferramenta intimidadora em um fluxo conversacional previsível.
+Documento 2: Memorial Descritivo de UX, Gamificação e Governança Financeira
+Cada seção e componente interativo do portal foi desenhado e auditado para resolver uma dor específica da jornada do participante durante as horas de competição.
+
+
+Componente do Portal
+	O Que Foi Feito
+	Por Que Foi Feito (Racional Estratégico)
+	Barra de XP e Patentes
+	Topo fixo com 5 níveis de evolução e salvamento automático.
+	Reduz a ansiedade transformando a jornada técnica em missões claras rumo ao palco.
+	Raio-X Visual da Tela
+	Maquete da interface do Replit desenhada em código CSS puro.
+	Ensina onde ficam o chat, o preview e o botão de publicar sem depender de imagens externas.
+	Plano dos 20 Dólares
+	Divisão visual do orçamento em três fases de consumo.
+	Impede que o participante gaste todo o saldo antes da hora de publicar o projeto.
+	Montador de Prompt
+	Gerador interativo com 3 campos de texto e abas por setor.
+	Evita que o leigo erre ao editar colchetes manualmente ou envie pedidos vagos.
+	Central Anti-Pânico
+	Protocolo da Regra das 2 Tentativas e alerta de hospedagem.
+	Protege o projeto contra telas brancas nos minutos finais e evita cobrança contínua.
+	Detalhamento do Racional de Cada Funcionalidade
+1. Governança dos 20 Dólares (Economia de Guerra)
+* Divisão em 3 Potes: O guia orienta o participante a gastar cerca de 1 dólar na Fase 1 usando o modo Plan (onde a IA apenas planeja o escopo sem alterar código), cerca de 12 dólares na Fase 2 para construir o coração do MVP com banco de dados, e reservar 7 dólares para a Fase 3, alternando o seletor para o modo Lite para realizar ajustes visuais e traduções baratas.
+* Blindagem no Momento de Publicar: Foi inserido um alerta vermelho instruindo o participante a escolher a modalidade Autoscale (que cobra apenas frações de centavo quando alguém acessa o link) e jamais selecionar Reserved VM (máquina virtual dedicada que consome saldo ininterruptamente mesmo com o aplicativo ocioso).
+2. Do Template Estático ao Montador Automático de Prompts
+* O Problema Identificado na Auditoria: Inicialmente, havia modelos de texto com lacunas entre colchetes para o usuário preencher. Na prática, usuários leigos frequentemente apagam instruções importantes ao redor dos colchetes ou esquecem de preenchê-los.
+* A Solução Implementada: Foi criado um Montador Interativo em Tempo Real com três caixas simples (Nome da Ideia, Quem Vai Usar e Qual Problema Resolve). Conforme o participante digita, o código JavaScript monta automaticamente um prompt de engenharia completo — exigindo idioma em português do Brasil, escopo restrito a três telas essenciais e quatro registros fictícios pré-cadastrados no banco de dados, garantindo que o aplicativo não abra vazio durante a demonstração aos jurados.
+3. Protocolo Anti-Pânico e a "Regra das 2 Tentativas"
+* Interrupção do Loop de Erro: Quando um software apresenta erro, o instinto do iniciante é responder "não funcionou, conserte" várias vezes seguidas. Isso consome créditos rapidamente e degrada o código.
+* Uso Estratégico do Checkpoint: O guia institui que, se a colagem do erro no chat não resolver o problema em duas tentativas, o participante deve parar imediatamente, rolar o histórico do chat para cima e acionar o botão Rollback to here (Máquina do Tempo), restaurando gratuitamente a última versão estável do software.
+Documento 3: Auditoria de Fontes, Engenharia de Resiliência e Uso do Google Antigravity
+A última etapa do trabalho consistiu em auditar a confiabilidade de todos os links externos, blindar o código contra falhas de ambiente e formatar a especificação técnica para execução autônoma no Google Antigravity.
+1. Auditoria e Curadoria de Links e Vídeos em Português
+* Classificação de Estabilidade de URLs: Rotas profundas de documentações traduzidas mudam com frequência e páginas de hackathons passados costumam sair do ar após o encerramento dos eventos. Por isso, os links oficiais foram ancorados nos portais-raiz de alta estabilidade (como o hub de boas-vindas em português da documentação oficial do Replit e artigos editoriais permanentes da Alura e do DataCamp), absorvendo todo o conteúdo crítico para dentro da própria página HTML.
+* Validação da Videoteca via API do YouTube: Foram auditados 13 vídeos reais em português do Brasil, verificando título, canal, identificador único e duração exata. Como o tempo durante um hackathon é escasso, a galeria recebeu filtros interativos por janela de atenção: vídeos de aquecimento rápido (31 segundos a 2 minutos) para perder o medo inicial e tutoriais mão na massa (6 a 20 minutos) mostrando a criação de aplicativos completos passo a passo.
+2. Engenharia de Resiliência (Por que o código foi escrito dessa forma)
+* Arquitetura em Arquivo Único Zero-Dependência: Todo o design visual, o simulador de tela do Replit e a lógica interativa foram programados utilizando HTML, CSS moderno e JavaScript puro embutidos em um único arquivo, sem depender de imagens externas, fontes remotas obrigatórias ou bibliotecas que possam falhar caso o Wi-Fi do local do evento oscile.
+* Correção do Bug Silencioso de Cópia: A função moderna do navegador para copiar textos (navigator.clipboard.writeText) é bloqueada por segurança quando o participante abre um arquivo HTML baixado diretamente do WhatsApp ou salvo na área de trabalho do computador. A auditoria substituiu a função simples por um método híbrido (copiarSeguro) que detecta o bloqueio e aciona automaticamente um plano de contingência invisível (document.execCommand('copy')), garantindo que o botão "Copiar Prompt" funcione em 100% dos computadores e celulares.
+* Persistência Inteligente de Progresso: O checklist de pré-pitch utiliza o armazenamento interno do navegador (localStorage) para não perder as marcações se o participante atualizar a página, mas inclui suporte a reinicialização rápida caso duas pessoas diferentes utilizem a mesma máquina.
+3. Otimização para o Fluxo Agêntico do Google Antigravity
+* Por que não entregar apenas um texto solto para a outra IA: O Google Antigravity opera com agentes capazes de planejar a arquitetura, editar código e inspecionar visualmente o resultado em um navegador integrado.
+* Estrutura do Prompt Mestre: O comando final foi dividido em duas camadas complementares: uma especificação de produto e regras de negócio (contexto, tom de voz, paleta de cores e jornada do usuário) seguida pelos quatro módulos de código já auditados. Além disso, o prompt instrui explicitamente o agente do Antigravity a abrir sua visualização integrada para testar os botões de cópia, os filtros de vídeo, o gerador de prompts em tempo real e a responsividade mobile antes de dar a tarefa por concluída.

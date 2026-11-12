@@ -1,0 +1,176 @@
+﻿Curadoria Auditada de Links, Vídeos, Tutoriais e PDFs — Kit Hackathon Replit (pt-BR)
+Arquitetura Pedagógica do Kit de Onboarding Replit
+Participantes sem experiência prévia em engenharia de software enfrentam alta carga cognitiva quando expostos a editores de código tradicionais, configuração de ambientes locais e depuração sintática durante maratonas de inovação. A arquitetura do Replit neutraliza essa barreira ao provisionar contêineres pré-configurados na nuvem e deslocar a produção de software para a especificação em linguagem natural por meio do Replit Agent (prática consolidada como vibe coding). Para que usuários leigos transitem da concepção de uma ideia até um Produto Mínimo Viável (MVP) publicado e funcional durante um hackathon, o kit de capacitação organiza-se em quatro camadas progressivas: compreensão do ambiente e engenharia de prompts orientados a resultados, construção incremental de interfaces com banco de dados e autenticação, publicação em nuvem com URL pública para demonstração à banca avaliadora e governança básica de segurança e créditos de processamento (US$ 20 por participante).
+1. Matriz de Auditoria de Estabilidade (Links Web e PDFs)
+Recurso
+	URL Auditada
+	Status de Estabilidade
+	Diretriz para Implementação
+	Replit Home e Docs Raiz
+	replit.com e docs.replit.com
+	Nível A (Perene)
+	Usar como links principais de ação nos botões de destaque (CTAs).
+	Documentação em Português
+	Portal de Boas-Vindas Replit PT
+	Nível B (Localizado)
+	Centralizar no hub /pt/welcome ou na raiz com instrução para ativar o seletor de idioma.
+	Artigo Técnico Alura
+	Artigo Replit Alura
+	Nível A (Editorial Fixo)
+	Seguro para leitura complementar sobre contêineres em nuvem e variáveis de ambiente.
+	Tutorial DataCamp PT
+	Guia Agente Replit DataCamp
+	Nível A (Editorial Fixo)
+	Seguro para consulta de exemplos práticos de comandos do Replit Agent.
+	Apostila PDF Iniciantes
+	Apostila Primeiros Passos em Tecnologia
+	Nível B (Domínio Terceiro)
+	Configurar abertura em nova aba e oferecer resumo nativo na própria página.
+	Apps de Eventos Passados
+	Guia Hackathon Abradi Replit
+	Nível C (Efêmero)
+	Absorver toda a didática diretamente dentro do HTML do novo portal para não depender de servidor externo.
+	2. Documentação Oficial Localizada (Replit Docs em Português)
+Módulo / Recurso Oficial
+	Link Direto
+	Escopo / Tempo
+	Aplicação Crítica no Hackathon
+	Portal de Boas-Vindas (pt-BR)
+	docs.replit.com/pt/welcome
+	Hub central de navegação
+	Ponto de entrada para exploração de fluxos de Chat, Build e Design na interface.
+	Visão Geral da Plataforma
+	Intro Replit
+	Leitura de 3 minutos
+	Explica o funcionamento do workspace no navegador, pré-visualização em tempo real e remixagem de projetos.
+	Quickstart: Crie seu Primeiro App
+	Ask AI Quickstart
+	Prática de 5 minutos
+	Roteiro guiado para transformar um comando inicial em aplicação funcional com o Replit Agent.
+	Quickstart: Expandir Projeto
+	Expand Your Project
+	Prática de 5 minutos
+	Ensina como adicionar novas funcionalidades de forma incremental sem quebrar o código existente.
+	Quickstart: Publicar Aplicativo
+	Publish Quickstart
+	Prática de 2 minutos
+	Demonstra a transição do ambiente de desenvolvimento para uma URL pública acessível aos jurados.
+	Guia do Replit Agent
+	Core Concepts Agent
+	Referência conceitual
+	Detalha o uso do Modo Planejamento, checkpoints de reversão e seleção entre modos Lite, Economy e Power.
+	Boas Práticas: Prompts Eficazes
+	Agent Best Practices
+	Guia de especificação
+	Apresenta quadros comparativos entre prompts vagos e eficazes, depuração com mensagens de erro e uso de referências visuais.
+	Introdução à IA no Replit
+	Introduction to AI
+	Fundamentos de LLMs
+	Esclarece tokens, janela de contexto, variabilidade das respostas e limites de autonomia do agente.
+	Armazenamento e Bancos de Dados
+	Storage and Databases
+	Persistência de dados
+	Diferencia o Banco de Dados estruturado (perfis, registros) do App Storage (imagens, vídeos, documentos).
+	Criação de App Mobile (Expo Go)
+	Build Mobile App
+	Prática de 15 minutos
+	Orienta equipes que optarem por protótipos móveis testáveis diretamente no smartphone via leitura de QR Code.
+	3. Base Expandida de 13 Vídeos no YouTube (Auditados em Português)
+Categoria
+	Título e Canal
+	Duração
+	Link Direto
+	Uso Recomendado no Portal
+	Aquecimento (Shorts)
+	Vibe Coding: O que você precisa saber! (Código Fonte TV)
+	00m31s
+	Assistir no YouTube
+	Vídeo de abertura no topo da página para quebrar o gelo em 30 segundos.
+	Aquecimento (Shorts)
+	Essa IA pode criar seus apps em segundos (Léo Andrade)
+	00m53s
+	Assistir no YouTube
+	Gancho motivacional mostrando a velocidade de geração de telas.
+	Tour Inicial
+	Como Usar o Replit Grátis - Guia para Iniciantes 2026 (TechGuidePro)
+	01m43s
+	Assistir no YouTube
+	Passo 1 do tutorial: criar conta e reconhecer os botões principais.
+	Visão da Plataforma
+	Replit - Programe Online de Forma Completa (Hashtag Programação)
+	10m46s
+	Assistir no YouTube
+	Explicação didática sobre onde ficam os arquivos e o navegador interno.
+	Planos e Créditos
+	Replit FREE e outras novidades - com EXEMPLO (Elber Domingos)
+	11m16s
+	Assistir no YouTube
+	Educação sobre consumo consciente de créditos durante a maratona.
+	Prática Rápida
+	CRIEI um APP e um SITE para VENDER em 6 MINUTOS! (Negócios em Mente)
+	06m18s
+	Assistir no YouTube
+	Inspiração para criar o produto junto com a página de vendas para o pitch.
+	Passo a Passo Leigo
+	Como criar seu Primeiro APP com IA no REPLIT! (Sancler Miranda)
+	19m03s
+	Assistir no YouTube
+	Vídeo central do módulo mão na massa para iniciantes absolutos.
+	Prompts Sequenciais
+	Com 5 prompts criamos um projeto no Replit (Código Fonte TV)
+	16m59s
+	Assistir no YouTube
+	Demonstração de como dividir um pedido grande em 5 etapas seguras.
+	Mobile (Android/iOS)
+	Eu testei: Criei aplicativos para Android e iOS com Replit (Helio Arreche)
+	06m19s
+	Assistir no YouTube
+	Referência para equipes que desejam demonstrar protótipo no celular.
+	Publicação em Lojas
+	PUBLICAR App com IA na Play Store e App Store (Onde eu Clico)
+	10m01s
+	Assistir no YouTube
+	Material bônus para equipes que quiserem continuar o projeto pós-evento.
+	Mentalidade Vibe Coding
+	Vibe coding: guia completo para iniciantes (Vini Lana)
+	42m17s
+	Assistir no YouTube
+	Guia conceitual para estudar na semana anterior ao hackathon.
+	Metodologia Séria
+	O Replit é a melhor plataforma para vibe coding (Rafael Quintanilha)
+	41m51s
+	Assistir no YouTube
+	Aprofundamento em estrutura de dados e organização de escopo.
+	Imersão Completa
+	Tutorial Replit: Como Usar o Replit AI para Criar Apps (Eric Grassi)
+	47m15s
+	Assistir no YouTube
+	Aula completa de ponta a ponta para quem quer dominar a ferramenta.
+	4. Guias Escritos, Artigos Técnicos e Materiais em PDF
+* Como Usar o Replit no Hackathon (Abradi x Replit): Acessar Guia Web — Manual direto concebido para participantes sem experiência em programação chegarem preparados a um hackathon Replit.
+* Replit: crie aplicativos e sites com inteligência artificial (Alura): Acessar Artigo Alura — Explica em linguagem acessível o conceito de contêineres na nuvem, organização de pastas, uso de Secrets e integração com GitHub.
+* Agente Replit: Um guia com exemplos práticos (DataCamp Brasil): Acessar Tutorial DataCamp — Lista nove casos de uso práticos (setup, banco de dados Postgres, depuração, documentação) acompanhados dos respectivos comandos.
+* Replit: Desenvolva apps com IA - Guia Definitivo (CursoB): Acessar Guia CursoB — Trilha textual introdutória focada na criação de aplicações com IA e integração de modelos de linguagem para iniciantes.
+* Primeiros Passos em Tecnologia (Apostila Gratuita em PDF - Rodrigo Ferrazza): Baixar PDF — Material introdutório em PDF que orienta iniciantes absolutos na utilização do ambiente online do Replit sem necessidade de instalação local.
+* Manual de Orientações Técnicas — Hackathon Rede +Brasil (Serpro): Baixar PDF Serpro — Referência institucional em PDF sobre dinâmica técnica de hackathons, validação Problem-Solution Fit e critérios de avaliação de completude funcional.
+5. Protocolo Operacional e Prompts-Base para as 4 Etapas da Maratona
+Etapa da Maratona
+	Modo Recomendado
+	Prompt-Base Estruturado (Copiar e Adaptar)
+	Resultado Técnico Esperado
+	1. Escopo e Arquitetura
+	Plan (Planejamento)
+	"Quero criar um aplicativo web em português do Brasil para [descrever o problema e o público-alvo]. Na primeira versão, o usuário deve conseguir [ação principal 1] e [ação principal 2]. Crie um plano de etapas simples e enxuto para um MVP funcional de hackathon, sem recursos supérfluos."
+	Lista ordenada de tarefas e telas que permite à equipe revisar o escopo antes de consumir recursos de construção.
+	2. Construção do MVP
+	Economy ou Power
+	"Aprove o plano. Construa a interface inicial limpa e responsiva em português do Brasil, utilizando um banco de dados integrado para salvar [tipos de registros]. Inclua dados de exemplo pré-carregados para facilitar a demonstração."
+	Aplicação full-stack funcional com persistência de dados e massa de testes pronta para validação imediata.
+	3. Refinamento e Correção
+	Lite (Ajustes rápidos)
+	"Na tela [nome da tela], ao clicar no botão [nome do botão], ocorre o seguinte comportamento inesperado: [descrever o erro ou colar a mensagem exata]. Corrija esse fluxo mantendo o restante da interface intacto."
+	Depuração cirúrgica de falhas pontuais com baixo consumo de créditos e preservação dos checkpoints anteriores.
+	4. Preparação para o Pitch
+	Lite + Aba Publishing
+	"Revise se todas as rotas, formulários e conexões com o banco de dados estão prontos para publicação em produção e prepare o aplicativo para deploy público."
+	Sincronização do esquema do banco de dados de produção e geração de link público estável (Autoscale) para apresentação aos avaliadores.
