@@ -234,6 +234,24 @@
       });
     }
 
+    // Suporte a setas do teclado (ArrowRight / ArrowLeft) dentro da seção do fluxograma
+    const flowSection = document.getElementById("fluxograma");
+    if (flowSection) {
+      flowSection.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowRight") {
+          e.preventDefault();
+          stopFlowTour();
+          const next = currentFlowStep >= 8 ? 1 : currentFlowStep + 1;
+          renderFlowStep(next, false);
+        } else if (e.key === "ArrowLeft") {
+          e.preventDefault();
+          stopFlowTour();
+          const prev = currentFlowStep <= 1 ? 8 : currentFlowStep - 1;
+          renderFlowStep(prev, false);
+        }
+      });
+    }
+
     // Static-first contract (?motion=static ou prefers-reduced-motion)
     const params = new URLSearchParams(window.location.search);
     const isStatic = params.get("motion") === "static";
@@ -678,9 +696,13 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
     const videoSummary = document.getElementById("video-modal-summary");
     const videoExtLink = document.getElementById("video-modal-external");
     const videoCloseBtn = document.getElementById("video-modal-close");
+    let lastVideoTrigger = null;
 
     function closeAndResetVideoModal() {
       if (videoIframe) videoIframe.setAttribute("src", "");
+      if (lastVideoTrigger && typeof lastVideoTrigger.focus === "function") {
+        lastVideoTrigger.focus();
+      }
     }
 
     attachDialogLightDismissFallback(videoModal, closeAndResetVideoModal);
@@ -699,6 +721,7 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
       const meta = VIDEOS_DATA.find((x) => x.id === vid);
       if (!meta) return;
 
+      lastVideoTrigger = trigger;
       if (videoTitle) videoTitle.textContent = `${meta.titulo} (${meta.duracao})`;
       if (videoSummary) videoSummary.textContent = meta.resumo;
       if (videoExtLink) videoExtLink.setAttribute("href", `https://www.youtube.com/watch?v=${meta.id}`);
@@ -716,7 +739,11 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
     const openPosterBtn = document.getElementById("btn-open-poster");
     const closePosterBtn = document.getElementById("poster-modal-close");
 
-    attachDialogLightDismissFallback(posterModal, null);
+    attachDialogLightDismissFallback(posterModal, () => {
+      if (openPosterBtn && typeof openPosterBtn.focus === "function") {
+        openPosterBtn.focus();
+      }
+    });
     if (openPosterBtn && posterModal) {
       openPosterBtn.addEventListener("click", () => posterModal.showModal());
     }

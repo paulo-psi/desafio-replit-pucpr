@@ -172,11 +172,12 @@ def test_portal_kit_inscrito_end_to_end(local_server_url):
             checks.nth(i).check()
         assert page.locator("#xp-percent").inner_text().strip() == "100%"
 
-        # 9. Auditoria Matemática de Contraste WCAG AA e Responsividade (3 Viewports)
+        # 9. Auditoria Matemática de Contraste WCAG AA e Responsividade (4 Viewports incluindo 320px)
         for vp in [
             {"width": 1440, "height": 900},
             {"width": 768, "height": 1024},
             {"width": 390, "height": 844},
+            {"width": 320, "height": 568},
         ]:
             page.set_viewport_size(vp)
             overflow = page.evaluate(

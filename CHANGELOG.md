@@ -2,6 +2,12 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [1.0.1] - 2026-11-12
+### Melhorado
+- Sincronização integral de `./src/index.html` com `./index.html` (0 anti-padrões no `npx impeccable detect` em ambos).
+- Polimento da `Navbar Daylight Glass` em Desktop (`1440px`) exibindo todas as 8 âncoras sem truncamento, `scroll-margin-top: 84px` nas seções e alvos de toque `>= 44px` no mobile.
+- Imunidade a overflow horizontal validada até `320x568` (`tests/test_portal_replit.py`), restauração automática de foco ao fechar os modais `<dialog>` e navegação por setas no Fluxograma Didático.
+
 ## [1.0.0] - 2026-11-12
 ### Adicionado
 - Portal completo **Kit Oficial do Inscrito — Desafio Replit + PUCPR** em `./index.html` (espelhado em `./src/index.html`), `./assets/css/styles.css` e `./assets/js/app.js`, pronto para GitHub Pages (`./.nojekyll`).
