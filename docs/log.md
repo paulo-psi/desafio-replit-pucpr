@@ -1,7 +1,7 @@
 # Log de Sessões e Handoff Rápido: Replit
 
 ## 📌 Estado Atual (Handoff Rápido)
-- **Última Atualização:** 2026-11-13 15:26
+- **Última Atualização:** 2026-11-13 18:07
 - **Status Atual:** **v1.3.1 Régua Seletora das Etapas 1 a 8, Destaque da Rota de Contingência e Padronização Monetária Anti-Quebra (US$20,00)** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
@@ -30,6 +30,7 @@
   - Implementação da régua seletora de etapas clicável (`.flow-steps-pillbar`) com pílulas táteis de 1 a 7 e destaque rubi para a etapa 8, com navegação bidirecional integrada ao SVG e ao painel lateral.
   - Padronização monetária rigorosa sem espaços intermediários em `US$` (`US$20,00`, `US$0,00`, `US$6,00`, etc.) em todos os arquivos de marcação e script.
   - Validação de contraste acessível (5.8:1, superando WCAG AA), 0 anti-padrões no `impeccable detect` e suíte Pytest 100% verde em 5.45s.
+  - Execução de `/learn`: persistência dos 5 aprendizados-chave nas regras globais (`padroes-engenharia-paulo.md` e `memoria-ecossistema-antigravity.md`), com commit e push no cofre central de governança.
 
 ### 2026-11-13 — Conceitos no Início, Raio-X Simétrico 3+3, Desgamificação e Botão Back to Top (v1.3.0)
 - **Ações Realizadas:**
