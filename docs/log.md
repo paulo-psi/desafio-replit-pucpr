@@ -1,19 +1,21 @@
 # Log de Sessões e Handoff Rápido: Replit
 
 ## 📌 Estado Atual (Handoff Rápido)
-- **Última Atualização:** 2026-11-13 11:15
-- **Status Atual:** **v1.2.1 Onboarding Dual (Pré-Evento & No Laboratório) e Enxugamento de Excessos Concluído & Publicado no GitHub Pages** 🍏✨
+- **Última Atualização:** 2026-11-13 14:55
+- **Status Atual:** **v1.3.0 Conceitos Fundamentais no Início, Raio-X Corrigido (Simetria 3+3), Desgamificação & Botão Voltar ao Início Concluídos** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
 - **Última Entrega Concluída:**
-  - **Onboarding em 2 Fases Complementares:**
-    - **Fase 1 (Pré-Evento • Em Casa • 10 min):** Criar conta gratuita no Replit, ambientação na tela e escolha do problema real com links diretos.
-    - **Fase 2 (Durante a Jornada • No Bloco 10):** Roteiro claro para Tarde 1 (17/11 - Plan), Tarde 2 (18/11 - Power Mode) e Tarde 3 (19/11 - Visual Editor & Pitch).
-  - **Tom Cordial, Simples e Acolhedor:** Remoção de termos alarmistas ("sobrevivência", "anti-pânico", "megalomaníaco") e foco no protagonismo de alunos leigos de Administração e Negócios.
-  - **Corte Cirúrgico de Excessos:** Seção de documentação condensada em 3 cartões essenciais e acordeão expansível para os outros 9 módulos, eliminando rolagem desnecessária.
-  - **Checklist Interativo:** Missão 1 agora cobre a preparação prévia (o aluno já ganha XP antes de chegar ao evento).
-- **Próximo Passo Imediato:** Compartilhar o link oficial com os inscritos do Desafio Replit + PUCPR e comissão avaliadora.
-- **Pendências / Bloqueios:** Nenhuma pendência técnica. Projeto 100% operacional em produção.
+  - **Seção 2: Conceitos Essenciais ("O Alfabeto do Vibe Coding"):** 10 cartões educativos em linguagem simples posicionados logo após o Hero (Vibe Coding, Replit, Aplicação Web, Banco de Dados, Hospedagem/Deploy, Prompt, MVP, Tokens US$ 20, Rollback e Dados Pré-Cadastrados), cada um com badge de contexto e analogia prática do dia a dia.
+  - **Cura do Raio-X da Interface Replit:**
+    - Fim do espaço em branco vertical gigante após o botão 1: substituído `space-between` por fluxo natural uniforme.
+    - Simetria 3+3 perfeita: 3 botões à esquerda (Área do Agent) e 3 botões à direita (Preview & Deploy) pareados com a mesma altura.
+    - Área de leitura em largura total (`.xray-detail-tray`): desacoplada do botão 5 e posicionada abaixo dos dois painéis, com controles sequenciais `[ ◀ Anterior ]` e `[ Próximo ▶ ]`.
+  - **Desgamificação e Simplicidade:** Removida a pílula de XP e videogame da navbar e do checklist, adotando formato sóbrio ("Progresso do Projeto: 0 de 6 etapas concluídas").
+  - **Botão Flutuante Voltar ao Início (Back to Top):** Botão circular daylight glass moderno e minimalista (`44x44`), fixo no canto inferior direito com fade-in suave após 400px de scroll.
+  - **Navbar Reordenada:** Sequência alinhada à jornada cognitiva (`Conceitos`, `Como Acessar`, `Raio-X`, `Fluxograma`, `Tokens`, `Cuidados`, `Exemplos`, `Prompts`, `Vídeos`, `Checklist`).
+- **Próximo Passo Imediato:** Divulgar o portal oficial atualizado para os inscritos e banca avaliadora.
+- **Pendências / Bloqueios:** Nenhuma pendência técnica. Projeto 100% testado e em produção.
 - **Comando de Validação:** `pytest tests/test_portal_replit.py -v && npx impeccable detect index.html`
 - **Métricas de Qualidade Aprovadas:**
   - **0 Anti-patterns no Impeccable Detect:** Zerado tanto em `./index.html` quanto em `./src/index.html`.
@@ -22,6 +24,14 @@
 ---
 
 ## Histórico de Sessões
+
+### 2026-11-13 — Conceitos no Início, Raio-X Simétrico 3+3, Desgamificação e Botão Back to Top (v1.3.0)
+- **Ações Realizadas:**
+  - Criação da Seção 2 `#conceitos` com 10 termos fundamentais (Vibe Coding, Replit, Aplicação Web, Banco de Dados, Hospedagem, Prompt, MVP, Tokens US$ 20, Rollback e Dados Pré-Cadastrados) com analogias didáticas.
+  - Cura do Raio-X da Tela do Replit: eliminação do espaço em branco artificial via `gap: 12px` uniforme, simetria 3+3 entre painel esquerdo (Agent) e direito (Preview/Nuvem) e criação da bandeja de inspeção horizontal em largura total com navegação sequencial anterior/próximo.
+  - Desgamificação completa: remoção da pílula `🏆 XP` da navbar e do checklist, substituindo por "Progresso do Projeto: 0 de 6 etapas concluídas (0%)" sóbrio e profissional.
+  - Implementação do botão flutuante minimalista Daylight Glass "Voltar ao Início" (`#btn-back-to-top`).
+  - Sincronização 100% de `index.html` e `src/index.html`, 0 anti-padrões no `impeccable detect` e suíte Playwright 100% verde em 5.39s.
 
 ### 2026-11-13 — Onboarding Dual (Pré-Evento & No Laboratório), Enxugamento de Excessos e Tom Cordial (v1.2.1)
 - **Ações Realizadas:**

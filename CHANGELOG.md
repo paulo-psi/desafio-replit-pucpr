@@ -2,6 +2,23 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [1.3.0] - 2026-11-13
+### Adicionado
+- **Seção 2: Conceitos Fundamentais ("O Alfabeto do Vibe Coding"):** 10 cartões educativos em linguagem simples posicionados logo após o Hero (Vibe Coding, Replit, Aplicação Web, Banco de Dados, Hospedagem/Deploy, Prompt, MVP, Tokens US$ 20, Rollback e Dados Pré-Cadastrados), cada um com badge de contexto e analogia prática do dia a dia.
+- **Botão Flutuante Voltar ao Início (Back to Top):** Botão minimalista daylight glass circular (`44x44`), fixado no canto inferior direito com SVG limpo e animação suave de fade-in ao rolar a página.
+- **Navegação Sequencial no Raio-X:** Botões `[ ◀ Anterior ]` e `[ Próximo ▶ ]` na bandeja de inspeção para folhear os 6 pontos do Replit sequencialmente.
+
+### Aprimorado & Corrigido
+- **Cura do Raio-X da Interface Replit:**
+  - **Fim do espaço em branco vertical:** Substituído o `justify-content: space-between` da coluna esquerda por alinhamento uniforme `justify-content: flex-start; gap: 12px`.
+  - **Simetria 3 + 3 perfeita:** Painel Esquerdo com os 3 pontos do Agent (1, 2, 3) e Painel Direito com os 3 pontos de Preview/Deploy (4, 5, 6), pareados com a mesma altura.
+  - **Área de Leitura em Largura Total (`.xray-detail-tray`):** Desacoplada do botão 5 e posicionada abaixo dos dois painéis em largura total (100%), deixando evidente que o texto reflete o ponto selecionado.
+- **Desgamificação & Simplicidade no Checklist:**
+  - Removido o badge `🏆 XP 0%` e ranks de videogame da navbar superior e do checklist.
+  - Checklist reconfigurado para formato sóbrio e profissional: "Progresso do Projeto: 0 de 6 etapas concluídas (0%)" com botão "↺ Limpar Seleção".
+- **Navbar Daylight Glass Otimizada:** Reordenação dos links para refletir a jornada (`Conceitos`, `Como Acessar`, `Raio-X`, `Fluxograma`, `Tokens`, `Cuidados`, `Exemplos`, `Prompts`, `Vídeos`, `Checklist`).
+- Cache-busting atualizado para `?v=1.3.0`.
+
 ## [1.2.1] - 2026-11-13
 ### Aprimorado (Onboarding Dual: Pré-Evento & No Laboratório)
 - Reestruturação do módulo de Onboarding em 2 momentos didáticos claros e cordiais:

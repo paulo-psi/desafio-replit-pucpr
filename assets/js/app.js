@@ -315,8 +315,14 @@
     const titleEl = document.getElementById("xray-detail-title");
     const bodyEl = document.getElementById("xray-detail-body");
     const tipEl = document.getElementById("xray-detail-tip");
+    const prevBtn = document.getElementById("btn-xray-prev");
+    const nextBtn = document.getElementById("btn-xray-next");
+
+    let currentSpot = 1;
 
     function selectSpot(spotId) {
+      spotId = Number(spotId) || 1;
+      currentSpot = spotId;
       const data = XRAY_SPOTS[spotId];
       if (!data) return;
       buttons.forEach((b) => {
@@ -331,6 +337,20 @@
     buttons.forEach((btn) => {
       btn.addEventListener("click", () => selectSpot(btn.getAttribute("data-xray-spot")));
     });
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        const next = currentSpot > 1 ? currentSpot - 1 : 6;
+        selectSpot(next);
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        const next = currentSpot < 6 ? currentSpot + 1 : 1;
+        selectSpot(next);
+      });
+    }
   }
 
   /* ------------------------------------------------------------------------
@@ -753,24 +773,15 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
   }
 
   /* ------------------------------------------------------------------------
-     7. Checklist Gamificado de 6 Missões (Persistência localStorage)
+     7. Checklist Prático do Inscrito (Persistência localStorage)
      ------------------------------------------------------------------------ */
-  const STORAGE_KEY = "pucpr_replit_kit_xp_v2";
-  const RANKS = [
-    "Nível 1: Explorador da Ideia",
-    "Nível 2: Arquiteto do Modo Plan",
-    "Nível 3: Construtor de MVP",
-    "Nível 4: Guardião dos Tokens",
-    "Nível 5: Especialista Full-Stack",
-    "Nível 6: Fundador Pronto para o Pitch 🏆"
-  ];
+  const STORAGE_KEY = "pucpr_replit_kit_check_v3";
 
-  function initGamifiedChecklist() {
+  function initChecklist() {
     const checkboxes = Array.from(document.querySelectorAll(".chk-missao"));
-    const xpFill = document.getElementById("xp-bar-fill");
     const xpPercent = document.getElementById("xp-percent");
-    const xpRank = document.getElementById("xp-rank");
-    const xpBannerStatus = document.getElementById("checklist-status-text");
+    const statusText = document.getElementById("checklist-status-text");
+    const doneCount = document.getElementById("checklist-done-count");
     const resetBtn = document.getElementById("btn-reset-xp");
 
     let savedState = {};
@@ -785,14 +796,11 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
       const done = checkboxes.filter((c) => c.checked).length;
       const pct = Math.round((done / total) * 100);
 
-      if (xpFill) xpFill.style.width = `${pct}%`;
-      if (xpPercent) xpPercent.textContent = `${pct}%`;
-
-      const rankIndex = done === 0 ? 0 : Math.min(RANKS.length - 1, done - 1);
-      const rankText = done === total ? RANKS[5] : RANKS[rankIndex];
-      if (xpRank) xpRank.textContent = rankText;
-      if (xpBannerStatus) {
-        xpBannerStatus.textContent = `${done} de ${total} missões concluídas (${pct}%) — ${rankText}`;
+      if (statusText) {
+        statusText.textContent = `${done} de ${total} etapas concluídas`;
+      }
+      if (xpPercent) {
+        xpPercent.textContent = `${pct}%`;
       }
 
       const toSave = {};
@@ -802,7 +810,7 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
       try {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(toSave));
       } catch (_) {
-        // Ignora erro de storage privado
+        // Silencia em storage privado
       }
     }
 
@@ -824,6 +832,30 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
   }
 
   /* ------------------------------------------------------------------------
+     8. Botão Flutuante Voltar ao Início (Back to Top) Minimalista
+     ------------------------------------------------------------------------ */
+  function initBackToTop() {
+    const btn = document.getElementById("btn-back-to-top");
+    if (!btn) return;
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (window.scrollY > 400) {
+          btn.classList.add("is-visible");
+        } else {
+          btn.classList.remove("is-visible");
+        }
+      },
+      { passive: true }
+    );
+
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  /* ------------------------------------------------------------------------
      Inicialização Principal
      ------------------------------------------------------------------------ */
   document.addEventListener("DOMContentLoaded", () => {
@@ -832,6 +864,7 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
     initPromptWorkshop();
     initAccessibleTabs("#prompt-stage-tabs");
     initVideoLibraryAndModals();
-    initGamifiedChecklist();
+    initChecklist();
+    initBackToTop();
   });
 })();

@@ -773,7 +773,71 @@ a:hover {
   font-size: 1rem;
 }
 
-/* Simulador Raio-X Minimalista */
+/* ==========================================================================
+   Seção de Conceitos Fundamentais (O Alfabeto do Vibe Coding)
+   ========================================================================== */
+.concepts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.concept-card {
+  background: var(--apple-bg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-md);
+  padding: 26px 22px;
+  box-shadow: var(--shadow-sm);
+  transition: all 220ms var(--ease-apple);
+  display: flex;
+  flex-direction: column;
+}
+
+.concept-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: rgba(0, 113, 227, 0.25);
+}
+
+.concept-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--apple-blue);
+  margin-bottom: 10px;
+}
+
+.concept-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--apple-ink);
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.concept-desc {
+  font-size: 0.93rem;
+  line-height: 1.55;
+  color: var(--apple-secondary);
+  margin-bottom: 14px;
+  flex-grow: 1;
+}
+
+.concept-analogy {
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--apple-muted);
+  background: var(--apple-surface);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Simulador Raio-X Minimalista (Simetria 3+3 e Área de Leitura Horizontal) */
 .ide-showcase-box {
   background: var(--apple-bg);
   border-radius: var(--radius-lg);
@@ -804,26 +868,91 @@ a:hover {
 
 .ide-split-stage {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  min-height: 360px;
+  grid-template-columns: 1fr 1fr;
+  min-height: auto;
 }
 
 .ide-split-left {
-  padding: 28px;
+  padding: 24px;
   background: #FCFCFD;
   border-right: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 16px;
+  justify-content: flex-start;
+  gap: 12px;
 }
 
 .ide-split-right {
-  padding: 32px;
+  padding: 24px;
   background: var(--apple-bg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.ide-panel-tag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--apple-muted);
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.xray-detail-tray {
+  padding: 28px 32px;
+  background: #FFFFFF;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.xray-detail-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.xray-nav-btn-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.xray-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--apple-secondary);
+  background: var(--apple-surface);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-family: var(--font-sans);
+  transition: all 180ms var(--ease-apple);
+}
+
+.xray-nav-btn:hover {
+  background: var(--apple-blue-soft);
+  color: var(--apple-blue);
+  border-color: var(--apple-blue);
+}
+
+.xray-tip-box {
+  margin-top: 14px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--apple-blue-soft);
+  border: 1px solid rgba(0, 113, 227, 0.12);
+  color: var(--apple-blue);
+  font-size: 0.88rem;
+  font-weight: 600;
 }
 
 .xray-hotspot-item {
@@ -1837,4 +1966,54 @@ dialog.apple-modal[open]::backdrop {
   }
 }
 
+/* ==========================================================================
+   Botão Flutuante Voltar ao Início (Back to Top) Minimalista Daylight
+   ========================================================================== */
+.back-to-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  color: var(--apple-ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 240ms var(--ease-apple);
+}
+
+.back-to-top-btn:hover {
+  background: #FFFFFF;
+  color: var(--apple-blue);
+  transform: translateY(0) scale(1.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.back-to-top-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .back-to-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .xray-detail-tray {
+    padding: 22px 20px;
+  }
 }
