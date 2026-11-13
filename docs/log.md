@@ -1,21 +1,23 @@
 # Log de Sessões e Handoff Rápido: Replit
 
-## Handoff Rápido (Estado Atual)
-- **Última Atualização:** 2026-11-13 10:56
+## 📌 Estado Atual (Handoff Rápido)
+- **Última Atualização:** 2026-11-13 11:15
 - **Status Atual:** **v1.2.1 Onboarding Dual (Pré-Evento & No Laboratório) e Enxugamento de Excessos Concluído & Publicado no GitHub Pages** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
-- **Melhorias Entregues (Atendimento ao Pedido do Usuário):**
+- **Última Entrega Concluída:**
   - **Onboarding em 2 Fases Complementares:**
     - **Fase 1 (Pré-Evento • Em Casa • 10 min):** Criar conta gratuita no Replit, ambientação na tela e escolha do problema real com links diretos.
     - **Fase 2 (Durante a Jornada • No Bloco 10):** Roteiro claro para Tarde 1 (17/11 - Plan), Tarde 2 (18/11 - Power Mode) e Tarde 3 (19/11 - Visual Editor & Pitch).
   - **Tom Cordial, Simples e Acolhedor:** Remoção de termos alarmistas ("sobrevivência", "anti-pânico", "megalomaníaco") e foco no protagonismo de alunos leigos de Administração e Negócios.
   - **Corte Cirúrgico de Excessos:** Seção de documentação condensada em 3 cartões essenciais e acordeão expansível para os outros 9 módulos, eliminando rolagem desnecessária.
   - **Checklist Interativo:** Missão 1 agora cobre a preparação prévia (o aluno já ganha XP antes de chegar ao evento).
+- **Próximo Passo Imediato:** Compartilhar o link oficial com os inscritos do Desafio Replit + PUCPR e comissão avaliadora.
+- **Pendências / Bloqueios:** Nenhuma pendência técnica. Projeto 100% operacional em produção.
+- **Comando de Validação:** `pytest tests/test_portal_replit.py -v && npx impeccable detect index.html`
 - **Métricas de Qualidade Aprovadas:**
   - **0 Anti-patterns no Impeccable Detect:** Zerado tanto em `./index.html` quanto em `./src/index.html`.
   - **Suíte Pytest 100% Verde:** Aprovado em todas as 4 viewports (1440, 768, 390 e 320px).
-- **Próximo Passo:** Compartilhar o link oficial com os inscritos do Desafio Replit + PUCPR.
 
 ---
 
