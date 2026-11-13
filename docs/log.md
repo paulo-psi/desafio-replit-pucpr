@@ -21,6 +21,17 @@
 
 ## Histórico de Sessões
 
+### 2026-11-13 — Onboarding Dual (Pré-Evento & No Laboratório), Enxugamento de Excessos e Tom Cordial (v1.2.1)
+- **Ações Realizadas:**
+  - Redesenho completo do módulo de Onboarding (`#onboarding`) dividindo em 2 blocos complementares:
+    - **Bloco 1 (Antes do Evento • Em Casa • 10 min):** Criação de conta Replit gratuita, ambientação na tela (Raio-X e vídeo de 2 min) e escolha da dor de negócio entre 4 modelos práticos.
+    - **Bloco 2 (Durante a Jornada • No Laboratório Watts Humphrey • Bloco 10):** Roteiro diário com foco claro para Tarde 1 (17/11 - Plan Mode), Tarde 2 (18/11 - Power Mode + Cuidados) e Tarde 3 (19/11 - Visual Editor & Pitch).
+  - Remoção rigorosa de vocabulário alarmista/ansioso ("sobrevivência", "anti-pânico", "megalomaníaco"), substituindo por linguagem acolhedora, encorajadora e orientada a negócios para estudantes de Administração e Engenharias.
+  - Corte cirúrgico de poluição visual na Seção 9 (Documentação): 3 cartões essenciais em destaque e 9 manuais complementares alocados em acordeão expansível limpo (`<details class="clean-details">`), poupando mais de 400px de altura de tela.
+  - Reconfiguração da Missão 1 do Checklist para "Preparação Prévia", permitindo que os participantes interajam e pontuem de imediato.
+  - Reorganização dos links na barra Daylight Glass com labels concisas (`Como Usar`, `Raio-X`, `Tokens`) eliminando qualquer risco de overflow horizontal em 1440px.
+  - Validação completa com 0 anti-padrões no `impeccable detect`, suíte Pytest 100% verde em 4 viewports e publicação em produção via GitHub Pages (`?v=1.2.1`).
+
 ### 2026-11-13 — Redesign Completo Apple Studio Daylight & Auditoria Multi-Personas (v1.1.0)
 - **Ações Realizadas:**
   - Diagnóstico forense profundo em 6 personas (Júlia/Leiga Adm, Lucas/Designer Apple, Felipe/Mentor Replit, Profa. Cristina/PUCPR, Tiago/Mobile, Marcelo/QA).
