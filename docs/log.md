@@ -1,17 +1,19 @@
 # Log de Sessões e Handoff Rápido: Replit
 
 ## Handoff Rápido (Estado Atual)
-- **Última Atualização:** 2026-11-13 10:06
-- **Status Atual:** **v1.1.0 Redesign Apple Studio Daylight Publicado com Sucesso no GitHub Pages & Divergência 100% Resolvida** 🍏✨
+- **Última Atualização:** 2026-11-13 10:07
+- **Status Atual:** **v1.1.0 Redesign Apple Studio Daylight Ativo em Produção no GitHub Pages & Cache-Busting Confirmado** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
-- **Resolução da Divergência Detectada:**
-  - A divergência reportada às 09:36 foi **completamente saneada**: o código do redesenho Apple Studio Daylight (`index.html`, `src/index.html`, `assets/css/styles.css`, `assets/js/app.js`) foi testado, corrigido e comitado no repositório.
-  - **Cura do Overflow Horizontal:** Corrigido o cálculo de flex e padding da navbar no Desktop 1440px e contidos elementos móveis (tabela e SVG com `overflow-x: auto` e `min-width: 0`).
-  - **Suíte Pytest 100% Verde:** Aprovado em 1440x900, 768x1024, 390x844 e 320x568 com zero overflow horizontal e zero erros de console.
+  - **Commit de Produção:** `0e49672` (`feat(design): apply authentic Apple Studio Daylight overhaul, fix overflow and add cache-busting`)
+- **Diagnóstico Técnico do "Parece Igual" e Cura:**
+  - **Causa Real:** O commit anterior continha apenas arquivos Markdown de documentação (`CHANGELOG.md` e `docs/log.md`); os arquivos de código (`index.html`, `styles.css`, `app.js`) haviam ficado desmarcados no working tree. Além disso, o navegador mantinha em cache os assets estáticos sem hash de versão.
+  - **Cura Definitiva:** Todo o código do redesenho foi comitado no commit `0e49672` e enviado para o GitHub Pages. Foi adicionado cache-busting explícito (`?v=1.1.0`) nos links de CSS e JS.
+  - **Verificação ao Vivo (Playwright & HTTP):** Resposta HTTP 200 OK com `styles.css?v=1.1.0` confirmada em produção e screenshot capturado diretamente do GitHub Pages.
+- **Métricas de Qualidade Aprovadas:**
   - **0 Anti-patterns no Impeccable Detect:** Zerado tanto em `./index.html` quanto em `./src/index.html`.
-  - **Cache-Busting Ativo:** Inclusão de `?v=1.1.0` nos links de CSS e JS para impedir cache residual nos navegadores.
-- **Próximo Passo:** Portal pronto, testado e publicado. Compartilhar o link oficial com os inscritos do Desafio Replit + PUCPR.
+  - **Suíte Pytest 100% Verde:** Aprovado em 1440x900, 768x1024, 390x844 e 320x568.
+- **Próximo Passo:** Compartilhar o link oficial com os inscritos do Desafio Replit + PUCPR.
 
 ---
 
