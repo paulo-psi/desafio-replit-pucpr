@@ -4,32 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kit Oficial do Inscrito — Desafio Replit + PUCPR | Da Ideia ao Software</title>
-  <meta name="description" content="Guia prático, dicas de economia de tokens (US$ 20), fluxograma interativo, oficina de prompts e tutoriais em vídeo para os inscritos no Desafio Replit + PUCPR (17, 18 e 19/11 no Bloco 10 — Politécnica). Realização Empreendedorismo PUCPR em parceria com o Curso de Administração da PUCPR e Replit.">
+  <meta name="description" content="Kit oficial de boas-vindas e execução prática para estudantes inscritos no Desafio Replit + PUCPR (17, 18 e 19/11). Realização Empreendedorismo PUCPR em parceria com o Curso de Administração da PUCPR e Replit.">
   <link rel="icon" type="image/png" href="./assets/img/logo-pucpr-selo.png">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/styles.css?v=1.1.0">
 </head>
 <body>
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
   <!-- ========================================================================
-       1. BARRA SUPERIOR DAYLIGHT GLASS + CHANCELA PUCPR + HUD GAMIFICADO
+       1. HEADER DAYLIGHT GLASS
        ======================================================================== -->
   <header class="site-header">
-    <div class="container header-inner">
+    <div class="header-inner">
       <div class="brand-cluster">
         <a href="https://empreendedorismo.pucpr.br/" target="_blank" rel="noopener" title="Empreendedorismo PUCPR">
-          <img src="./assets/img/logo-pucpr-selo.png" alt="Selo Oficial Brasão PUCPR" class="brand-selo" width="38" height="38">
+          <img src="./assets/img/logo-pucpr-selo.png" alt="Selo Oficial Brasão PUCPR" class="brand-selo" width="36" height="36">
         </a>
         <div class="brand-text-group">
           <span class="brand-eyebrow">Empreendedorismo PUCPR • Administração</span>
           <span class="brand-title">Kit do Inscrito • Desafio Replit</span>
         </div>
-        <span class="brand-divider" aria-hidden="true"></span>
-        <a href="https://replit.com/" target="_blank" rel="noopener" class="brand-replit-badge" title="Abrir Replit">
+        <a href="https://replit.com/" target="_blank" rel="noopener" title="Abrir Replit" style="display:inline-flex;align-items:center;margin-left:6px;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="#F26207" aria-hidden="true">
             <path d="M4 3.5A1.5 1.5 0 0 1 5.5 2h6A1.5 1.5 0 0 1 13 3.5V9H5.5A1.5 1.5 0 0 1 4 7.5v-4ZM13 9h6.5A1.5 1.5 0 0 1 21 10.5v4a1.5 1.5 0 0 1-1.5 1.5H13V9ZM4 16.5A1.5 1.5 0 0 1 5.5 15H13v5.5A1.5 1.5 0 0 1 11.5 22h-6A1.5 1.5 0 0 1 4 20.5v-4Z"/>
           </svg>
-          <span>Replit</span>
         </a>
       </div>
 
@@ -46,10 +44,10 @@
 
       <div class="header-actions">
         <a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener" class="btn-edital-top" title="Abrir Documento Oficial do Evento (Edital PDF)">
-          <span>📄 Edital Oficial (PDF)</span>
+          <span>📄 Edital PDF</span>
         </a>
         <a href="#checklist" class="xp-hud-pill" title="Sua evolução no Kit do Inscrito">
-          <span style="font-weight:700;color:var(--ink-primary);">🏆 XP</span>
+          <span style="font-weight:700;color:var(--apple-ink);">🏆 XP</span>
           <span id="xp-rank" class="xp-rank-label">Nível 1</span>
           <span class="xp-mini-track" aria-hidden="true">
             <span id="xp-bar-fill" class="xp-mini-fill"></span>
@@ -62,85 +60,54 @@
 
   <main id="conteudo-principal">
     <!-- ======================================================================
-         2. HERO DO INSCRITO: BOAS-VINDAS + CARTAZ OFICIAL + CHANCELA PUCPR
+         2. HERO ESCULTÓRICO (DESCONGESTIONADO & MONUMENTAL)
          ====================================================================== -->
     <section class="hero-section">
       <div class="container hero-grid">
         <div>
-          <div class="hero-chancela-bar">
-            <span class="eyebrow-pill pucpr">🎓 Kit Oficial para Participantes Inscritos</span>
-            <span class="eyebrow-pill replit">⚡ Zero Programação • 100% Prático</span>
+          <div class="hero-chancela">
+            <span>Realização</span>
+            <strong style="color:var(--apple-ink);">Empreendedorismo PUCPR</strong>
+            <span>•</span>
+            <span>Administração</span>
+            <span>•</span>
+            <span style="color:var(--replit-orange);font-weight:700;">Replit</span>
           </div>
 
           <h1 class="hero-title">
-            Da ideia ao software em 3 dias: seu guia completo para o <span class="highlight-replit">Desafio Replit</span> + <span class="highlight-safira">PUCPR</span>.
+            Da ideia ao software em 3 dias.
           </h1>
 
           <p class="hero-lead">
-            Você já garantiu sua participação! Este portal foi construído pela equipe de <strong><a href="https://empreendedorismo.pucpr.br/" target="_blank" rel="noopener">Empreendedorismo PUCPR</a></strong> em parceria com o <strong>Curso de Administração da PUCPR</strong> (Escola de Negócios) e a <strong>Replit</strong> para guiar você — mesmo que <strong>nunca tenha programado na vida</strong> — a criar um aplicativo real na nuvem sem queimar seus créditos de IA antes do Pitch.
+            Bem-vindo ao seu kit oficial de sobrevivência e execução. Desenvolvido para guiar você — mesmo com <strong>zero experiência em código</strong> — a criar um produto real na nuvem e apresentar um Pitch impecável no Desafio Replit + PUCPR.
           </p>
 
-          <div class="event-logistics-grid">
-            <div class="logistic-pill-card">
-              <span class="logistic-label">📅 Datas e Horário</span>
-              <span class="logistic-value">17, 18 e 19/11 • 14h às 17h</span>
-            </div>
-            <div class="logistic-pill-card">
-              <span class="logistic-label">📍 Local Presencial</span>
-              <span class="logistic-value">Bloco 10 (Politécnica) • Lab. Watts Humphrey (1º andar)</span>
-            </div>
-            <div class="logistic-pill-card">
-              <span class="logistic-label">🎁 Benefícios do Inscrito</span>
-              <span class="logistic-value">US$ 20 Replit + Mentoria + 20h + Premiação e Brindes</span>
-            </div>
-          </div>
-
-          <div class="hero-cta-row">
-            <a href="#fluxograma" class="btn btn-safira">🗺️ Iniciar pelo Fluxograma Didático</a>
-            <a href="#prompts" class="btn btn-primary">✨ Montar Meu 1º Prompt</a>
-            <a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener" class="btn btn-secondary">📄 Ler Documento Oficial (Edital PDF) ↗</a>
-          </div>
-
-          <div class="days-strip">
-            <article class="day-mini-card">
-              <span class="day-tag">Tarde 1 • 17/11 (Terça)</span>
-              <h2>Ideia &amp; Modo Plan</h2>
-              <p>Definir o problema de negócio, escolher as 3 telas essenciais e planejar no Replit gastando menos de US$ 1.</p>
-            </article>
-            <article class="day-mini-card">
-              <span class="day-tag">Tarde 2 • 18/11 (Quarta)</span>
-              <h2>Construção do MVP</h2>
-              <p>Gerar o sistema com banco de dados no <strong>Power Mode</strong> e pré-cadastrar 5 exemplos realistas.</p>
-            </article>
-            <article class="day-mini-card">
-              <span class="day-tag">Tarde 3 • 19/11 (Quinta)</span>
-              <h2>Ajuste Grátis &amp; Pitch</h2>
-              <p>Polir textos no <strong>Visual Editor (US$ 0)</strong>, publicar em <strong>Autoscale</strong> e brilhar na banca!</p>
-            </article>
+          <div class="hero-cta-group">
+            <a href="#fluxograma" class="btn btn-safira">Trilha dos 3 Dias</a>
+            <a href="#prompts" class="btn btn-primary">Montar Meu 1º Prompt</a>
+            <a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Edital Oficial (PDF) ↗</a>
           </div>
         </div>
 
-        <!-- Coluna Direita: Cartaz Oficial + Card Institucional PUCPR | Grupo Marista -->
-        <div class="hero-visual-stack">
-          <div class="poster-showcase-card">
+        <!-- Pedestal do Cartaz Oficial + Chancela Marista -->
+        <div class="hero-visual-pedestal">
+          <div class="poster-frame">
             <button type="button" id="btn-open-poster" class="poster-btn-trigger" aria-label="Ampliar Cartaz Oficial do Desafio Replit + PUCPR em tela cheia">
               <img src="./assets/img/cartaz-desafio-replit.jpg" alt="Cartaz Oficial Desafio Replit + PUCPR: 17, 18 e 19 de novembro, 14h às 17h, Laboratório Watts Humphrey, Escola Politécnica - Bloco 10" class="poster-img" width="723" height="1024">
             </button>
-            <div class="poster-caption-bar">
-              <span>📌 Cartaz Oficial do Evento</span>
-              <span>🔍 Clique na imagem para ampliar</span>
+            <div class="poster-caption">
+              <span>Cartaz Oficial do Evento • Clique para ampliar</span>
             </div>
           </div>
 
-          <div class="chancela-institucional-card">
-            <img src="./assets/img/logo-pucpr-marista.jpg" alt="Brasão Oficial PUCPR — Grupo Marista" class="logo-marista-vertical" width="92" height="122">
-            <div class="chancela-copy">
-              <h2>Realização Institucional</h2>
-              <p>Iniciativa oficial <strong>Empreendedorismo PUCPR</strong> em parceria com o <strong>Curso de Administração da PUCPR</strong> e <strong>Replit</strong>.</p>
-              <div class="chancela-links">
-                <a href="https://empreendedorismo.pucpr.br/" target="_blank" rel="noopener">🌐 Portal Empreendedorismo PUCPR ↗</a>
-                <a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener">📄 Edital PDF ↗</a>
-                <a href="https://sites.pucpr.br/mapas/" target="_blank" rel="noopener">🗺️ Mapa do Campus ↗</a>
+          <div class="chancela-marista-banner">
+            <img src="./assets/img/logo-pucpr-marista.jpg" alt="Brasão Oficial PUCPR — Grupo Marista" class="logo-marista-img" width="68" height="91">
+            <div class="chancela-marista-copy">
+              <h2>Parceria Oficial PUCPR &amp; Replit</h2>
+              <p>Escola de Negócios • Laboratório Watts Humphrey</p>
+              <div style="display:flex;gap:12px;font-size:0.8rem;font-weight:600;">
+                <a href="https://empreendedorismo.pucpr.br/" target="_blank" rel="noopener">Portal Empreendedorismo ↗</a>
+                <a href="https://sites.pucpr.br/mapas/" target="_blank" rel="noopener">Mapa do Campus ↗</a>
               </div>
             </div>
           </div>
@@ -149,177 +116,196 @@
     </section>
 
     <!-- ======================================================================
-         3. FLUXOGRAMA DIDÁTICO INTERATIVO (diagram-design: type-flowchart.md)
+         FAIXA ESPAÇOSA: LOGÍSTICA & AS 3 TARDES
          ====================================================================== -->
-    <section id="fluxograma" class="section-block section-stage">
+    <section class="logistics-strip-section">
+      <div class="container">
+        <div class="logistics-grid">
+          <div class="logistic-item">
+            <span class="logistic-eyebrow">Datas &amp; Horário</span>
+            <span class="logistic-main">17, 18 e 19 de novembro • 14h às 17h</span>
+          </div>
+          <div class="logistic-item">
+            <span class="logistic-eyebrow">Local Presencial</span>
+            <span class="logistic-main">Bloco 10 (Politécnica) • Lab. Watts Humphrey</span>
+          </div>
+          <div class="logistic-item">
+            <span class="logistic-eyebrow">Benefícios ao Inscrito</span>
+            <span class="logistic-main">US$ 20 Replit • Mentoria • 20h • Premiação</span>
+          </div>
+        </div>
+
+        <div class="days-triptych">
+          <article class="day-card">
+            <span class="day-eyebrow">Tarde 1 • 17/11 (Terça)</span>
+            <h2>Ideia &amp; Modo Plan</h2>
+            <p>Descobrir a dor do cliente, escolher 3 telas essenciais e planejar a arquitetura no Replit gastando menos de US$ 1 em tokens.</p>
+          </article>
+          <article class="day-card">
+            <span class="day-eyebrow">Tarde 2 • 18/11 (Quarta)</span>
+            <h2>Construção do MVP</h2>
+            <p>Construir a aplicação com banco de dados funcional usando o Power Mode e garantir 5 registros realistas cadastrados.</p>
+          </article>
+          <article class="day-card">
+            <span class="day-eyebrow">Tarde 3 • 19/11 (Quinta)</span>
+            <h2>Polimento &amp; Pitch</h2>
+            <p>Ajustar textos e cores no Visual Editor (US$ 0), publicar em Autoscale (.replit.app) e encantar a banca avaliadora!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. FLUXOGRAMA DIDÁTICO INTERATIVO (diagram-design)
+         ====================================================================== -->
+    <section id="fluxograma" class="section-block">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill">🗺️ Mapa Visual para Iniciantes (Passo a Passo)</span>
-          <h2 class="section-title">Fluxograma Didático: Como Sair do Zero ao Pitch Sem Queimar Tokens</h2>
+          <span class="eyebrow-text">Jornada em 8 Etapas</span>
+          <h2 class="section-title">Como Sair do Zero ao Pitch Sem Queimar Tokens</h2>
           <p class="section-subtitle">
-            Não sabe por onde começar quando abrir o computador no laboratório? Siga exatamente esta trilha de <strong>8 paradas</strong>. Clique em qualquer forma geométrica do diagrama (ou use os botões abaixo) para ver <strong>o que fazer</strong>, <strong>onde clicar no Replit</strong>, <strong>quanto custa em créditos</strong> e <strong>o prompt exato da etapa</strong>.
+            Uma bússola visual para orientar suas decisões nas 3 tardes. Clique em qualquer etapa do diagrama para revelar o que fazer, onde clicar no Replit e o prompt exato.
           </p>
         </div>
 
-        <div class="flowchart-workspace">
-          <!-- Canvas SVG com formas semânticas (Oval=Início/Fim, Retângulo=Ação, Losango=Decisão, Ponto=Junção) -->
-          <div class="flowchart-canvas-card">
-            <div class="flowchart-toolbar">
-              <div class="flowchart-controls" role="group" aria-label="Controles de navegação do fluxograma">
+        <div class="flowchart-layout">
+          <!-- Canvas SVG -->
+          <div class="flowchart-stage-card">
+            <div class="flowchart-actions-bar">
+              <div class="flowchart-controls-group" role="group" aria-label="Controles do fluxograma">
                 <button type="button" id="flow-prev" class="btn btn-secondary btn-sm">◀ Anterior</button>
                 <button type="button" id="flow-next" class="btn btn-safira btn-sm">Próxima Etapa ▶</button>
                 <button type="button" id="flow-tour" class="btn btn-secondary btn-sm">⏯ Tour Guiado</button>
-                <button type="button" id="flow-reset" class="btn btn-secondary btn-sm">↺ Visão Completa</button>
+                <button type="button" id="flow-reset" class="btn btn-secondary btn-sm">↺ Visão Geral</button>
               </div>
-              <div class="flow-legend" aria-label="Legenda de formas e cores">
-                <span class="legend-item"><span class="legend-dot" style="background:#0066CC;"></span>Dia 1: Planejar</span>
-                <span class="legend-item"><span class="legend-dot" style="background:#B44104;"></span>Dia 2: Construir</span>
-                <span class="legend-item"><span class="legend-dot" style="background:#047857;"></span>Dia 3: Polir &amp; Pitch</span>
-                <span class="legend-item"><span class="legend-dot" style="background:#B91C1C;"></span>Resgate Anti-Erro</span>
+              <div class="flow-legend-clean" aria-label="Legenda das fases">
+                <span class="flow-legend-item"><span class="legend-color-dot" style="background:#0071E3;"></span>Planejar</span>
+                <span class="flow-legend-item"><span class="legend-color-dot" style="background:#F26207;"></span>Construir</span>
+                <span class="flow-legend-item"><span class="legend-color-dot" style="background:#1D8348;"></span>Pitch</span>
+                <span class="flow-legend-item"><span class="legend-color-dot" style="background:#D9381E;"></span>Anti-Erro</span>
               </div>
             </div>
 
-            <div class="flow-svg-wrapper">
+            <div class="flow-svg-box">
               <svg class="didactic-flow-svg" viewBox="0 0 780 430" role="img" aria-labelledby="flow-svg-title flow-svg-desc">
                 <title id="flow-svg-title">Fluxograma Didático de 8 Etapas do Desafio Replit + PUCPR</title>
-                <desc id="flow-svg-desc">Diagrama de fluxo mostrando o caminho desde a ideia no papel (Etapa 1), Modo Plan (Etapa 2), construção no Power Mode (Etapa 3), decisão de teste no Preview (Etapa 4) com desvio de segurança para Rollback + Database (Etapa 8), até o Visual Editor (Etapa 5), publicação Autoscale (Etapa 6) e Pitch no palco (Etapa 7).</desc>
+                <desc id="flow-svg-desc">Diagrama de fluxo desde a ideia no papel até o Pitch no palco com desvio de segurança de Rollback.</desc>
 
                 <defs>
                   <marker id="arrow-std" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#64748B"/>
+                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#94A3B8"/>
                   </marker>
                   <marker id="arrow-ok" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#047857"/>
+                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#1D8348"/>
                   </marker>
                   <marker id="arrow-danger" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#B91C1C"/>
+                    <path d="M 0 1 L 8 5 L 0 9 z" fill="#D9381E"/>
                   </marker>
                 </defs>
 
-                <!-- Faixas sutis de fundo para as 3 tardes -->
-                <rect x="12" y="14" width="225" height="398" rx="14" fill="#F1F5F9" stroke="#E2E8F0"/>
-                <text x="26" y="38" font-size="11" font-weight="700" fill="#0066CC">TARDE 1 (17/11) • PLANEJAMENTO</text>
+                <!-- Colunas das 3 Tardes -->
+                <rect x="12" y="14" width="225" height="398" rx="18" fill="#F8FAFC"/>
+                <text x="28" y="38" font-size="11" font-weight="700" fill="#0071E3" letter-spacing="0.05em">TARDE 1 • PLANEJAMENTO</text>
 
-                <rect x="250" y="14" width="265" height="398" rx="14" fill="#FFF7F2" stroke="#FED7AA"/>
-                <text x="264" y="38" font-size="11" font-weight="700" fill="#B44104">TARDE 2 (18/11) • CONSTRUÇÃO MVP</text>
+                <rect x="250" y="14" width="265" height="398" rx="18" fill="#FFFBF8"/>
+                <text x="266" y="38" font-size="11" font-weight="700" fill="#F26207" letter-spacing="0.05em">TARDE 2 • CONSTRUÇÃO MVP</text>
 
-                <rect x="528" y="14" width="240" height="398" rx="14" fill="#F0FDF4" stroke="#BBF7D0"/>
-                <text x="542" y="38" font-size="11" font-weight="700" fill="#047857">TARDE 3 (19/11) • PITCH &amp; DEPLOY</text>
+                <rect x="528" y="14" width="240" height="398" rx="18" fill="#F7FCF9"/>
+                <text x="544" y="38" font-size="11" font-weight="700" fill="#1D8348" letter-spacing="0.05em">TARDE 3 • PUBLICAÇÃO &amp; PITCH</text>
 
-                <!-- Conectores ortogonais -->
-                <!-- 1 -> 2 -->
+                <!-- Conectores -->
                 <path d="M 124 118 L 124 172" class="flow-connector" marker-end="url(#arrow-std)"/>
-                <!-- 2 -> sobe até o Ponto de junção (242, 106) -> 3 -->
                 <path d="M 218 206 L 242 206 L 242 106 L 266 106" class="flow-connector" marker-end="url(#arrow-std)"/>
-                <!-- 3 -> 4 (Losango) -->
                 <path d="M 380 140 L 380 182" class="flow-connector" marker-end="url(#arrow-std)"/>
-                <!-- 4 (Sim) -> 5 -->
-                <path d="M 468 236 L 510 236 L 510 100 L 548 100" class="flow-connector" style="stroke:#047857;" marker-end="url(#arrow-ok)"/>
-                <text x="472" y="226" font-size="10.5" font-weight="700" fill="#047857">Sim (OK!)</text>
+                <path d="M 468 236 L 510 236 L 510 100 L 548 100" class="flow-connector" style="stroke:#1D8348;" marker-end="url(#arrow-ok)"/>
+                <text x="472" y="226" font-size="10.5" font-weight="700" fill="#1D8348">Sim (OK)</text>
 
-                <!-- 4 (3º Erro) -> 8 (Rollback) -->
                 <path d="M 380 290 L 380 330" class="flow-connector danger-branch" marker-end="url(#arrow-danger)"/>
-                <text x="388" y="314" font-size="10" font-weight="700" fill="#B91C1C">Erro &gt; 2x (Pare!)</text>
+                <text x="388" y="314" font-size="10" font-weight="700" fill="#D9381E">Erro &gt; 2x</text>
 
-                <!-- 8 (Rollback) -> volta para o ponto de junção antes do nó 3 -->
                 <path d="M 276 364 L 242 364 L 242 106 L 266 106" class="flow-connector danger-branch" marker-end="url(#arrow-danger)"/>
-                <!-- Ponto de junção semântico (type-flowchart.md: small filled dot r=4) -->
                 <circle cx="242" cy="106" r="4.5" fill="#1D1D1F"/>
 
-                <!-- 5 -> 6 -->
-                <path d="M 648 134 L 648 182" class="flow-connector" style="stroke:#047857;" marker-end="url(#arrow-ok)"/>
-                <!-- 6 -> 7 -->
-                <path d="M 648 250 L 648 302" class="flow-connector" style="stroke:#047857;" marker-end="url(#arrow-ok)"/>
+                <path d="M 648 134 L 648 182" class="flow-connector" style="stroke:#1D8348;" marker-end="url(#arrow-ok)"/>
+                <path d="M 648 250 L 648 302" class="flow-connector" style="stroke:#1D8348;" marker-end="url(#arrow-ok)"/>
 
-                <!-- NÓ 1: OVAL (Início) -->
-                <g class="flow-node-group is-active" data-flow-step="1" tabindex="0" role="button" aria-label="Etapa 1: Ideia no Papel e 3 Telas (US$ 0)">
-                  <rect class="flow-node-shape" x="32" y="64" width="184" height="54" rx="27" fill="#FFFFFF" stroke="#0066CC" stroke-width="2.2"/>
-                  <text x="124" y="87" text-anchor="middle" font-size="12.5" font-weight="800" fill="#1D1D1F">1. Ideia + 3 Telas</text>
-                  <text x="124" y="104" text-anchor="middle" font-size="10.5" font-weight="600" fill="#047857">Papel &amp; Caneta • US$ 0</text>
+                <!-- NÓS DO FLUXOGRAMA -->
+                <g class="flow-node-group is-active" data-flow-step="1" tabindex="0" role="button" aria-label="Etapa 1: Ideia e 3 Telas">
+                  <rect class="flow-node-shape" x="32" y="64" width="184" height="54" rx="27" fill="#FFFFFF" stroke="#0071E3" stroke-width="2"/>
+                  <text x="124" y="87" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1D1F">1. Ideia + 3 Telas</text>
+                  <text x="124" y="104" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1D8348">Papel &amp; Caneta • US$ 0</text>
                 </g>
 
-                <!-- NÓ 2: RETÂNGULO (Ação - Modo Plan) -->
-                <g class="flow-node-group" data-flow-step="2" tabindex="0" role="button" aria-label="Etapa 2: Ativar Botão Plan no Chat (~US$ 0,50)">
-                  <rect class="flow-node-shape" x="32" y="176" width="186" height="62" rx="8" fill="#E8F2FF" stroke="#0066CC" stroke-width="2.2"/>
-                  <text x="125" y="201" text-anchor="middle" font-size="12.5" font-weight="800" fill="#1D1D1F">2. Conversar no 'Plan'</text>
-                  <text x="125" y="220" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0066CC">Trava Segura • ~US$ 0,50</text>
+                <g class="flow-node-group" data-flow-step="2" tabindex="0" role="button" aria-label="Etapa 2: Planejar com botão Plan">
+                  <rect class="flow-node-shape" x="32" y="176" width="186" height="62" rx="12" fill="#FFFFFF" stroke="#0071E3" stroke-width="2"/>
+                  <text x="125" y="201" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1D1F">2. Modo 'Plan'</text>
+                  <text x="125" y="220" text-anchor="middle" font-size="10.5" font-weight="600" fill="#0071E3">Trava Anti-Gasto • ~US$ 0,50</text>
                 </g>
 
-                <!-- NÓ 3: RETÂNGULO (Ação - Power Mode) -->
-                <g class="flow-node-group" data-flow-step="3" tabindex="0" role="button" aria-label="Etapa 3: Construir MVP com 5 exemplos no Power Mode">
-                  <rect class="flow-node-shape" x="270" y="72" width="220" height="68" rx="8" fill="#FFFFFF" stroke="#B44104" stroke-width="2.2"/>
-                  <text x="380" y="96" text-anchor="middle" font-size="12.5" font-weight="800" fill="#1D1D1F">3. Gerar MVP (Power Mode)</text>
-                  <text x="380" y="114" text-anchor="middle" font-size="10.5" font-weight="600" fill="#424245">+ Banco + 5 Dados de Exemplo</text>
-                  <text x="380" y="129" text-anchor="middle" font-size="10" font-weight="700" fill="#B44104">Investimento: ~US$ 6 a US$ 10</text>
+                <g class="flow-node-group" data-flow-step="3" tabindex="0" role="button" aria-label="Etapa 3: Gerar MVP no Power Mode">
+                  <rect class="flow-node-shape" x="270" y="72" width="220" height="68" rx="12" fill="#FFFFFF" stroke="#F26207" stroke-width="2"/>
+                  <text x="380" y="96" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D1D1F">3. Gerar MVP (Power Mode)</text>
+                  <text x="380" y="114" text-anchor="middle" font-size="10.5" font-weight="500" fill="#424245">+ Banco + 5 Exemplos</text>
+                  <text x="380" y="129" text-anchor="middle" font-size="10" font-weight="600" fill="#F26207">Custo Médio: ~US$ 6 a US$ 10</text>
                 </g>
 
-                <!-- NÓ 4: LOSANGO (Decisão - Funcionou no Preview?) -->
-                <g class="flow-node-group" data-flow-step="4" tabindex="0" role="button" aria-label="Etapa 4: Decisão — Funcionou no Preview?">
-                  <polygon class="flow-node-shape" points="380,184 468,236 380,288 292,236" fill="#FFFFFF" stroke="#B45309" stroke-width="2.2"/>
-                  <text x="380" y="232" text-anchor="middle" font-size="11.5" font-weight="800" fill="#1D1D1F">4. Funcionou</text>
-                  <text x="380" y="247" text-anchor="middle" font-size="11.5" font-weight="800" fill="#B45309">no Preview?</text>
+                <g class="flow-node-group" data-flow-step="4" tabindex="0" role="button" aria-label="Etapa 4: Funcionou no Preview?">
+                  <polygon class="flow-node-shape" points="380,184 468,236 380,288 292,236" fill="#FFFFFF" stroke="#B25E02" stroke-width="2"/>
+                  <text x="380" y="232" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1D1D1F">4. Funcionou</text>
+                  <text x="380" y="247" text-anchor="middle" font-size="11.5" font-weight="700" fill="#B25E02">no Preview?</text>
                 </g>
 
-                <!-- NÓ 8: RETÂNGULO DE EMERGÊNCIA (Rollback + Database) -->
-                <g class="flow-node-group" data-flow-step="8" tabindex="0" role="button" aria-label="Etapa 8: Emergência — Rollback marcando a caixinha Database">
-                  <rect class="flow-node-shape" x="276" y="334" width="208" height="60" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2.2"/>
-                  <text x="380" y="359" text-anchor="middle" font-size="12" font-weight="800" fill="#B91C1C">8. Rollback + Database</text>
-                  <text x="380" y="377" text-anchor="middle" font-size="10" font-weight="700" fill="#1D1D1F">Volta ao último ponto estável!</text>
+                <g class="flow-node-group" data-flow-step="8" tabindex="0" role="button" aria-label="Etapa 8: Emergência Rollback marcando Database">
+                  <rect class="flow-node-shape" x="276" y="334" width="208" height="60" rx="12" fill="#FFF5F5" stroke="#D9381E" stroke-width="2"/>
+                  <text x="380" y="359" text-anchor="middle" font-size="12" font-weight="700" fill="#D9381E">8. Rollback + Database</text>
+                  <text x="380" y="377" text-anchor="middle" font-size="10" font-weight="600" fill="#1D1D1F">Restaura último ponto estável</text>
                 </g>
 
-                <!-- NÓ 5: RETÂNGULO (Visual Editor Grátis) -->
-                <g class="flow-node-group" data-flow-step="5" tabindex="0" role="button" aria-label="Etapa 5: Ajustar Textos e Cores no Visual Editor a Custo Zero">
-                  <rect class="flow-node-shape" x="550" y="68" width="196" height="64" rx="8" fill="#FFFFFF" stroke="#047857" stroke-width="2.2"/>
-                  <text x="648" y="94" text-anchor="middle" font-size="12" font-weight="800" fill="#1D1D1F">5. Visual Editor / Free</text>
-                  <text x="648" y="113" text-anchor="middle" font-size="10.5" font-weight="700" fill="#047857">Ajuste Visual • US$ 0,00!</text>
+                <g class="flow-node-group" data-flow-step="5" tabindex="0" role="button" aria-label="Etapa 5: Visual Editor Grátis">
+                  <rect class="flow-node-shape" x="550" y="68" width="196" height="64" rx="12" fill="#FFFFFF" stroke="#1D8348" stroke-width="2"/>
+                  <text x="648" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#1D1D1F">5. Visual Editor</text>
+                  <text x="648" y="113" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1D8348">Ajuste de Tela • US$ 0,00!</text>
                 </g>
 
-                <!-- NÓ 6: RETÂNGULO (Publicar Autoscale) -->
-                <g class="flow-node-group" data-flow-step="6" tabindex="0" role="button" aria-label="Etapa 6: Publicar na Internet com Autoscale">
-                  <rect class="flow-node-shape" x="550" y="186" width="196" height="62" rx="8" fill="#FFFFFF" stroke="#047857" stroke-width="2.2"/>
-                  <text x="648" y="211" text-anchor="middle" font-size="12" font-weight="800" fill="#1D1D1F">6. Publish: Autoscale</text>
-                  <text x="648" y="229" text-anchor="middle" font-size="10.5" font-weight="600" fill="#424245">Link .replit.app no Ar!</text>
+                <g class="flow-node-group" data-flow-step="6" tabindex="0" role="button" aria-label="Etapa 6: Publicar Autoscale">
+                  <rect class="flow-node-shape" x="550" y="186" width="196" height="62" rx="12" fill="#FFFFFF" stroke="#1D8348" stroke-width="2"/>
+                  <text x="648" y="211" text-anchor="middle" font-size="12" font-weight="700" fill="#1D1D1F">6. Publish: Autoscale</text>
+                  <text x="648" y="229" text-anchor="middle" font-size="10.5" font-weight="500" fill="#424245">Link .replit.app no Ar</text>
                 </g>
 
-                <!-- NÓ 7: OVAL (Chegada - Pitch no Palco) -->
-                <g class="flow-node-group" data-flow-step="7" tabindex="0" role="button" aria-label="Etapa 7: Pitch de 3 Minutos no Palco">
-                  <rect class="flow-node-shape" x="550" y="306" width="196" height="60" rx="30" fill="#ECFDF5" stroke="#047857" stroke-width="2.6"/>
-                  <text x="648" y="332" text-anchor="middle" font-size="12.5" font-weight="800" fill="#047857">7. Pitch de 3 Minutos 🏆</text>
-                  <text x="648" y="350" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1D1D1F">Demo ao Vivo • Sem Tela Vazia</text>
+                <g class="flow-node-group" data-flow-step="7" tabindex="0" role="button" aria-label="Etapa 7: Pitch de 3 Minutos">
+                  <rect class="flow-node-shape" x="550" y="306" width="196" height="60" rx="30" fill="#F0FDF4" stroke="#1D8348" stroke-width="2.5"/>
+                  <text x="648" y="332" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1D8348">7. Pitch de 3 Minutos 🏆</text>
+                  <text x="648" y="350" text-anchor="middle" font-size="10.5" font-weight="600" fill="#1D1D1F">Demonstração ao Vivo</text>
                 </g>
               </svg>
             </div>
           </div>
 
-          <!-- Painel Lateral Sincronizado da Etapa Selecionada -->
-          <aside class="flow-detail-panel" aria-live="polite">
-            <div class="flow-detail-meta">
-              <span id="flow-detail-badge" class="flow-step-counter">Etapa 1 de 8 • Dia 1 (17/11)</span>
-              <span id="flow-detail-cost" class="cost-pill free">🟢 Custo: US$ 0,00 (Zero Tokens)</span>
-            </div>
+          <!-- Painel Lateral Limpo -->
+          <aside class="flow-sidebar-panel" aria-live="polite">
+            <span id="flow-detail-badge" class="flow-step-tag">Etapa 1 de 8 • Dia 1 (17/11)</span>
+            <h3 id="flow-detail-title" class="flow-panel-title">1. Papel &amp; Caneta: Definir a Dor e as 3 Telas</h3>
 
-            <h3 id="flow-detail-title" style="font-size:1.25rem;margin-bottom:10px;">
-              1. Papel &amp; Caneta: Definir a Dor e as 3 Telas
-            </h3>
-
-            <div class="flow-detail-list">
-              <div class="flow-detail-box">
-                <strong>🎯 O que fazer na prática</strong>
+            <div class="flow-insight-list">
+              <div class="flow-insight-row">
+                <strong>O que fazer</strong>
                 <p id="flow-detail-what">Antes de encostar no teclado, defina em 1 frase quem é o cliente, qual problema real você resolve e quais são as 3 únicas telas essenciais da primeira versão (MVP).</p>
               </div>
-              <div class="flow-detail-box">
-                <strong>🖱️ Onde clicar na tela do Replit</strong>
+              <div class="flow-insight-row">
+                <strong>Onde clicar no Replit</strong>
                 <p id="flow-detail-where">Fora da tela (anotação rápida ou Montador de Prompts da Seção 8 deste Kit).</p>
+              </div>
+              <div class="flow-insight-row">
+                <strong>Custo Estimado</strong>
+                <p id="flow-detail-cost" style="font-weight:700;color:var(--semantic-ok);">🟢 Custo: US$ 0,00 (Zero Tokens)</p>
               </div>
             </div>
 
-            <strong style="display:block;font-size:0.76rem;text-transform:uppercase;letter-spacing:0.04em;color:var(--ink-muted);margin-bottom:6px;">
-              💬 Prompt / Comando Recomendado desta Etapa:
-            </strong>
-            <pre id="flow-detail-prompt" class="flow-prompt-snippet">Minha ideia se chama [Nome], ajuda [Público] a resolver [Problema] através de 3 telas simples: 1) Painel Resumo, 2) Cadastro Rápido e 3) Lista de Gestão.</pre>
+            <pre id="flow-detail-prompt" class="flow-code-preview">Minha ideia se chama [Nome], ajuda [Público] a resolver [Problema] através de 3 telas simples: 1) Painel Resumo, 2) Cadastro Rápido e 3) Lista de Gestão.</pre>
 
             <div class="copy-action-wrap">
-              <button type="button" id="btn-copy-flow-prompt" class="btn btn-primary btn-sm">📋 Copiar Comando da Etapa</button>
+              <button type="button" id="btn-copy-flow-prompt" class="btn btn-safira btn-sm">📋 Copiar Prompt da Etapa</button>
               <span id="tip-copy-flow-prompt" class="copy-tip" role="status"></span>
             </div>
           </aside>
@@ -328,227 +314,214 @@
     </section>
 
     <!-- ======================================================================
-         4. COMO USAR O REPLIT SEM SABER PROGRAMAR (RAIO-X DA TELA + JARGÕES)
+         4. COMO USAR O REPLIT (DIRETOR VS IA & RAIO-X)
          ====================================================================== -->
-    <section id="como-usar" class="section-block">
+    <section id="como-usar" class="section-block section-stage">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill">🧭 Guia para Iniciantes Absolutos</span>
+          <span class="eyebrow-text">Mentalidade de Vibe Coding</span>
           <h2 class="section-title">Como Usar o Replit Sem Saber Programar</h2>
           <p class="section-subtitle">
-            Esqueça códigos complicados. No <strong>Vibe Coding</strong>, você entra com o olhar de <strong>Administração e Negócios</strong>, enquanto o Replit Agent trabalha como sua equipe técnica completa.
+            Você não precisa ser da área de TI. Em um desafio assistido por inteligência artificial, você assume o comando de produto e negócios, enquanto a IA cuida de toda a engenharia.
           </p>
         </div>
 
-        <!-- Comparativo Diretor de Produto vs Engenheiro IA -->
-        <div class="role-comparison-grid">
-          <article class="bento-card">
-            <span class="eyebrow-pill ok">👤 O Seu Papel no Desafio</span>
-            <h3 style="font-size:1.3rem;margin-bottom:10px;">Você é o Diretor de Produto (CEO do App)</h3>
-            <ul style="padding-left:18px;display:grid;gap:8px;">
-              <li><strong>Escolhe a dor real:</strong> Define qual problema de clientes ou empresas seu aplicativo resolve.</li>
-              <li><strong>Mantém o foco em 3 telas:</strong> Corta exageros que levariam meses e aprova apenas o essencial que gera valor.</li>
-              <li><strong>Testa como usuário:</strong> Clica nos botões da janela <em>Preview</em> e confere se os dados fazem sentido para a banca.</li>
+        <div class="director-pair-grid">
+          <article class="director-card">
+            <span class="director-eyebrow" style="color:var(--apple-blue);">O Seu Papel no Evento</span>
+            <h3>Diretor de Produto (CEO do App)</h3>
+            <ul>
+              <li><strong>Escolhe o problema real:</strong> Define qual dor do mercado ou da universidade seu software resolve.</li>
+              <li><strong>Foco absoluto em 3 telas:</strong> Corta excessos para entregar um produto que funcione de ponta a ponta.</li>
+              <li><strong>Validação de usuário:</strong> Testa o fluxo no painel Preview e confere se a demonstração encanta a banca.</li>
             </ul>
           </article>
 
-          <article class="bento-card">
-            <span class="eyebrow-pill replit">🤖 O Papel do Replit Agent</span>
-            <h3 style="font-size:1.3rem;margin-bottom:10px;">A IA é o seu Engenheiro Full-Stack 24h</h3>
-            <ul style="padding-left:18px;display:grid;gap:8px;">
-              <li><strong>Escreve todo o código:</strong> Cria o visual (Front-end), as regras de negócio (Back-end) e instala bibliotecas sozinho.</li>
-              <li><strong>Configura o Banco de Dados:</strong> Cria as tabelas automaticamente e já insere os 5 exemplos que você pedir no prompt.</li>
-              <li><strong>Coloca o site no ar:</strong> Gera um endereço público na internet (<code>.replit.app</code>) pronto para abrir no celular.</li>
+          <article class="director-card">
+            <span class="director-eyebrow" style="color:var(--replit-orange);">O Papel da Inteligência Artificial</span>
+            <h3>Seu Engenheiro Full-Stack 24h</h3>
+            <ul>
+              <li><strong>Escreve 100% do código:</strong> Monta o visual, as integrações de regras e instala as bibliotecas.</li>
+              <li><strong>Banco de dados automático:</strong> Cria as tabelas e pré-cadastra os dados de exemplo para o Pitch.</li>
+              <li><strong>Hospedagem na nuvem:</strong> Publica o aplicativo em um link público seguro (.replit.app).</li>
             </ul>
           </article>
         </div>
 
-        <!-- Raio-X Interativo da Tela do Replit (6 Pinos) -->
-        <h3 style="font-size:1.35rem;margin-bottom:14px;">🔍 Raio-X da Tela do Replit 2026: Clique nos 6 Botões Vitais</h3>
-        <div class="xray-container">
-          <div class="replit-ide-mockup" aria-label="Simulador visual da interface do Replit">
-            <div class="ide-topbar">
-              <div class="ide-dots" aria-hidden="true">
-                <span class="ide-dot"></span>
-                <span class="ide-dot"></span>
-                <span class="ide-dot"></span>
-              </div>
-              <span style="font-size:0.78rem;font-weight:700;color:var(--ink-muted);">replit.com • Meu App PUCPR</span>
-              <button type="button" class="xray-hotspot-btn" style="width:auto;padding:5px 12px;" data-xray-spot="6">
-                <span class="spot-num">6</span>
-                <span>Publish (Autoscale) &amp; DB</span>
-              </button>
+        <!-- Raio-X da Interface Replit -->
+        <div class="section-header" style="margin-bottom:32px;">
+          <h2 class="section-title" style="font-size:2rem;">Raio-X da Tela do Replit: Conheça os 6 Botões Vitais</h2>
+          <p class="section-subtitle">Clique nos pontos do painel abaixo para ver onde cada comando reside na interface real.</p>
+        </div>
+
+        <div class="ide-showcase-box">
+          <div class="ide-showcase-bar">
+            <div class="ide-dots-group" aria-hidden="true">
+              <span class="ide-mac-dot"></span>
+              <span class="ide-mac-dot"></span>
+              <span class="ide-mac-dot"></span>
             </div>
+            <span style="font-size:0.8rem;font-weight:600;color:var(--apple-muted);">replit.com • Meu App PUCPR</span>
+            <button type="button" class="xray-hotspot-item" style="width:auto;padding:6px 14px;" data-xray-spot="6">
+              <span class="xray-spot-badge">6</span>
+              <span>Publish &amp; DB</span>
+            </button>
+          </div>
 
-            <div class="ide-workspace-body">
-              <!-- Lado Esquerdo: Chat do Agent -->
-              <div class="ide-chat-pane">
-                <div>
-                  <span style="font-size:0.72rem;font-weight:700;text-transform:uppercase;color:var(--ink-muted);display:block;margin-bottom:8px;">Painel Esquerdo • Conversa com a IA</span>
-                  <button type="button" class="xray-hotspot-btn is-active" data-xray-spot="1">
-                    <span class="spot-num">1</span>
-                    <span>Caixa de Chat do Replit Agent (em PT-BR)</span>
-                  </button>
-                </div>
-
-                <div style="display:grid;gap:8px;">
-                  <button type="button" class="xray-hotspot-btn" data-xray-spot="2">
-                    <span class="spot-num">2</span>
-                    <span>Botão 'Plan' (Trava de Planejamento)</span>
-                  </button>
-                  <button type="button" class="xray-hotspot-btn" data-xray-spot="3">
-                    <span class="spot-num">3</span>
-                    <span>Seletor: Free Mode / Power Mode / Max</span>
-                  </button>
-                </div>
+          <div class="ide-split-stage">
+            <div class="ide-split-left">
+              <div>
+                <span style="font-size:0.75rem;font-weight:700;text-transform:uppercase;color:var(--apple-muted);letter-spacing:0.05em;display:block;margin-bottom:12px;">Painel Esquerdo • Conversa com o Agent</span>
+                <button type="button" class="xray-hotspot-item is-active" data-xray-spot="1">
+                  <span class="xray-spot-badge">1</span>
+                  <span>Caixa de Chat do Agent (em Português)</span>
+                </button>
               </div>
 
-              <!-- Lado Direito: Preview Visual & Checkpoints -->
-              <div class="ide-preview-pane">
-                <div>
-                  <span style="font-size:0.72rem;font-weight:700;text-transform:uppercase;color:var(--ink-muted);display:block;margin-bottom:8px;">Painel Direito • Seu App Funcionando ao Vivo</span>
-                  <button type="button" class="xray-hotspot-btn" data-xray-spot="4">
-                    <span class="spot-num">4</span>
-                    <span>Botão 'Visual Editor' (Mudar Texto/Cor a US$ 0!)</span>
-                  </button>
-                </div>
-
-                <div style="background:var(--bg-subtle);border:1px dashed var(--border-strong);border-radius:var(--radius-sm);padding:14px;text-align:center;font-size:0.82rem;color:var(--ink-muted);">
-                  🖥️ Aqui aparece a tela do seu sistema funcionando em tempo real conforme a IA constrói.
-                </div>
-
-                <button type="button" class="xray-hotspot-btn" data-xray-spot="5">
-                  <span class="spot-num">5</span>
-                  <span>Janela Preview + Botão 'Rollback' (+ Database)</span>
+              <div style="display:grid;gap:10px;">
+                <button type="button" class="xray-hotspot-item" data-xray-spot="2">
+                  <span class="xray-spot-badge">2</span>
+                  <span>Botão 'Plan' (Canto inferior do chat)</span>
+                </button>
+                <button type="button" class="xray-hotspot-item" data-xray-spot="3">
+                  <span class="xray-spot-badge">3</span>
+                  <span>Seletor: Free Mode / Power Mode</span>
                 </button>
               </div>
             </div>
-          </div>
 
-          <!-- Painel Explicativo do Pino Selecionado -->
-          <aside class="bento-card" style="display:flex;flex-direction:column;justify-content:center;border:2px solid var(--accent-safira);" aria-live="polite">
-            <span id="xray-detail-badge" class="eyebrow-pill" style="align-self:flex-start;">Ponto 1 de 6 • Seu Canal de Comando</span>
-            <h4 id="xray-detail-title" style="font-size:1.3rem;margin-bottom:10px;">Caixa de Chat do Replit Agent (Em Português)</h4>
-            <p id="xray-detail-body" style="margin-bottom:16px;">
-              É aqui que você conversa com a inteligência artificial como se fosse um colega de equipe. Você não digita código: você descreve o problema de negócio, as telas que deseja e o que precisa ser ajustado.
-            </p>
-            <div style="background:var(--semantic-ok-soft);border:1px solid rgba(4, 120, 87, 0.28);padding:12px 14px;border-radius:var(--radius-sm);font-size:0.88rem;color:var(--ink-primary);font-weight:600;" id="xray-detail-tip">
-              💡 Dica de Ouro: Após o app base ficar pronto, peça apenas 1 alteração por mensagem para manter precisão máxima e gastar poucos tokens.
+            <div class="ide-split-right">
+              <div>
+                <button type="button" class="xray-hotspot-item" style="margin-bottom:16px;" data-xray-spot="4">
+                  <span class="xray-spot-badge">4</span>
+                  <span>Botão 'Visual Editor' (Edição a Custo Zero)</span>
+                </button>
+                <button type="button" class="xray-hotspot-item" data-xray-spot="5">
+                  <span class="xray-spot-badge">5</span>
+                  <span>Janela Preview + Histórico de Rollback</span>
+                </button>
+              </div>
+
+              <div style="margin-top:24px;padding:20px;border-top:1px solid rgba(0,0,0,0.08);padding-top:20px;" aria-live="polite">
+                <span id="xray-detail-badge" class="eyebrow-text" style="font-size:0.75rem;margin-bottom:4px;">Ponto 1 de 6</span>
+                <h3 id="xray-detail-title" style="font-size:1.15rem;margin-bottom:8px;">Caixa de Chat do Replit Agent</h3>
+                <p id="xray-detail-body" style="font-size:0.92rem;margin-bottom:12px;">É onde você conversa em português do Brasil com a IA. Você não digita código: descreve o negócio, as 3 telas e os dados necessários.</p>
+                <p id="xray-detail-tip" style="font-size:0.84rem;color:var(--apple-blue);font-weight:600;">💡 Dica: Peça 1 alteração por mensagem para economizar tokens e manter precisão máxima.</p>
+              </div>
             </div>
-          </aside>
+          </div>
         </div>
 
-        <!-- Dicionário Anti-Tecniquês (<details>) -->
-        <h3 style="font-size:1.25rem;margin-bottom:14px;">📖 Tradutor Rápido de "Tecniquês" para Leigos (Clique para abrir)</h3>
-        <div class="glossary-grid">
-          <details class="glossary-details">
-            <summary><span>O que é um Prompt?</span><span aria-hidden="true">+</span></summary>
-            <p>É simplesmente o pedido em português que você escreve no chat para orientar a IA. Quanto mais claro for o seu pedido (quem usa + qual problema resolve + quais as 3 telas), menos créditos você gasta.</p>
+        <!-- Dicionário Sem "Tecniquês" -->
+        <div class="clean-accordion-grid">
+          <details class="clean-details">
+            <summary><span>O que é um Prompt?</span><span>+</span></summary>
+            <p>É o pedido em português claro que você faz para a IA. Quanto mais específico for o objetivo de negócio e as telas, mais rápido o app fica pronto.</p>
           </details>
-          <details class="glossary-details">
-            <summary><span>O que significa MVP?</span><span aria-hidden="true">+</span></summary>
-            <p><em>Minimum Viable Product</em> (Produto Mínimo Viável): é a primeira versão enxuta do seu aplicativo, contendo apenas as 3 telas essenciais que provam que sua ideia funciona na prática.</p>
+          <details class="clean-details">
+            <summary><span>O que significa MVP?</span><span>+</span></summary>
+            <p>Produto Mínimo Viável: a versão inicial enxuta com apenas as 3 telas essenciais que provam para a banca que a sua solução resolve a dor.</p>
           </details>
-          <details class="glossary-details">
-            <summary><span>O que são Tokens / Créditos (US$ 20)?</span><span aria-hidden="true">+</span></summary>
-            <p>São o "combustível" da inteligência artificial. Cada vez que o Replit Agent escreve código ou corrige erros complexos, ele consome alguns centavos ou dólares do seu saldo do hackathon.</p>
+          <details class="clean-details">
+            <summary><span>O que são Tokens (US$ 20)?</span><span>+</span></summary>
+            <p>O saldo concedido para o desafio. A IA consome alguns centavos ou dólares conforme a complexidade e esforço do que é gerado.</p>
           </details>
-          <details class="glossary-details">
-            <summary><span>O que é Checkpoint e Rollback?</span><span aria-hidden="true">+</span></summary>
-            <p>É o "Ctrl+Z inteligente" do Replit. Se a IA fizer uma alteração que quebre seu aplicativo, você clica em <strong>Rollback</strong> no chat e volta exatamente para o minuto em que tudo funcionava.</p>
+          <details class="clean-details">
+            <summary><span>O que é Rollback?</span><span>+</span></summary>
+            <p>A máquina do tempo do Replit. Se uma mudança quebrar seu app, você clica em Rollback no chat e volta ao minuto exato em que tudo funcionava.</p>
           </details>
-          <details class="glossary-details">
-            <summary><span>O que é Banco de Dados (Dev vs. Produção)?</span><span aria-hidden="true">+</span></summary>
-            <p>É a "planilha invisível" onde seu app guarda os cadastros. O Replit separa o banco de testes (enquanto você constrói) do banco oficial publicado na internet (Produção).</p>
+          <details class="clean-details">
+            <summary><span>O que é Publicação Autoscale?</span><span>+</span></summary>
+            <p>É a publicação inteligente na nuvem: o app liga quando alguém acessa o link .replit.app e desliga quando fica ocioso, sem cobrança fixa mensal.</p>
           </details>
-          <details class="glossary-details">
-            <summary><span>O que é Publicação Autoscale?</span><span aria-hidden="true">+</span></summary>
-            <p>É o modo inteligente de colocar seu site no ar: ele liga quando alguém acessa seu link <code>.replit.app</code> e desliga sozinho quando ninguém está usando, evitando cobrança fixa por hora.</p>
+          <details class="clean-details">
+            <summary><span>O que são Dados Pré-Cadastrados?</span><span>+</span></summary>
+            <p>Registros de exemplo realistas já salvos no banco de dados para que a banca avaliadora nunca veja uma tela vazia durante os 3 minutos de Pitch.</p>
           </details>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         5. MANUAL DE ECONOMIA DE TOKENS: OS 3 POTES DOS US$ 20
+         5. MANUAL DE ECONOMIA DE TOKENS (US$ 20)
          ====================================================================== -->
-    <section id="economia" class="section-block section-stage">
+    <section id="economia" class="section-block">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill ok">💰 Gestão Inteligente de Créditos (Effort-Based Billing)</span>
-          <h2 class="section-title">Como Fazer Seus US$ 20 Renderem os 3 Dias Inteiros</h2>
+          <span class="eyebrow-text">Gestão Estratégica do Orçamento</span>
+          <h2 class="section-title">Como Fazer Seus US$ 20 Renderem os 3 Dias</h2>
           <p class="section-subtitle">
-            O Replit cobra conforme o <strong>esforço da IA</strong>. Quem manda pedidos gigantes e vagos gasta US$ 20 em uma tarde; quem usa a estratégia abaixo chega ao Pitch com saldo de sobra!
+            O Replit cobra por esforço computacional. Com esta distribuição, você constrói um MVP robusto e chega ao Pitch com saldo de segurança de sobra.
           </p>
         </div>
 
-        <div class="budget-buckets-grid">
-          <article class="bento-card">
-            <span class="eyebrow-pill">Pote 1 • Dia 1 (Planejamento)</span>
-            <div class="bucket-amount">~US$ 1,00 <span style="font-size:0.95rem;font-weight:600;color:var(--ink-muted);">(5% do saldo)</span></div>
-            <h3 style="font-size:1.1rem;margin-bottom:8px;">Debater Ideia com o Botão 'Plan'</h3>
-            <p style="font-size:0.9rem;">Com o botão <strong>Plan</strong> ativado no canto inferior direito do chat, você alinha o escopo das 3 telas e tira dúvidas gastando apenas centavos.</p>
+        <div class="token-triptych">
+          <article class="token-big-card">
+            <span class="eyebrow-text">Dia 1 • Planejamento</span>
+            <div class="token-number">~US$ 1</div>
+            <h3>Modo 'Plan' Ativado</h3>
+            <p>Alinhe as 3 telas e tire dúvidas com o Agent gastando apenas centavos antes de gerar qualquer arquivo de código.</p>
           </article>
 
-          <article class="bento-card">
-            <span class="eyebrow-pill replit">Pote 2 • Dia 2 (Construção MVP)</span>
-            <div class="bucket-amount">~US$ 12,00 <span style="font-size:0.95rem;font-weight:600;color:var(--ink-muted);">(60% do saldo)</span></div>
-            <h3 style="font-size:1.1rem;margin-bottom:8px;">Criar o Sistema no 'Power Mode'</h3>
-            <p style="font-size:0.9rem;">Na versão 2026 do Replit, o <strong>Power Mode</strong> substituiu o antigo <em>Economy Mode</em>. É o modo ideal para construir o MVP com banco de dados sem desperdiçar saldo.</p>
+          <article class="token-big-card">
+            <span class="eyebrow-text">Dia 2 • Construção</span>
+            <div class="token-number">~US$ 12</div>
+            <h3>Construir no 'Power Mode'</h3>
+            <p>Substituto oficial do antigo Economy Mode em 2026. É o equilíbrio ideal de custo e inteligência para criar o MVP com banco de dados.</p>
           </article>
 
-          <article class="bento-card">
-            <span class="eyebrow-pill ok">Pote 3 • Dia 3 (Reserva &amp; Pitch)</span>
-            <div class="bucket-amount">~US$ 7,00 <span style="font-size:0.95rem;font-weight:600;color:var(--ink-muted);">(35% de segurança)</span></div>
-            <h3 style="font-size:1.1rem;margin-bottom:8px;">Visual Editor (US$ 0) + Free Mode</h3>
-            <p style="font-size:0.9rem;">Use o <strong>Visual Editor</strong> para trocar textos/cores de graça e aproveite a franquia do <strong>Free Mode</strong> (renovada a cada 5h) para pequenos retoques finais.</p>
+          <article class="token-big-card">
+            <span class="eyebrow-text">Dia 3 • Acabamento</span>
+            <div class="token-number">~US$ 7</div>
+            <h3>Visual Editor &amp; Free Mode</h3>
+            <p>Faça ajustes visuais a custo zero de IA no Visual Editor e reserve o saldo restante para testes finais e deploy Autoscale.</p>
           </article>
         </div>
 
-        <div class="token-table-wrap">
-          <table class="token-table">
+        <div class="clean-table-box">
+          <table class="clean-table">
             <thead>
               <tr>
-                <th>Ação no Replit (Versão Atualizada Nov/2026)</th>
-                <th>Impacto nos seus US$ 20</th>
-                <th>Por que acontece &amp; Recomendação Prática</th>
+                <th>Ação no Replit (Nov/2026)</th>
+                <th>Custo de Tokens</th>
+                <th>Por Que Acontece &amp; Como Fazer Certo</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><strong>Editar textos, títulos, fontes e cores pelo 'Visual Editor'</strong></td>
-                <td><span class="cost-pill free">🟢 ZERO (US$ 0,00)</span></td>
-                <td>Altera o visual diretamente na janela Preview sem acionar o modelo de IA. <strong>Jamais gaste um prompt só para mudar uma frase ou cor!</strong></td>
+                <td><strong>Mudar texto, título ou cor no 'Visual Editor'</strong></td>
+                <td><span class="status-dot-inline dot-green">● ZERO (US$ 0,00)</span></td>
+                <td>Edita visualmente direto na tela sem acionar o cérebro da IA. <strong>Nunca gaste um prompt para mudar cor ou frase!</strong></td>
               </tr>
               <tr>
-                <td><strong>Usar o 'Free Mode' para dúvidas e ajustes leves</strong></td>
-                <td><span class="cost-pill free">🟢 Grátis (Franquia 5h)</span></td>
-                <td>Usa a cota gratuita do Replit que renova a cada 5 horas antes de tocar nos seus créditos de US$ 20.</td>
+                <td><strong>Usar o 'Free Mode' para dúvidas e pequenos retoques</strong></td>
+                <td><span class="status-dot-inline dot-green">● Grátis (Franquia 5h)</span></td>
+                <td>Usa a cota gratuita da Replit renovada a cada 5 horas antes de tocar no saldo de US$ 20.</td>
               </tr>
               <tr>
-                <td><strong>Estruturar o projeto com o botão 'Plan' ligado</strong></td>
-                <td><span class="cost-pill free">🟢 Baixíssimo (~US$ 0,20 a US$ 0,50)</span></td>
-                <td>A IA cria a lista de telas e tarefas sem rodar compilação pesada nem reescrever arquivos.</td>
+                <td><strong>Planejar escopo com o botão 'Plan' ligado</strong></td>
+                <td><span class="status-dot-inline dot-green">● ~US$ 0,20 a US$ 0,50</span></td>
+                <td>A IA lista as telas e estrutura o projeto sem rodar builds pesadas.</td>
               </tr>
               <tr>
-                <td><strong>Construir o MVP aprovado usando 'Power Mode'</strong></td>
-                <td><span class="cost-pill moderate">🟡 Moderado (~US$ 2 a US$ 4 por etapa)</span></td>
-                <td>É o motor padrão recomendado (substituto oficial do antigo <em>Economy Mode</em>) para criar as 3 telas e o banco de dados.</td>
+                <td><strong>Construir o MVP completo no 'Power Mode'</strong></td>
+                <td><span class="status-dot-inline dot-amber">● ~US$ 2 a US$ 4 por etapa</span></td>
+                <td>Modo padrão recomendado da plataforma para gerar sistema e tabelas de dados.</td>
               </tr>
               <tr>
-                <td><strong>Deixar o 'Max Mode' ativado para tarefas simples</strong></td>
-                <td><span class="cost-pill burn">🔴 Altíssimo (Queima Rápida)</span></td>
-                <td>Aciona o raciocínio estendido mais caro. <strong>Evite usar no hackathon</strong>, a menos que um mentor oriente para uma lógica muito específica.</td>
+                <td><strong>Deixar 'Max Mode' ativado para coisas simples</strong></td>
+                <td><span class="status-dot-inline dot-red">● Altíssimo (Queima rápida)</span></td>
+                <td>Aciona raciocínio profundo caro. Evite usar a menos que orientado por um mentor para um cálculo específico.</td>
               </tr>
               <tr>
-                <td><strong>Repetir "Não funcionou, conserte" 4 ou 5 vezes seguidas</strong></td>
-                <td><span class="cost-pill burn">🔴 Desperdício Crítico (US$ 6+ perdidos)</span></td>
-                <td>A IA entra em loop tentando adivinhar o erro. <strong>Aplique a Regra das 2 Tentativas + Rollback!</strong></td>
+                <td><strong>Repetir "não funcionou, conserte" em loop</strong></td>
+                <td><span class="status-dot-inline dot-red">● Desperdício Crítico</span></td>
+                <td>A IA entra em loop tentando adivinhar. <strong>Use a Regra das 2 Tentativas + Rollback!</strong></td>
               </tr>
               <tr>
-                <td><strong>Publicar escolhendo 'Reserved VM' em vez de 'Autoscale'</strong></td>
-                <td><span class="cost-pill burn">🔴 Dreno Fixo (US$ 20/mês 24h)</span></td>
-                <td>A máquina dedicada cobra mesmo de madrugada sem ninguém acessar. <strong>Sempre escolha Autoscale!</strong></td>
+                <td><strong>Publicar escolhendo 'Reserved VM'</strong></td>
+                <td><span class="status-dot-inline dot-red">● US$ 20/mês contínuo</span></td>
+                <td>Cobra 24h por dia mesmo sem ninguém abrir o app. <strong>Sempre escolha Autoscale!</strong></td>
               </tr>
             </tbody>
           </table>
@@ -557,305 +530,250 @@
     </section>
 
     <!-- ======================================================================
-         6. CUIDADOS CRÍTICOS & CENTRAL ANTI-PÂNICO (AUDITORIA FORENSE)
+         6. CUIDADOS CRÍTICOS & CENTRAL ANTI-PÂNICO
          ====================================================================== -->
-    <section id="cuidados" class="section-block">
+    <section id="cuidados" class="section-block section-stage">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill danger">🛟 Central Anti-Pânico &amp; Auditoria Forense</span>
-          <h2 class="section-title">Os 4 Cuidados Críticos que Salvam Seu Projeto na Maratona</h2>
+          <span class="eyebrow-text">Sobrevivência Técnica</span>
+          <h2 class="section-title">4 Cuidados Críticos que Salvam Seu Projeto</h2>
           <p class="section-subtitle">
-            Deu tela branca ou erro no meio do laboratório? Respire fundo e siga estas 4 regras testadas na documentação oficial de novembro de 2026 da Replit.
+            Diretrizes comprovadas na documentação oficial de novembro de 2026 da Replit para evitar travamentos e perda de tempo no laboratório.
           </p>
         </div>
 
-        <div class="cards-grid-2">
-          <article class="bento-card">
-            <div class="care-card-header">
-              <span class="eyebrow-pill danger" style="margin:0;">🛑 Cuidado 1 • Anti-Loop</span>
-              <span style="font-size:0.8rem;font-weight:700;color:var(--ink-muted);">Economiza até US$ 10</span>
-            </div>
-            <h3 style="font-size:1.22rem;margin-bottom:8px;">A Regra de Ouro das 2 Tentativas</h3>
-            <p style="margin-bottom:10px;">
-              Se você pediu uma correção ao Replit Agent e <strong>na segunda tentativa o erro continuou</strong>, <strong>PARE IMEDIATAMENTE</strong> de mandar mensagens dizendo <em>"ainda está com erro"</em>.
-            </p>
-            <p style="font-size:0.88rem;background:var(--bg-subtle);padding:10px 12px;border-radius:var(--radius-sm);">
-              <strong>Como agir:</strong> Role o chat para cima até a última versão onde o app funcionava, clique em <strong>Rollback here</strong> e faça um pedido mais simples!
-            </p>
+        <div class="clean-cards-grid-2">
+          <article class="care-clean-card">
+            <span class="eyebrow-text" style="color:var(--semantic-danger);">Anti-Loop</span>
+            <h3>A Regra das 2 Tentativas</h3>
+            <p>Se você pediu uma correção e na segunda tentativa o erro persistiu, <strong>PARE de mandar mensagens</strong> dizendo que ainda não deu certo.</p>
+            <p style="margin-top:12px;font-weight:600;color:var(--apple-ink);">Como agir: suba o chat até o ponto onde tudo funcionava, clique em <em>Rollback here</em> e faça um pedido mais simples e cirúrgico.</p>
           </article>
 
-          <article class="bento-card">
-            <div class="care-card-header">
-              <span class="eyebrow-pill replit" style="margin:0;">🗄️ Cuidado 2 • Segredo Técnico</span>
-              <span style="font-size:0.8rem;font-weight:700;color:var(--ink-muted);">Doc Oficial Replit</span>
-            </div>
-            <h3 style="font-size:1.22rem;margin-bottom:8px;">A Caixinha Oculta 'Database' no Rollback</h3>
-            <p style="margin-bottom:10px;">
-              Na versão atual do Replit, clicar em <strong>Rollback</strong> restaura os arquivos de código e a conversa do chat, mas <strong>NÃO volta o Banco de Dados por padrão</strong>!
-            </p>
-            <p style="font-size:0.88rem;background:var(--bg-subtle);padding:10px 12px;border-radius:var(--radius-sm);">
-              <strong>Como agir:</strong> Ao clicar em <em>Rollback</em> após um erro que bagunçou os cadastros, clique em <strong>"Additional rollback options"</strong> e marque a caixinha <strong>☑️ "Database"</strong>.
-            </p>
+          <article class="care-clean-card">
+            <span class="eyebrow-text" style="color:var(--replit-orange);">Doc Oficial Replit</span>
+            <h3>A Caixinha 'Database' no Rollback</h3>
+            <p>Clicar em Rollback restaura o código e a conversa, mas <strong>NÃO volta o Banco de Dados de desenvolvimento por padrão</strong>.</p>
+            <p style="margin-top:12px;font-weight:600;color:var(--apple-ink);">Como agir: ao fazer Rollback após um erro que bagunçou seus dados, clique em <em>Additional rollback options</em> e marque a caixinha <strong>☑️ "Database"</strong>.</p>
           </article>
 
-          <article class="bento-card">
-            <div class="care-card-header">
-              <span class="eyebrow-pill ok" style="margin:0;">🚀 Cuidado 3 • Deploy Correto</span>
-              <span style="font-size:0.8rem;font-weight:700;color:var(--ink-muted);">Link Público Seguro</span>
-            </div>
-            <h3 style="font-size:1.22rem;margin-bottom:8px;">Por Que Usar 'Autoscale' (E Nunca Static ou VM)</h3>
-            <p style="margin-bottom:10px;">
-              Aplicativos criados pelo Replit Agent possuem servidor e banco de dados (por isso <strong>não funcionam</strong> no modo <em>Static</em>), enquanto o modo <em>Reserved VM</em> drena créditos 24h por dia.
-            </p>
-            <p style="font-size:0.88rem;background:var(--bg-subtle);padding:10px 12px;border-radius:var(--radius-sm);">
-              <strong>Caminho exato:</strong> Clique em <code>Publish → Adjust settings → Deployment type → Autoscale</code>.
-            </p>
+          <article class="care-clean-card">
+            <span class="eyebrow-text" style="color:var(--semantic-ok);">Deploy Seguro</span>
+            <h3>Por Que Usar 'Autoscale'</h3>
+            <p>Apps criados pelo Replit Agent têm servidor e banco de dados (não funcionam em modo <em>Static</em>), enquanto o modo <em>Reserved VM</em> cobra taxa fixa 24h por dia.</p>
+            <p style="margin-top:12px;font-weight:600;color:var(--apple-ink);">Caminho exato: <code>Publish → Adjust settings → Deployment type → Autoscale</code>.</p>
           </article>
 
-          <article class="bento-card">
-            <div class="care-card-header">
-              <span class="eyebrow-pill" style="margin:0;">🎭 Cuidado 4 • Nota Máxima no Pitch</span>
-              <span style="font-size:0.8rem;font-weight:700;color:var(--ink-muted);">Foco na Banca PUCPR</span>
-            </div>
-            <h3 style="font-size:1.22rem;margin-bottom:8px;">Zero Tela Vazia &amp; Zero Login Bloqueante</h3>
-            <p style="margin-bottom:10px;">
-              Você terá apenas <strong>3 minutos no palco</strong>. Se abrir um painel em branco ou perder 1 minuto digitando senha de login e e-mail de confirmação, sua apresentação perde força.
-            </p>
-            <p style="font-size:0.88rem;background:var(--bg-subtle);padding:10px 12px;border-radius:var(--radius-sm);">
-              <strong>Como agir:</strong> Peça sempre no prompt: <em>"Abra direto no Dashboard com 5 registros brasileiros realistas já cadastrados no banco de dados"</em>.
-            </p>
+          <article class="care-clean-card">
+            <span class="eyebrow-text" style="color:var(--apple-blue);">Avaliação da Banca</span>
+            <h3>Zero Tela Vazia &amp; Zero Login Bloqueante</h3>
+            <p>Você terá apenas 3 minutos no palco. Um app com tabelas em branco parece quebrado, e perder tempo digitando e-mail e senha de login enfraquece a apresentação.</p>
+            <p style="margin-top:12px;font-weight:600;color:var(--apple-ink);">Como agir: exija no prompt que a rota principal abra direto no Dashboard com 5 registros realistas já cadastrados.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         7. EXEMPLOS PRÁTICOS DE IDEIAS (ADMINISTRAÇÃO, NEGÓCIOS E GESTÃO)
+         7. EXEMPLOS PRÁTICOS DE NEGÓCIOS / ADMINISTRAÇÃO
          ====================================================================== -->
-    <section id="exemplos" class="section-block section-stage">
+    <section id="exemplos" class="section-block">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill pucpr">💼 Inspiração Prática • Escola de Negócios &amp; Politécnica</span>
-          <h2 class="section-title">4 Exemplos de MVPs Enxutos que Funcionam em 3 Dias</h2>
+          <span class="eyebrow-text">Inspiração para o MVP</span>
+          <h2 class="section-title">4 Modelos de Solução que Funcionam em 3 Dias</h2>
           <p class="section-subtitle">
-            Veja como transformar uma ideia ampla em um <strong>MVP cirúrgico de 3 telas</strong>. Clique em qualquer exemplo abaixo para carregar automaticamente o prompt completo no Montador da próxima seção!
+            Veja como manter o escopo enxuto em 3 telas principais. Clique em qualquer modelo para preencher automaticamente o Montador de Prompts abaixo!
           </p>
         </div>
 
-        <div class="cards-grid-4">
-          <article class="bento-card interactive-lift">
-            <span class="eyebrow-pill">Exemplo 1 • Varejo &amp; Finanças</span>
-            <h3 style="font-size:1.2rem;margin-bottom:6px;">📊 GestãoFácil — Pedidos, Estoque Crítico e Caixa</h3>
-            <p style="font-size:0.9rem;">Pensado para microempresas, cafeterias e comércios locais que perdem vendas por falta de controle de estoque mínimo.</p>
-            <div class="example-scope-cols">
-              <div class="scope-box in">
-                <strong>✅ O que incluir (3 Telas):</strong>
-                <span>1) Resumo de vendas e alertas de estoque baixo; 2) Novo pedido rápido; 3) Lista de produtos com filtro.</span>
+        <div class="clean-cards-grid-2">
+          <article class="apple-card">
+            <span class="eyebrow-text">Varejo &amp; Finanças</span>
+            <h3>📊 GestãoFácil — Pedidos, Estoque Crítico e Caixa</h3>
+            <p style="font-size:0.95rem;margin-top:8px;">Para microempresas e comércios locais que perdem vendas por falta de controle de estoque mínimo.</p>
+            <div class="example-scope-clean">
+                <div class="scope-line ok"><strong>O que entra no MVP (3 Telas):</strong> Resumo de faturamento, alerta de estoque baixo e formulário de novo pedido.</div>
+                <div class="scope-line out"><strong>O que fica de fora:</strong> Emissão fiscal SEFAZ, TEF bancário e integração com leitor físico de código de barras.</div>
               </div>
-              <div class="scope-box out">
-                <strong>🚫 O que deixar de fora:</strong>
-                <span>Emissão de nota fiscal eletrônica SEFAZ, integração bancária real e leitor de código de barras via hardware.</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="gestao">⚡ Carregar este Exemplo no Montador ↓</button>
+            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="gestao">Carregar no Montador ↓</button>
           </article>
 
-          <article class="bento-card interactive-lift">
-            <span class="eyebrow-pill replit">Exemplo 2 • Serviços &amp; Atendimento</span>
-            <h3 style="font-size:1.2rem;margin-bottom:6px;">📅 AgendaSmart — Triagem e Redução de Faltas</h3>
-            <p style="font-size:0.9rem;">Ideal para clínicas, consultorias e prestadores de serviço que sofrem com clientes que agendam pelo WhatsApp e não comparecem.</p>
-            <div class="example-scope-cols">
-              <div class="scope-box in">
-                <strong>✅ O que incluir (3 Telas):</strong>
-                <span>1) Painel do dia com taxa de confirmação; 2) Agendamento em 3 cliques; 3) Fila de clientes por status.</span>
+          <article class="apple-card">
+            <span class="eyebrow-text">Serviços &amp; Atendimento</span>
+            <h3>📅 AgendaSmart — Triagem e Redução de Faltas</h3>
+            <p style="font-size:0.95rem;margin-top:8px;">Para consultórios e prestadores de serviços que sofrem com clientes que agendam e faltam sem avisar.</p>
+            <div class="example-scope-clean">
+                <div class="scope-line ok"><strong>O que entra no MVP (3 Telas):</strong> Painel do dia com taxa de confirmação, agendamento rápido e fila de clientes.</div>
+                <div class="scope-line out"><strong>O que fica de fora:</strong> Pagamento antecipado com cartão de crédito e API paga do WhatsApp Business.</div>
               </div>
-              <div class="scope-box out">
-                <strong>🚫 O que deixar de fora:</strong>
-                <span>Cobrança de cartão de crédito ao vivo, API paga do WhatsApp oficial e sincronização bidirecional com Google Agenda.</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="agenda">⚡ Carregar este Exemplo no Montador ↓</button>
+            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="agenda">Carregar no Montador ↓</button>
           </article>
 
-          <article class="bento-card interactive-lift">
-            <span class="eyebrow-pill ok">Exemplo 3 • Pessoas, RH &amp; Liderança</span>
-            <h3 style="font-size:1.2rem;margin-bottom:6px;">🤝 PulsoEquipe — Metas (OKRs) e PDI Simplificado</h3>
-            <p style="font-size:0.9rem;">Para gestores acompanharem metas trimestrais, feedbacks rápidos e clima da equipe sem depender de dezenas de planilhas.</p>
-            <div class="example-scope-cols">
-              <div class="scope-box in">
-                <strong>✅ O que incluir (3 Telas):</strong>
-                <span>1) Termômetro de metas por setor; 2) Registro de meta/feedback; 3) Mural de evolução dos colaboradores.</span>
+          <article class="apple-card">
+            <span class="eyebrow-text">Pessoas &amp; Gestão</span>
+            <h3>🤝 PulsoEquipe — Metas (OKRs) e PDI Simplificado</h3>
+            <p style="font-size:0.95rem;margin-top:8px;">Para líderes acompanharem metas trimestrais e feedbacks de equipe sem planilhas confusas.</p>
+            <div class="example-scope-clean">
+                <div class="scope-line ok"><strong>O que entra no MVP (3 Telas):</strong> Termômetro de metas da semana, cadastro de feedback e mural de conquistas.</div>
+                <div class="scope-line out"><strong>O que fica de fora:</strong> Cálculo de folha de pagamento e hierarquia de múltiplos níveis de permissão.</div>
               </div>
-              <div class="scope-box out">
-                <strong>🚫 O que deixar de fora:</strong>
-                <span>Cálculo de folha de pagamento, hierarquia de 10 níveis de permissão e SSO corporativo.</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="rh">⚡ Carregar este Exemplo no Montador ↓</button>
+            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="rh">Carregar no Montador ↓</button>
           </article>
 
-          <article class="bento-card interactive-lift">
-            <span class="eyebrow-pill pucpr">Exemplo 4 • Ecossistema Universitário</span>
-            <h3 style="font-size:1.2rem;margin-bottom:6px;">🌱 ConectaCampus — Match de Projetos e Talentos</h3>
-            <p style="font-size:0.9rem;">Conecta estudantes de Administração, Negócios, Engenharia e Design da PUCPR para tirarem ideias de startups do papel.</p>
-            <div class="example-scope-cols">
-              <div class="scope-box in">
-                <strong>✅ O que incluir (3 Telas):</strong>
-                <span>1) Vitrine de projetos com filtros por área; 2) Cadastrar nova ideia/vaga de sócio; 3) Painel de interesse/votos.</span>
+          <article class="apple-card">
+            <span class="eyebrow-text">Inovação &amp; Campus</span>
+            <h3>🌱 ConectaCampus — Match de Projetos e Talentos</h3>
+            <p style="font-size:0.95rem;margin-top:8px;">Conecta estudantes da PUCPR (Administração, Engenharias, Design) para formar equipes de startups.</p>
+            <div class="example-scope-clean">
+                <div class="scope-line ok"><strong>O que entra no MVP (3 Telas):</strong> Vitrine de projetos por área, cadastro de nova ideia/vaga de sócio e painel de interesse.</div>
+                <div class="scope-line out"><strong>O que fica de fora:</strong> Chamadas de vídeo em tempo real e algoritmo complexo de inteligência social.</div>
               </div>
-              <div class="scope-box out">
-                <strong>🚫 O que deixar de fora:</strong>
-                <span>Chat de vídeo em tempo real, rede social completa com stories e algoritmo complexo de recomendação.</span>
-              </div>
-            </div>
-            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="campus">⚡ Carregar este Exemplo no Montador ↓</button>
+            <button type="button" class="btn btn-safira btn-sm scroll-to-builder" data-preset="campus">Carregar no Montador ↓</button>
           </article>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         8. OFICINA DE PROMPTS: MONTADOR INTERATIVO + DUELO + 4 ETAPAS
+         8. OFICINA DE PROMPTS
          ====================================================================== -->
-    <section id="prompts" class="section-block">
+    <section id="prompts" class="section-block section-stage">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill">✨ Engenharia de Prompts Pronta para Iniciantes</span>
-          <h2 class="section-title">Oficina de Prompts: Monte, Copie e Cole no Replit</h2>
+          <span class="eyebrow-text">Engenharia de Prompts</span>
+          <h2 class="section-title">Oficina de Prompts: Monte, Copie e Execute</h2>
           <p class="section-subtitle">
-            Preencha os 3 campos abaixo com a sua ideia (ou clique em um dos atalhos de exemplo) para gerar instantaneamente um <strong>Prompt Mestre blindado</strong> contra desperdício de tokens.
+            Preencha os campos abaixo com os dados da sua ideia para gerar um Prompt Mestre pronto em português, blindado contra erros e já solicitando os 5 exemplos de demonstração no banco.
           </p>
         </div>
 
-        <!-- 8.1 Montador Interativo em Tempo Real -->
-        <div id="oficina-montador" class="prompt-builder-grid">
-          <div class="bento-card">
-            <h3 style="font-size:1.2rem;margin-bottom:10px;">1. Descreva Sua Ideia em 3 Respostas Simples</h3>
-            <p style="font-size:0.84rem;color:var(--ink-muted);margin-bottom:12px;">Ou preencha com 1 clique usando um modelo de negócios:</p>
+        <div id="oficina-montador" class="prompt-workbench-grid">
+          <div class="apple-card">
+            <h3 style="font-size:1.3rem;margin-bottom:12px;">1. Descreva sua Ideia em 3 Linhas</h3>
+            <p style="font-size:0.92rem;color:var(--apple-muted);margin-bottom:16px;">Ou use um modelo de preenchimento rápido:</p>
 
-            <div class="preset-pills-row" role="group" aria-label="Modelos rápidos de negócio">
-              <button type="button" class="preset-chip is-active" data-preset="gestao">📊 GestãoFácil</button>
-              <button type="button" class="preset-chip" data-preset="agenda">📅 AgendaSmart</button>
-              <button type="button" class="preset-chip" data-preset="rh">🤝 PulsoEquipe</button>
-              <button type="button" class="preset-chip" data-preset="campus">🌱 ConectaCampus</button>
+            <div class="preset-strip" role="group" aria-label="Modelos de ideia">
+              <button type="button" class="preset-chip-clean is-active" data-preset="gestao">📊 GestãoFácil</button>
+              <button type="button" class="preset-chip-clean" data-preset="agenda">📅 AgendaSmart</button>
+              <button type="button" class="preset-chip-clean" data-preset="rh">🤝 PulsoEquipe</button>
+              <button type="button" class="preset-chip-clean" data-preset="campus">🌱 ConectaCampus</button>
             </div>
 
-            <div class="form-group">
-              <label for="in-ideia">Qual é o nome e o resumo do seu aplicativo?</label>
-              <input type="text" id="in-ideia" class="form-input" value="GestãoFácil — Painel de Pedidos, Estoque Crítico e Caixa para Microempresas" placeholder="Ex.: FinançaJovem — Controle de gastos para universitários">
+            <div class="form-group-clean">
+              <label for="in-ideia">Nome e objetivo do aplicativo</label>
+              <input type="text" id="in-ideia" class="form-input-clean" value="GestãoFácil — Painel de Pedidos, Estoque Crítico e Caixa para Microempresas">
             </div>
 
-            <div class="form-group">
-              <label for="in-publico">Quem vai usar essa solução (Público-Alvo)?</label>
-              <input type="text" id="in-publico" class="form-input" value="donos de pequenos comércios, cafeterias e negócios locais de Curitiba" placeholder="Ex.: estudantes universitários e pequenos empreendedores">
+            <div class="form-group-clean">
+              <label for="in-publico">Público-alvo principal</label>
+              <input type="text" id="in-publico" class="form-input-clean" value="donos de pequenos comércios, cafeterias e negócios locais de Curitiba">
             </div>
 
-            <div class="form-group" style="margin-bottom:0;">
-              <label for="in-dor">Qual problema prático ela resolve no dia a dia?</label>
-              <input type="text" id="in-dor" class="form-input" value="perder vendas por falta de controle de estoque mínimo e não visualizar o lucro líquido da semana em uma tela simples" placeholder="Ex.: organizar pedidos e saber quais produtos estão acabando">
+            <div class="form-group-clean" style="margin-bottom:0;">
+              <label for="in-dor">Problema prático que você resolve</label>
+              <input type="text" id="in-dor" class="form-input-clean" value="perder vendas por falta de controle de estoque mínimo e não visualizar o lucro líquido da semana em uma tela simples">
             </div>
           </div>
 
-          <div class="bento-card" style="border:2px solid var(--accent-safira);">
-            <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;">
-              <span class="eyebrow-pill" style="margin:0;">⚡ Passo 1: Ative o botão 'Plan' no Replit → Passo 2: Cole este Prompt</span>
-              <span style="font-size:0.78rem;font-weight:700;color:var(--semantic-ok);">✓ Já pede 5 exemplos no Banco!</span>
+          <!-- Prompt Terminal Escultórico -->
+          <div class="prompt-terminal-card">
+            <div>
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+                <span class="eyebrow-text" style="color:#64D2FF;margin:0;">Prompt Mestre Gerado</span>
+                <span style="font-size:0.8rem;color:#86868B;">pt-BR • 3 Telas • Seed Data</span>
+              </div>
+              <pre id="prompt-gerado-output" class="prompt-mono-text" aria-live="polite"></pre>
             </div>
 
-            <pre id="prompt-gerado-output" class="prompt-output-box" aria-live="polite"></pre>
-
             <div class="copy-action-wrap">
-              <button type="button" id="btn-copy-builder" class="btn btn-safira">📋 Copiar Meu Prompt Mestre</button>
+              <button type="button" id="btn-copy-builder" class="btn btn-safira">📋 Copiar Prompt Mestre</button>
               <span id="tip-copy-builder" class="copy-tip" role="status"></span>
             </div>
           </div>
         </div>
 
-        <!-- 8.2 Duelo Visual de Prompts (Errado vs Certo) -->
-        <div class="cards-grid-2" style="margin-bottom:36px;">
-          <article class="bento-card" style="border:1.5px solid rgba(185, 28, 28, 0.28);">
-            <span class="eyebrow-pill danger">❌ Como NÃO pedir (Queima US$ 15 e trava)</span>
-            <h3 style="font-size:1.12rem;margin-bottom:8px;">O Prompt Vago e Megalomaníaco</h3>
-            <p style="font-family:var(--font-mono);font-size:0.84rem;background:var(--semantic-danger-soft);color:var(--semantic-danger);padding:12px;border-radius:var(--radius-sm);margin-bottom:10px;">
-              "Crie um super aplicativo igual ao iFood e Uber misturados, com login por reconhecimento facial, chat ao vivo, pagamento PIX real, mapa GPS em 3D e inteligência artificial preditiva."
+        <!-- Duelo Visual Limpo -->
+        <div class="clean-cards-grid-2" style="margin-bottom:48px;">
+          <article class="apple-card" >
+            <span class="eyebrow-text" style="color:var(--semantic-danger);">Como NÃO Pedir (Queima US$ 15)</span>
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">O Prompt Vago e Megalomaníaco</h3>
+            <p style="font-family:var(--font-mono);font-size:0.86rem;border-left:2px solid var(--apple-muted);padding-left:14px;margin-block:12px 14px;">
+              "Crie um super aplicativo tipo iFood com Uber, reconhecimento facial, chat em tempo real, pagamento PIX e inteligência preditiva."
             </p>
-            <p style="font-size:0.88rem;">
-              <strong>Por que dá errado:</strong> Pede 10 sistemas complexos de uma vez só, exige chaves externas pagas e deixa a IA presa em erros de autenticação.
-            </p>
+            <p style="font-size:0.9rem;"><strong>Por que falha:</strong> Pede dezenas de integrações pagas simultâneas e queima o saldo com erros de autenticação complexa.</p>
           </article>
 
-          <article class="bento-card" style="border:1.5px solid rgba(4, 120, 87, 0.28);">
-            <span class="eyebrow-pill ok">✅ Como pedir CERTO (Funciona de 1ª por ~US$ 2)</span>
-            <h3 style="font-size:1.12rem;margin-bottom:8px;">O Prompt Cirúrgico de Diretor de Produto</h3>
-            <p style="font-family:var(--font-mono);font-size:0.84rem;background:var(--semantic-ok-soft);color:var(--semantic-ok);padding:12px;border-radius:var(--radius-sm);margin-bottom:10px;">
-              "Crie em português (pt-BR) um MVP de 3 telas para gestão de entregas locais: 1) Painel com resumo do dia; 2) Formulário de novo pedido; 3) Lista de pedidos por status. Deixe 5 pedidos realistas já cadastrados no banco e sem tela de login bloqueante."
+          <article class="apple-card" >
+            <span class="eyebrow-text" style="color:var(--semantic-ok);">Como Pedir Certo (~US$ 2)</span>
+            <h3 style="font-size:1.15rem;margin-bottom:8px;">O Prompt de Diretor de Produto</h3>
+            <p style="font-family:var(--font-mono);font-size:0.86rem;border-left:2px solid var(--apple-muted);padding-left:14px;margin-block:12px 14px;">
+              "Crie em português (pt-BR) um MVP de 3 telas para entregas locais: 1) Resumo do dia; 2) Novo pedido; 3) Lista por status. Deixe 5 registros brasileiros já cadastrados e sem login bloqueante."
             </p>
-            <p style="font-size:0.88rem;">
-              <strong>Por que funciona:</strong> Escopo fechado em 3 telas, sem bloqueios de senha para a banca e já populado com dados prontos para o Pitch!
-            </p>
+            <p style="font-size:0.9rem;"><strong>Por que funciona:</strong> Escopo cirúrgico em 3 telas, sem bloqueio de senhas para a banca e com dados prontos para a demonstração.</p>
           </article>
         </div>
 
-        <!-- 8.3 Biblioteca de Prompts das 4 Etapas do Hackathon (Abas Acessíveis) -->
-        <div class="bento-card">
-          <h3 style="font-size:1.25rem;margin-bottom:6px;">🧰 Kit de Prompts de Bolso para Cada Momento dos 3 Dias</h3>
-          <p style="font-size:0.9rem;margin-bottom:16px;">Selecione a fase em que você está agora e copie o comando pronto:</p>
+        <!-- Abas das 4 Etapas da Maratona -->
+        <div class="apple-card">
+          <h3 style="font-size:1.35rem;margin-bottom:12px;">Biblioteca de Prompts para Cada Fase do Desafio</h3>
+          <p style="font-size:0.95rem;margin-bottom:24px;">Selecione o momento da maratona em que você está e copie o comando pronto:</p>
 
-          <div id="prompt-stage-tabs" class="tabs-bar" role="tablist" aria-label="Etapas de Prompts da Maratona">
-            <button type="button" class="tab-btn" role="tab" id="tab-stage-1" aria-selected="true" aria-controls="panel-stage-1" tabindex="0">1. Planejar no Modo Plan (Dia 1)</button>
-            <button type="button" class="tab-btn" role="tab" id="tab-stage-2" aria-selected="false" aria-controls="panel-stage-2" tabindex="-1">2. Construir MVP em Power Mode (Dia 2)</button>
-            <button type="button" class="tab-btn" role="tab" id="tab-stage-3" aria-selected="false" aria-controls="panel-stage-3" tabindex="-1">3. Corrigir um Erro Sem Quebrar o Resto</button>
-            <button type="button" class="tab-btn" role="tab" id="tab-stage-4" aria-selected="false" aria-controls="panel-stage-4" tabindex="-1">4. Preparar para Publicação e Pitch (Dia 3)</button>
+          <div id="prompt-stage-tabs" class="apple-tab-bar" role="tablist" aria-label="Etapas de Prompts">
+            <button type="button" class="apple-tab-btn" role="tab" id="tab-stage-1" aria-selected="true" aria-controls="panel-stage-1" tabindex="0">1. Planejar no Modo Plan (Dia 1)</button>
+            <button type="button" class="apple-tab-btn" role="tab" id="tab-stage-2" aria-selected="false" aria-controls="panel-stage-2" tabindex="-1">2. Construir no Power Mode (Dia 2)</button>
+            <button type="button" class="apple-tab-btn" role="tab" id="tab-stage-3" aria-selected="false" aria-controls="panel-stage-3" tabindex="-1">3. Corrigir Erro Cirúrgico</button>
+            <button type="button" class="apple-tab-btn" role="tab" id="tab-stage-4" aria-selected="false" aria-controls="panel-stage-4" tabindex="-1">4. Revisão Pré-Pitch (Dia 3)</button>
           </div>
 
           <div id="panel-stage-1" role="tabpanel" aria-labelledby="tab-stage-1">
-            <p style="font-size:0.9rem;margin-bottom:8px;"><strong>Quando usar:</strong> No início do Dia 1, com o botão <strong>Plan</strong> ligado no canto inferior direito do chat.</p>
-            <pre id="code-stage-1" class="prompt-output-box">Estou com o modo Plan ativado. Quero validar a arquitetura de um MVP enxuto em português do Brasil (pt-BR).
+            <p style="font-size:0.95rem;margin-bottom:12px;"><strong>Quando usar:</strong> Na primeira tarde (17/11), com o botão <strong>Plan</strong> ligado no chat.</p>
+            <pre id="code-stage-1" class="flow-code-preview" style="background:#1C1C1E;color:#FFFFFF;">Estou com o modo Plan ativado. Quero validar a arquitetura de um MVP enxuto em português do Brasil (pt-BR).
 Analise a ideia abaixo e me responda APENAS:
 1) Quais serão as 3 telas principais para demonstrar valor em um Pitch de 3 minutos;
 2) Quais campos teremos na tabela principal do banco de dados;
 3) Quais 5 registros brasileiros realistas você deixará pré-cadastrados para a demonstração.
 Ainda não gere código até eu aprovar este plano.</pre>
             <div class="copy-action-wrap">
-              <button type="button" class="btn btn-primary btn-sm" data-copy-stage="code-stage-1" data-copy-tip="tip-stage-1">📋 Copiar Prompt da Etapa 1</button>
+              <button type="button" class="btn btn-safira btn-sm" data-copy-stage="code-stage-1" data-copy-tip="tip-stage-1">📋 Copiar Prompt da Etapa 1</button>
               <span id="tip-stage-1" class="copy-tip" role="status"></span>
             </div>
           </div>
 
           <div id="panel-stage-2" role="tabpanel" aria-labelledby="tab-stage-2" hidden>
-            <p style="font-size:0.9rem;margin-bottom:8px;"><strong>Quando usar:</strong> Logo após aprovar o plano da IA, mudando para o modo de construção com <strong>Power Mode</strong> selecionado.</p>
-            <pre id="code-stage-2" class="prompt-output-box">Aprovo o plano! Agora construa o MVP completo seguindo estas regras estritas:
+            <p style="font-size:0.95rem;margin-bottom:12px;"><strong>Quando usar:</strong> Após aprovar o plano, selecionando o <strong>Power Mode</strong>.</p>
+            <pre id="code-stage-2" class="flow-code-preview" style="background:#1C1C1E;color:#FFFFFF;">Aprovo o plano! Agora construa o MVP completo seguindo estas regras estritas:
 - Interface 100% em Português do Brasil (pt-BR), tema claro moderno (estilo Apple Studio Daylight) e excelente contraste;
 - Acesso direto ao Dashboard principal ao abrir o site (sem tela de login bloqueando os avaliadores);
 - Banco de dados configurado e populado automaticamente com 5 exemplos brasileiros realistas;
 - Todos os botões e formulários das 3 telas funcionando de ponta a ponta.</pre>
             <div class="copy-action-wrap">
-              <button type="button" class="btn btn-primary btn-sm" data-copy-stage="code-stage-2" data-copy-tip="tip-stage-2">📋 Copiar Prompt da Etapa 2</button>
+              <button type="button" class="btn btn-safira btn-sm" data-copy-stage="code-stage-2" data-copy-tip="tip-stage-2">📋 Copiar Prompt da Etapa 2</button>
               <span id="tip-stage-2" class="copy-tip" role="status"></span>
             </div>
           </div>
 
           <div id="panel-stage-3" role="tabpanel" aria-labelledby="tab-stage-3" hidden>
-            <p style="font-size:0.9rem;margin-bottom:8px;"><strong>Quando usar:</strong> Se um botão não salvar ou aparecer mensagem de erro (lembre-se: tente no máximo 2 vezes; na 3ª faça <em>Rollback</em>!).</p>
-            <pre id="code-stage-3" class="prompt-output-box">Correção cirúrgica e isolada:
+            <p style="font-size:0.95rem;margin-bottom:12px;"><strong>Quando usar:</strong> Para corrigir uma função pontual (lembre-se: tente 2 vezes; se persistir, use Rollback!).</p>
+            <pre id="code-stage-3" class="flow-code-preview" style="background:#1C1C1E;color:#FFFFFF;">Correção cirúrgica e isolada:
 Na tela [NOME DA TELA], quando eu clico no botão [NOME DO BOTÃO], acontece o seguinte comportamento/erro:
 "[COLE AQUI O TEXTO DO ERRO OU EXPLIQUE EM 1 FRASE]"
 
 Corrija APENAS esse comportamento específico. NÃO altere o layout, NÃO apague os dados de exemplo e NÃO modifique as outras telas que já estão funcionando.</pre>
             <div class="copy-action-wrap">
-              <button type="button" class="btn btn-primary btn-sm" data-copy-stage="code-stage-3" data-copy-tip="tip-stage-3">📋 Copiar Prompt da Etapa 3</button>
+              <button type="button" class="btn btn-safira btn-sm" data-copy-stage="code-stage-3" data-copy-tip="tip-stage-3">📋 Copiar Prompt da Etapa 3</button>
               <span id="tip-stage-3" class="copy-tip" role="status"></span>
             </div>
           </div>
 
           <div id="panel-stage-4" role="tabpanel" aria-labelledby="tab-stage-4" hidden>
-            <p style="font-size:0.9rem;margin-bottom:8px;"><strong>Quando usar:</strong> Na tarde do Dia 3 (19/11), antes de clicar em <code>Publish → Autoscale</code>.</p>
-            <pre id="code-stage-4" class="prompt-output-box">Revisão final pré-Pitch e pré-publicação (Autoscale):
+            <p style="font-size:0.95rem;margin-bottom:12px;"><strong>Quando usar:</strong> Na quinta-feira (19/11), antes de publicar em Autoscale.</p>
+            <pre id="code-stage-4" class="flow-code-preview" style="background:#1C1C1E;color:#FFFFFF;">Revisão final pré-Pitch e pré-publicação (Autoscale):
 1) Verifique se todos os textos, botões, moedas (R$) e datas estão em Português do Brasil (pt-BR);
 2) Garanta que, se o banco de dados de produção iniciar vazio após o Publish, o sistema insira automaticamente os 5 registros de demonstração na primeira abertura;
 3) Confirme que o layout está responsivo para exibição no projetor e no celular.</pre>
             <div class="copy-action-wrap">
-              <button type="button" class="btn btn-primary btn-sm" data-copy-stage="code-stage-4" data-copy-tip="tip-stage-4">📋 Copiar Prompt da Etapa 4</button>
+              <button type="button" class="btn btn-safira btn-sm" data-copy-stage="code-stage-4" data-copy-tip="tip-stage-4">📋 Copiar Prompt da Etapa 4</button>
               <span id="tip-stage-4" class="copy-tip" role="status"></span>
             </div>
           </div>
@@ -864,202 +782,165 @@ Corrija APENAS esse comportamento específico. NÃO altere o layout, NÃO apague
     </section>
 
     <!-- ======================================================================
-         9. VIDEOTECA AUDITADA COM PLAYER EMBUTIDO (13 VÍDEOS) + DOCS/PDFS
+         9. VIDEOTECA DE CINEMA & DOCUMENTAÇÃO OFICIAL
          ====================================================================== -->
-    <section id="videos" class="section-block section-stage">
+    <section id="videos" class="section-block">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill">🎬 Curadoria Auditada em Português (Player Embutido na Página)</span>
-          <h2 class="section-title">13 Tutoriais em Vídeo &amp; Documentação Oficial Replit PT-BR</h2>
+          <span class="eyebrow-text">Curadoria Auditada em Português</span>
+          <h2 class="section-title">13 Tutoriais em Vídeo &amp; Guias Oficiais</h2>
           <p class="section-subtitle">
-            Todos os 13 vídeos abaixo estão em português e foram verificados um a um. Clique em qualquer card para <strong>assistir diretamente aqui dentro da página</strong> sem perder seu lugar no Kit!
+            Todos os 13 vídeos foram verificados e rodam diretamente aqui dentro da página no player embutido, sem tirar você do kit.
           </p>
         </div>
 
-        <!-- Filtros por Tempo Disponível -->
-        <div id="video-filter-tabs" class="tabs-bar" role="tablist" aria-label="Filtrar vídeos por duração">
-          <button type="button" class="tab-btn" role="tab" aria-selected="true" data-video-filter="todos">Todos os Vídeos (13)</button>
-          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-video-filter="rapido">⚡ Aquecimento Rápido — Até 2 min (2)</button>
-          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-video-filter="pratico">🛠️ Mão na Massa — 6 a 22 min (8)</button>
-          <button type="button" class="tab-btn" role="tab" aria-selected="false" data-video-filter="imersao">🎓 Imersão Completa — &gt;40 min (3)</button>
+        <div id="video-filter-tabs" class="apple-tab-bar" role="tablist" aria-label="Filtrar vídeos por duração">
+          <button type="button" class="apple-tab-btn" role="tab" aria-selected="true" data-video-filter="todos">Todos os Vídeos (13)</button>
+          <button type="button" class="apple-tab-btn" role="tab" aria-selected="false" data-video-filter="rapido">⚡ Aquecimento — Até 2 min (2)</button>
+          <button type="button" class="apple-tab-btn" role="tab" aria-selected="false" data-video-filter="pratico">🛠️ Mão na Massa — 6 a 22 min (8)</button>
+          <button type="button" class="apple-tab-btn" role="tab" aria-selected="false" data-video-filter="imersao">🎓 Imersão — &gt;40 min (3)</button>
         </div>
 
-        <!-- Grade de Vídeos Renderizada via JS -->
-        <div id="grid-videos" class="video-grid" aria-live="polite"></div>
+        <div id="grid-videos" class="video-grid-spacious" aria-live="polite"></div>
 
-        <!-- Biblioteca de Documentação Oficial Replit PT-BR (10 Módulos) + 5 Artigos/PDFs -->
-        <h3 style="font-size:1.35rem;margin-bottom:8px;">📚 Documentação Oficial Replit em Português &amp; Apostilas PDF</h3>
-        <p style="font-size:0.94rem;color:var(--ink-secondary);margin-bottom:20px;">
-          Links diretos auditados (100% ativos) para consulta rápida durante os 3 dias de evento:
-        </p>
+        <!-- Documentação Oficial Replit PT-BR -->
+        <div class="section-header" style="margin-top:64px;margin-bottom:28px;">
+          <span class="eyebrow-text">Documentação Oficial Replit (PT-BR)</span>
+          <h2 class="section-title" style="font-size:2rem;">10 Módulos Oficiais Traduzidos &amp; Apostilas PDF</h2>
+        </div>
 
-        <div class="docs-grid">
-          <a href="https://docs.replit.com/pt/welcome" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 01</span>
-            <strong>Portal de Boas-Vindas Replit</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Ponto de partida oficial traduzido para português ↗</span>
+        <div class="docs-clean-grid">
+          <a href="https://docs.replit.com/pt/welcome" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 01</span>
+            <strong style="color:var(--apple-ink);">Portal de Boas-Vindas Replit</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Ponto de partida oficial em português ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/getting-started/intro-replit" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 02</span>
-            <strong>Visão Geral do Replit (Leitura 3 min)</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Entenda a plataforma sem jargão técnico ↗</span>
+          <a href="https://docs.replit.com/pt/getting-started/intro-replit" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 02</span>
+            <strong style="color:var(--apple-ink);">Visão Geral (Leitura 3 min)</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Conceitos fundamentais sem tecniquês ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/getting-started/quickstarts/ask-ai" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 03</span>
-            <strong>Quickstart: Crie Seu 1º App com IA (5 min)</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Tutorial passo a passo oficial para iniciantes ↗</span>
+          <a href="https://docs.replit.com/pt/getting-started/quickstarts/ask-ai" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 03</span>
+            <strong style="color:var(--apple-ink);">Crie Seu 1º App com IA (5 min)</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Quickstart passo a passo para iniciantes ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/getting-started/quickstarts/expand-your-project" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 04</span>
-            <strong>Quickstart: Expandir Seu Projeto (5 min)</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Como adicionar novas funções com segurança ↗</span>
+          <a href="https://docs.replit.com/pt/getting-started/quickstarts/expand-your-project" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 04</span>
+            <strong style="color:var(--apple-ink);">Expandir Seu Projeto (5 min)</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Como adicionar novas telas com segurança ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/getting-started/quickstarts/publish" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 05</span>
-            <strong>Quickstart: Publicar Seu Aplicativo (2 min)</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Como gerar o link público .replit.app para a banca ↗</span>
+          <a href="https://docs.replit.com/pt/getting-started/quickstarts/publish" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 05</span>
+            <strong style="color:var(--apple-ink);">Publicar Aplicativo (2 min)</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Gerando o link público .replit.app ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/core-concepts/agent" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill replit" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 06</span>
-            <strong>Guia Completo do Replit Agent</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Como funcionam os modos Plan, Build, Checkpoints e Rollback ↗</span>
+          <a href="https://docs.replit.com/pt/core-concepts/agent" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 06</span>
+            <strong style="color:var(--apple-ink);">Guia do Replit Agent</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Modos Plan, Build e Checkpoints ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/core-concepts/agent/best-practices" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill ok" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 07</span>
-            <strong>Boas Práticas: Como Escrever Prompts Eficazes</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Dicas oficiais da engenharia da Replit para economizar créditos ↗</span>
+          <a href="https://docs.replit.com/pt/core-concepts/agent/best-practices" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 07</span>
+            <strong style="color:var(--apple-ink);">Boas Práticas de Prompts</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Como economizar créditos de IA ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/learn/foundations/introduction-to-ai" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 08</span>
-            <strong>Introdução à IA no Replit</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Fundamentos de construção assistida por inteligência artificial ↗</span>
+          <a href="https://docs.replit.com/pt/learn/foundations/introduction-to-ai" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 08</span>
+            <strong style="color:var(--apple-ink);">Introdução à IA no Replit</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Fundamentos de desenvolvimento assistido ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/learn/projects-and-artifacts/storage-and-databases" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 09</span>
-            <strong>Armazenamento e Bancos de Dados</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Como salvar cadastros reais no seu aplicativo ↗</span>
+          <a href="https://docs.replit.com/pt/learn/projects-and-artifacts/storage-and-databases" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 09</span>
+            <strong style="color:var(--apple-ink);">Armazenamento e Banco de Dados</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Persistência de cadastros na aplicação ↗</span>
           </a>
-
-          <a href="https://docs.replit.com/pt/build/mobile-app" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Doc Oficial PT-BR • 10</span>
-            <strong>Criação de Aplicativo Mobile (Expo Go)</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Para quem quiser testar versão mobile via QR Code ↗</span>
+          <a href="https://docs.replit.com/pt/build/mobile-app" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Módulo 10</span>
+            <strong style="color:var(--apple-ink);">App Mobile (Expo Go)</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Como testar no celular via QR Code ↗</span>
           </a>
-
-          <a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener" class="doc-link-card interactive-lift" style="border-color:rgba(122,0,38,0.3);">
-            <span class="eyebrow-pill pucpr" style="align-self:flex-start;margin:0;">📄 PDF Oficial PUCPR</span>
-            <strong>Edital Oficial: Desafio Replit + PUCPR 2026</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Regras, critérios de avaliação da banca, premiação e 20h ↗</span>
+          <a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener" class="doc-clean-item" style="background:var(--pucpr-soft);">
+            <span class="eyebrow-text" style="font-size:0.75rem;color:var(--pucpr-bordo);">📄 Documento Oficial</span>
+            <strong style="color:var(--pucpr-bordo);">Edital Oficial do Evento (PDF)</strong>
+            <span style="font-size:0.86rem;color:var(--apple-secondary);">Regras, banca, premiação e 20h ↗</span>
           </a>
-
-          <a href="https://www.alura.com.br/artigos/replit" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Artigo em Português</span>
-            <strong>Guia Alura: O que é e Como Usar o Replit</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Introdução didática em português para iniciantes ↗</span>
-          </a>
-
-          <a href="https://www.datacamp.com/pt/tutorial/replit-agent-ai-code-editor" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Tutorial Passo a Passo</span>
-            <strong>DataCamp PT: Tutorial Completo Replit Agent</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Explicação detalhada com exemplos de comandos ↗</span>
-          </a>
-
-          <a href="https://cursob.com/tutoriais/replit-definitivo-desenvolver-apps-ia/" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Guia Prático</span>
-            <strong>CursoB: Guia Definitivo para Desenvolver Apps com IA</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Fluxo prático do zero à publicação ↗</span>
-          </a>
-
-          <a href="https://apostila.digoferrazza.com.br/primeiros-passos-em-tecnologia.pdf" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Apostila PDF</span>
-            <strong>Apostila: Primeiros Passos em Tecnologia (PDF)</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Material de apoio complementar para quem nunca programou ↗</span>
-          </a>
-
-          <a href="https://www.serpro.gov.br/menu/quem-somos/inovacao-aberta/hackserpro/hackathon-rede-brasil/publicacao_-manual-de-orientacoes-tecnicas-hackathon-rede-brasil-2.pdf" target="_blank" rel="noopener" class="doc-link-card interactive-lift">
-            <span class="eyebrow-pill" style="align-self:flex-start;margin:0;">Manual de Hackathon PDF</span>
-            <strong>Manual de Orientações de Hackathon (Boas Práticas de Pitch)</strong>
-            <span style="font-size:0.82rem;color:var(--ink-muted);">Dicas de organização de equipe, validação e apresentação ↗</span>
+          <a href="https://www.alura.com.br/artigos/replit" target="_blank" rel="noopener" class="doc-clean-item">
+            <span class="eyebrow-text" style="font-size:0.75rem;">Artigo em Português</span>
+            <strong style="color:var(--apple-ink);">Guia Alura: O que é o Replit</strong>
+            <span style="font-size:0.86rem;color:var(--apple-muted);">Conceitos introdutórios claros ↗</span>
           </a>
         </div>
       </div>
     </section>
 
     <!-- ======================================================================
-         10. CHECKLIST GAMIFICADO "DO ZERO AO PITCH" (6 MISSÕES XP)
+         10. CHECKLIST GAMIFICADO "DO ZERO AO PITCH"
          ====================================================================== -->
-    <section id="checklist" class="section-block">
+    <section id="checklist" class="section-block section-stage">
       <div class="container">
         <div class="section-header">
-          <span class="eyebrow-pill ok">🏆 Sua Jornada Rumo ao Palco (Salvo Automaticamente)</span>
-          <h2 class="section-title">Checklist Oficial "Do Zero ao Pitch": 6 Missões do Inscrito</h2>
+          <span class="eyebrow-text">Sua Conquista Passo a Passo</span>
+          <h2 class="section-title">Checklist Oficial: 6 Missões do Inscrito</h2>
           <p class="section-subtitle">
-            Vá marcando cada conquista ao longo dos dias <strong>17, 18 e 19 de novembro</strong>. Seu progresso fica salvo neste navegador e atualiza sua patente no topo da página!
+            Marque cada avanço ao longo das 3 tardes. Seu progresso fica gravado automaticamente no seu navegador.
           </p>
         </div>
 
-        <div class="bento-card" style="margin-bottom:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
+        <div class="apple-card" style="margin-bottom:24px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;">
           <div>
-            <strong style="font-size:1.05rem;display:block;color:var(--ink-primary);">Status Atual da Sua Equipe / Projeto:</strong>
-            <span id="checklist-status-text" style="font-size:0.92rem;color:var(--semantic-ok);font-weight:700;">0 de 6 missões concluídas (0%) — Nível 1: Explorador da Ideia</span>
+            <strong style="font-size:1.1rem;color:var(--apple-ink);display:block;">Status Atual da Sua Equipe:</strong>
+            <span id="checklist-status-text" style="font-size:0.95rem;color:var(--semantic-ok);font-weight:700;">0 de 6 missões concluídas (0%) — Nível 1: Explorador da Ideia</span>
           </div>
           <button type="button" id="btn-reset-xp" class="btn btn-secondary btn-sm">↺ Desmarcar Tudo</button>
         </div>
 
-        <div class="checklist-stack">
-          <label class="mission-label">
+        <div class="checklist-flow-stack">
+          <label class="mission-clean-card">
             <input type="checkbox" class="chk-missao" value="m1">
             <div>
-              <strong style="font-size:1rem;color:var(--ink-primary);display:block;">Missão 1 (Dia 1): Conta Replit ativa + Créditos do Desafio conferidos</strong>
-              <span style="font-size:0.88rem;color:var(--ink-secondary);">Acessei o Replit no laboratório do Bloco 10, ativei o benefício do evento e localizei o botão <code>Plan</code> no canto inferior direito do chat.</span>
+              <strong style="font-size:1.05rem;color:var(--apple-ink);display:block;">Missão 1 (Dia 1): Conta Replit ativa + Créditos do Desafio conferidos</strong>
+              <span style="font-size:0.92rem;color:var(--apple-secondary);">Acessei o Replit no laboratório do Bloco 10, ativei o benefício do evento e localizei o botão <code>Plan</code> no chat.</span>
             </div>
           </label>
 
-          <label class="mission-label">
+          <label class="mission-clean-card">
             <input type="checkbox" class="chk-missao" value="m2">
             <div>
-              <strong style="font-size:1rem;color:var(--ink-primary);display:block;">Missão 2 (Dia 1): Ideia validada em 3 telas com o botão 'Plan' ligado</strong>
-              <span style="font-size:0.88rem;color:var(--ink-secondary);">Usei o Montador de Prompts da Seção 8, colei no modo <code>Plan</code> e aprovei um escopo enxuto de 3 telas sem gastar créditos pesados.</span>
+              <strong style="font-size:1.05rem;color:var(--apple-ink);display:block;">Missão 2 (Dia 1): Ideia validada em 3 telas com o botão 'Plan' ligado</strong>
+              <span style="font-size:0.92rem;color:var(--apple-secondary);">Usei o Montador de Prompts da Seção 8, colei no modo <code>Plan</code> e aprovei um escopo enxuto de 3 telas sem gastar créditos pesados.</span>
             </div>
           </label>
 
-          <label class="mission-label">
+          <label class="mission-clean-card">
             <input type="checkbox" class="chk-missao" value="m3">
             <div>
-              <strong style="font-size:1rem;color:var(--ink-primary);display:block;">Missão 3 (Dia 2): MVP construído usando o 'Power Mode'</strong>
-              <span style="font-size:0.88rem;color:var(--ink-secondary);">Autorizei a construção da primeira versão funcional no <code>Power Mode</code> e testei o fluxo principal na janela <em>Preview</em>.</span>
+              <strong style="font-size:1.05rem;color:var(--apple-ink);display:block;">Missão 3 (Dia 2): MVP construído usando o 'Power Mode'</strong>
+              <span style="font-size:0.92rem;color:var(--apple-secondary);">Autorizei a construção da primeira versão funcional no <code>Power Mode</code> e testei o fluxo principal na janela <em>Preview</em>.</span>
             </div>
           </label>
 
-          <label class="mission-label">
+          <label class="mission-clean-card">
             <input type="checkbox" class="chk-missao" value="m4">
             <div>
-              <strong style="font-size:1rem;color:var(--ink-primary);display:block;">Missão 4 (Dia 2): Banco de dados com 5 exemplos realistas (Zero Tela Vazia!)</strong>
-              <span style="font-size:0.88rem;color:var(--ink-secondary);">Conferi que meu aplicativo já abre direto no painel principal (sem login bloqueante) exibindo 5 registros brasileiros realistas.</span>
+              <strong style="font-size:1.05rem;color:var(--apple-ink);display:block;">Missão 4 (Dia 2): Banco de dados com 5 exemplos realistas (Zero Tela Vazia!)</strong>
+              <span style="font-size:0.92rem;color:var(--apple-secondary);">Conferi que meu aplicativo já abre direto no painel principal (sem login bloqueante) exibindo 5 registros brasileiros realistas.</span>
             </div>
           </label>
 
-          <label class="mission-label">
+          <label class="mission-clean-card">
             <input type="checkbox" class="chk-missao" value="m5">
             <div>
-              <strong style="font-size:1rem;color:var(--ink-primary);display:block;">Missão 5 (Dia 3): Acabamento visual em português usando o 'Visual Editor' (US$ 0)</strong>
-              <span style="font-size:0.88rem;color:var(--ink-secondary);">Ajustei títulos, cores e textos pelo <code>Visual Editor</code> ou <code>Free Mode</code>, poupando meus créditos para qualquer ajuste final.</span>
+              <strong style="font-size:1.05rem;color:var(--apple-ink);display:block;">Missão 5 (Dia 3): Acabamento visual em português usando o 'Visual Editor' (US$ 0)</strong>
+              <span style="font-size:0.92rem;color:var(--apple-secondary);">Ajustei títulos, cores e textos pelo <code>Visual Editor</code> ou <code>Free Mode</code>, poupando meus créditos para qualquer ajuste final.</span>
             </div>
           </label>
 
-          <label class="mission-label">
+          <label class="mission-clean-card">
             <input type="checkbox" class="chk-missao" value="m6">
             <div>
-              <strong style="font-size:1rem;color:var(--ink-primary);display:block;">Missão 6 (Dia 3): App publicado em 'Autoscale' (.replit.app) + Pitch de 3 min ensaiado! 🏆</strong>
-              <span style="font-size:0.88rem;color:var(--ink-secondary);">Publiquei escolhendo <code>Autoscale</code>, abri o link no meu próprio celular para confirmar que funciona fora do computador e cronometrei meu Pitch!</span>
+              <strong style="font-size:1.05rem;color:var(--apple-ink);display:block;">Missão 6 (Dia 3): App publicado em 'Autoscale' (.replit.app) + Pitch de 3 min ensaiado! 🏆</strong>
+              <span style="font-size:0.92rem;color:var(--apple-secondary);">Publiquei escolhendo <code>Autoscale</code>, abri o link no meu celular para confirmar que funciona fora do computador e cronometrei meu Pitch!</span>
             </div>
           </label>
         </div>
@@ -1068,80 +949,77 @@ Corrija APENAS esse comportamento específico. NÃO altere o layout, NÃO apague
   </main>
 
   <!-- ========================================================================
-       RODAPÉ INSTITUCIONAL PUCPR | GRUPO MARISTA + EMPREENDEDORISMO + REPLIT
+       RODAPÉ INSTITUCIONAL PUCPR
        ======================================================================== -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-triptych">
         <div>
-          <img src="./assets/img/logo-pucpr-marista.jpg" alt="Logo Oficial PUCPR — Grupo Marista" class="footer-logo-marista" width="112" height="149">
-          <h3 style="font-size:1.05rem;margin-bottom:6px;">Desafio Replit + PUCPR (Novembro/2026)</h3>
-          <p style="font-size:0.88rem;color:var(--ink-secondary);margin-bottom:10px;">
+          <img src="./assets/img/logo-pucpr-marista.jpg" alt="Logo Oficial PUCPR — Grupo Marista" style="width:100px;height:auto;margin-bottom:16px;" width="100" height="133">
+          <h3 style="font-size:1.1rem;margin-bottom:8px;">Desafio Replit + PUCPR</h3>
+          <p style="font-size:0.92rem;color:var(--apple-secondary);">
             Realização: <strong><a href="https://empreendedorismo.pucpr.br/" target="_blank" rel="noopener">Empreendedorismo PUCPR</a></strong> em parceria com o <strong>Curso de Administração da PUCPR</strong> (Escola de Negócios) e <strong><a href="https://replit.com/" target="_blank" rel="noopener">Replit</a></strong>.
           </p>
         </div>
 
         <div>
-          <h4 style="font-size:0.92rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--ink-muted);margin-bottom:10px;">Documentos &amp; Links Oficiais</h4>
-          <ul style="list-style:none;display:grid;gap:8px;font-size:0.9rem;font-weight:600;">
-            <li><a href="https://empreendedorismo.pucpr.br/" target="_blank" rel="noopener">🌐 Portal Empreendedorismo PUCPR ↗</a></li>
-            <li><a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener">📄 Edital Oficial do Evento (PDF) ↗</a></li>
-            <li><a href="https://sites.pucpr.br/mapas/" target="_blank" rel="noopener">🗺️ Mapa do Campus Curitiba (Bloco 10) ↗</a></li>
-            <li><a href="https://docs.replit.com/pt/welcome" target="_blank" rel="noopener">📘 Documentação Oficial Replit (PT-BR) ↗</a></li>
+          <h4 style="font-size:0.84rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--apple-muted);margin-bottom:12px;">Documentos &amp; Links</h4>
+          <ul style="list-style:none;display:grid;gap:10px;font-size:0.92rem;font-weight:500;">
+            <li><a href="https://empreendedorismo.pucpr.br/" target="_blank" rel="noopener">Portal Empreendedorismo PUCPR ↗</a></li>
+            <li><a href="https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf" target="_blank" rel="noopener">Edital Oficial do Evento (PDF) ↗</a></li>
+            <li><a href="https://sites.pucpr.br/mapas/" target="_blank" rel="noopener">Mapa do Campus (Bloco 10) ↗</a></li>
+            <li><a href="https://docs.replit.com/pt/welcome" target="_blank" rel="noopener">Documentação Oficial Replit ↗</a></li>
           </ul>
         </div>
 
         <div>
-          <h4 style="font-size:0.92rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--ink-muted);margin-bottom:10px;">Local &amp; Suporte ao Inscrito</h4>
-          <p style="font-size:0.88rem;margin-bottom:8px;">
-            <strong>📍 Laboratório Watts Humphrey</strong><br>
+          <h4 style="font-size:0.84rem;text-transform:uppercase;letter-spacing:0.06em;color:var(--apple-muted);margin-bottom:12px;">Local &amp; Suporte</h4>
+          <p style="font-size:0.92rem;margin-bottom:8px;">
+            <strong>Laboratório Watts Humphrey</strong><br>
             Escola Politécnica — Bloco 10 (1º andar)<br>
-            PUCPR Campus Curitiba • R. Imaculada Conceição, 1155
+            PUCPR Campus Curitiba
           </p>
-          <p style="font-size:0.88rem;">
-            <strong>🗓️ 17, 18 e 19 de novembro de 2026</strong> • 14h às 17h<br>
-            ✉️ <a href="mailto:empreendedorismo@pucpr.br">empreendedorismo@pucpr.br</a> • 📱 WhatsApp: (41) 99137-4233
+          <p style="font-size:0.88rem;color:var(--apple-secondary);">
+            ✉️ <a href="mailto:empreendedorismo@pucpr.br">empreendedorismo@pucpr.br</a><br>
+            📱 WhatsApp: (41) 99137-4233
           </p>
         </div>
       </div>
 
-      <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--border-hairline);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;font-size:0.8rem;color:var(--ink-muted);">
-        <span>© 2026 Pontifícia Universidade Católica do Paraná (PUCPR) • Empreendedorismo PUCPR &amp; Curso de Administração.</span>
-        <span>Kit Pedagógico Oficial do Inscrito • Tema Apple Studio Daylight</span>
+      <div style="margin-top:48px;padding-top:24px;border-top:1px solid rgba(0, 0, 0, 0.05);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;font-size:0.84rem;color:var(--apple-muted);">
+        <span>© 2026 Pontifícia Universidade Católica do Paraná (PUCPR).</span>
+        <span>Kit Oficial do Inscrito • Padrão Apple Studio Daylight</span>
       </div>
     </div>
   </footer>
 
   <!-- ========================================================================
-       MODAL 1: PLAYER DE VÍDEO YOUTUBE EMBUTIDO (<dialog closedby="any">)
+       MODAIS APPLE TOP-LAYER (<dialog closedby="any">)
        ======================================================================== -->
   <dialog id="video-modal" class="apple-modal" closedby="any" aria-labelledby="video-modal-title">
-    <div class="modal-header">
-      <h3 id="video-modal-title" style="font-size:1.05rem;">Assistir Tutorial</h3>
+    <div class="modal-header-clean">
+      <h3 id="video-modal-title" style="font-size:1.15rem;">Assistir Tutorial</h3>
       <button type="button" id="video-modal-close" class="btn btn-secondary btn-sm" aria-label="Fechar player de vídeo">✕ Fechar</button>
     </div>
-    <div class="modal-video-frame-wrap">
-      <iframe id="video-modal-iframe" src="" title="Player de Vídeo Tutorial Replit" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="modal-video-frame">
+      <iframe id="video-modal-iframe" src="" title="Player de Vídeo Tutorial Replit" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="modal-footer">
-      <p id="video-modal-summary" style="font-size:0.86rem;color:var(--ink-secondary);margin:0;"></p>
+    <div class="modal-footer-clean">
+      <p id="video-modal-summary" style="font-size:0.9rem;color:var(--apple-secondary);margin:0;"></p>
       <a id="video-modal-external" href="https://www.youtube.com" target="_blank" rel="noopener" class="btn btn-safira btn-sm">Abrir no YouTube ↗</a>
     </div>
   </dialog>
 
-  <!-- ========================================================================
-       MODAL 2: LIGHTBOX DO CARTAZ OFICIAL (<dialog closedby="any">)
-       ======================================================================== -->
   <dialog id="poster-modal" class="apple-modal" style="width:min(90vw, 560px);" closedby="any" aria-labelledby="poster-modal-title">
-    <div class="modal-header">
-      <h3 id="poster-modal-title" style="font-size:1.02rem;">Cartaz Oficial — Desafio Replit + PUCPR</h3>
-      <button type="button" id="poster-modal-close" class="btn btn-secondary btn-sm" aria-label="Fechar visualização do cartaz">✕ Fechar</button>
+    <div class="modal-header-clean">
+      <h3 id="poster-modal-title" style="font-size:1.1rem;">Cartaz Oficial do Evento</h3>
+      <button type="button" id="poster-modal-close" class="btn btn-secondary btn-sm" aria-label="Fechar cartaz">✕ Fechar</button>
     </div>
-    <div style="padding:16px;background:var(--bg-subtle);text-align:center;">
+    <div style="padding:24px;background:var(--apple-surface);text-align:center;">
       <img src="./assets/img/cartaz-desafio-replit.jpg" alt="Cartaz Oficial Ampliado do Desafio Replit + PUCPR" style="max-width:100%;max-height:76vh;border-radius:var(--radius-sm);">
     </div>
   </dialog>
 
-  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/app.js?v=1.1.0"></script>
 </body>
 </html>

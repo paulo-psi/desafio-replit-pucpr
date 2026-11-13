@@ -628,24 +628,24 @@ IMPORTANTE: Se eu estiver com o botão "Plan" ativado agora, apresente primeiro 
     grid.innerHTML = list
       .map(
         (v) => `
-      <article class="video-card interactive-lift" data-video-id="${v.id}" data-video-cat="${v.cat}">
-        <button type="button" class="video-thumb-btn" data-open-video="${v.id}" aria-label="Assistir na página: ${v.titulo}">
+      <article class="cinema-video-card" data-video-id="${v.id}" data-video-cat="${v.cat}">
+        <button type="button" class="cinema-thumb-wrap" data-open-video="${v.id}" aria-label="Assistir na página: ${v.titulo}">
           <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="Miniatura da aula ${v.titulo}" loading="lazy" width="480" height="360">
-          <span class="play-badge-overlay">
-            <span class="play-circle" aria-hidden="true">▶</span>
+          <span class="cinema-play-btn">
+            <span class="cinema-glass-circle" aria-hidden="true">▶</span>
           </span>
-          <span class="duration-chip">${v.duracao}</span>
+          <span class="cinema-time-tag">${v.duracao}</span>
         </button>
-        <div class="video-card-body">
+        <div class="cinema-card-info">
           <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
-            <span class="eyebrow-pill" style="margin:0;font-size:0.7rem;padding:3px 9px;">${v.catLabel}</span>
-            <span class="video-card-channel">${v.canal}</span>
+            <span class="eyebrow-text" style="margin:0;font-size:0.75rem;">${v.catLabel}</span>
+            <span style="font-size:0.8rem;color:var(--apple-muted);">${v.canal}</span>
           </div>
-          <h3 class="video-card-title">${v.titulo}</h3>
-          <p style="font-size:0.84rem;color:var(--ink-secondary);flex:1;">${v.resumo}</p>
-          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:8px;border-top:1px solid var(--border-hairline);">
+          <h3>${v.titulo}</h3>
+          <p style="font-size:0.9rem;color:var(--apple-secondary);flex:1;">${v.resumo}</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px solid rgba(0,0,0,0.05);margin-top:8px;">
             <button type="button" class="btn btn-safira btn-sm" data-open-video="${v.id}">▶ Assistir Aqui</button>
-            <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" style="font-size:0.78rem;font-weight:700;">Abrir no YouTube ↗</a>
+            <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener" style="font-size:0.82rem;font-weight:600;">YouTube ↗</a>
           </div>
         </div>
       </article>

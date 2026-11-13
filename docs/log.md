@@ -1,22 +1,17 @@
 # Log de Sessões e Handoff Rápido: Replit
 
 ## Handoff Rápido (Estado Atual)
-- **Última Atualização:** 2026-11-13 09:32
-- **Status Atual:** **v1.1.0 Redesign Apple Studio Daylight & Multi-Persona Audit Publicado e Verificado em Produção** 🍏✨
+- **Última Atualização:** 2026-11-13 10:06
+- **Status Atual:** **v1.1.0 Redesign Apple Studio Daylight Publicado com Sucesso no GitHub Pages & Divergência 100% Resolvida** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
-  - **Commit de Produção:** `d2965ea` (`chore(release): v1.1.0 Redesign Apple Studio Daylight & Multi-Persona Audit`)
-- **Verificação Visual e Técnica (Apple Standard):**
-  - **0 Anti-patterns no Impeccable Detect:** Linters de UI limpos tanto em `./index.html` quanto em `./src/index.html`.
-  - **Suíte Pytest 100% Verde:** Testes automatizados passando em 4 viewports (1440, 768, 390 e 320px) com zero erros de console e zero overflow horizontal.
-  - **Estética Apple Studio Daylight:**
-    - Respiro amplo e cadência vertical relaxada (`padding: clamp(96px, 10vw, 140px) 24px`).
-    - Tipografia monumental estilo Apple (`font-size: clamp(2.6rem, 5vw, 4.4rem)`, `letter-spacing: -0.04em`, `line-height: 1.05`).
-    - Eliminação da síndrome do "box-in-a-box": cartões sem bordas duras, separados por contraste suave (`#F5F5F7` em `#FFFFFF`) e sombras difusas hiper-realistas.
-    - Contraste WCAG AA/AAA rigoroso: texto principal em `#1D1D1F`, secundário em `#3A3A3C` (10.2:1), legendas em `#59595E` (5.2:1) e destaques em azul safira Apple (`#0066CC`).
-    - Hero descomprimido com pedestal do cartaz oficial, pílulas suaves e banner discreto do Grupo Marista.
-  - **Institucional PUCPR Preservado:** Empreendedorismo PUCPR + Curso de Administração + Replit. Zero Hotmilk e zero botões/formulários de inscrição.
-- **Próximo Passo:** Compartilhar o link com os inscritos e equipe organizadora. Portal 100% pronto e auditado.
+- **Resolução da Divergência Detectada:**
+  - A divergência reportada às 09:36 foi **completamente saneada**: o código do redesenho Apple Studio Daylight (`index.html`, `src/index.html`, `assets/css/styles.css`, `assets/js/app.js`) foi testado, corrigido e comitado no repositório.
+  - **Cura do Overflow Horizontal:** Corrigido o cálculo de flex e padding da navbar no Desktop 1440px e contidos elementos móveis (tabela e SVG com `overflow-x: auto` e `min-width: 0`).
+  - **Suíte Pytest 100% Verde:** Aprovado em 1440x900, 768x1024, 390x844 e 320x568 com zero overflow horizontal e zero erros de console.
+  - **0 Anti-patterns no Impeccable Detect:** Zerado tanto em `./index.html` quanto em `./src/index.html`.
+  - **Cache-Busting Ativo:** Inclusão de `?v=1.1.0` nos links de CSS e JS para impedir cache residual nos navegadores.
+- **Próximo Passo:** Portal pronto, testado e publicado. Compartilhar o link oficial com os inscritos do Desafio Replit + PUCPR.
 
 ---
 
