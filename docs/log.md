@@ -1,18 +1,16 @@
 # Log de Sessões e Handoff Rápido: Replit
 
 ## Handoff Rápido (Estado Atual)
-- **Última Atualização:** 2026-11-13 10:07
-- **Status Atual:** **v1.1.0 Redesign Apple Studio Daylight Ativo em Produção no GitHub Pages & Cache-Busting Confirmado** 🍏✨
+- **Última Atualização:** 2026-11-13 10:10
+- **Status Atual:** **v1.1.1 Rodapé Limpo: Menção de Copyright e Label de Tema Removidos & Publicado no GitHub Pages** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
-  - **Commit de Produção:** `0e49672` (`feat(design): apply authentic Apple Studio Daylight overhaul, fix overflow and add cache-busting`)
-- **Diagnóstico Técnico do "Parece Igual" e Cura:**
-  - **Causa Real:** O commit anterior continha apenas arquivos Markdown de documentação (`CHANGELOG.md` e `docs/log.md`); os arquivos de código (`index.html`, `styles.css`, `app.js`) haviam ficado desmarcados no working tree. Além disso, o navegador mantinha em cache os assets estáticos sem hash de versão.
-  - **Cura Definitiva:** Todo o código do redesenho foi comitado no commit `0e49672` e enviado para o GitHub Pages. Foi adicionado cache-busting explícito (`?v=1.1.0`) nos links de CSS e JS.
-  - **Verificação ao Vivo (Playwright & HTTP):** Resposta HTTP 200 OK com `styles.css?v=1.1.0` confirmada em produção e screenshot capturado diretamente do GitHub Pages.
+- **Ajuste Realizado (Nível 1 — Express):**
+  - Removida a linha inferior do rodapé contendo `© 2026 Pontifícia Universidade Católica do Paraná (PUCPR).` e `Kit Oficial do Inscrito • Padrão Apple Studio Daylight`.
+  - Mantidas as 3 colunas institucionais de realização (Empreendedorismo PUCPR + Curso de Administração + Replit), links oficiais e contatos do Laboratório Watts Humphrey.
 - **Métricas de Qualidade Aprovadas:**
   - **0 Anti-patterns no Impeccable Detect:** Zerado tanto em `./index.html` quanto em `./src/index.html`.
-  - **Suíte Pytest 100% Verde:** Aprovado em 1440x900, 768x1024, 390x844 e 320x568.
+  - **Suíte Pytest 100% Verde:** Aprovado em todas as 4 viewports (1440, 768, 390 e 320px).
 - **Próximo Passo:** Compartilhar o link oficial com os inscritos do Desafio Replit + PUCPR.
 
 ---

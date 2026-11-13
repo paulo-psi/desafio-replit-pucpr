@@ -2,6 +2,10 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [1.1.1] - 2026-11-13
+### Removido
+- Removida linha inferior do rodapé contendo o copyright `© 2026 Pontifícia Universidade Católica do Paraná (PUCPR).` e a legenda `Kit Oficial do Inscrito • Padrão Apple Studio Daylight`.
+
 ## [1.1.0] - 2026-11-13
 ### Alterado & Polimento Estético (Apple Studio Daylight)
 - Redesign completo da hierarquia visual, espaçamentos e ritmo vertical seguindo a diretriz autêntica da Apple: seções com `padding: clamp(96px, 10vw, 140px) 24px` e remoção da sensação de "caixas empilhadas".
