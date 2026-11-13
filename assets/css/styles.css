@@ -598,6 +598,107 @@ a:hover {
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
+/* Régua Seletora de Etapas do Fluxograma (1 a 8) */
+.flow-steps-pillbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 8px 12px;
+  background: var(--apple-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.flow-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--apple-secondary);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all 180ms var(--ease-apple);
+}
+
+.flow-pill-btn:hover {
+  background: var(--apple-bg);
+  color: var(--apple-ink);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.flow-pill-btn.is-active {
+  background: var(--apple-bg);
+  color: var(--apple-blue);
+  border-color: rgba(0, 113, 227, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.flow-pill-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.06);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: inherit;
+}
+
+.flow-pill-btn.is-active .flow-pill-num {
+  background: var(--apple-blue);
+  color: #FFFFFF;
+}
+
+/* Destaque Diferenciado para o Item 8 (Rota de Contingência / Erro) */
+.flow-pill-btn.flow-pill-contingency {
+  background: rgba(217, 56, 30, 0.08);
+  border-color: rgba(217, 56, 30, 0.25);
+  color: #9C1C0D;
+  margin-left: auto;
+}
+
+.flow-pill-btn.flow-pill-contingency:hover {
+  background: rgba(217, 56, 30, 0.14);
+  border-color: #9C1C0D;
+}
+
+.flow-pill-btn.flow-pill-contingency.is-active {
+  background: #9C1C0D;
+  border-color: #9C1C0D;
+  color: #FFFFFF;
+}
+
+.flow-pill-btn.flow-pill-contingency .flow-pill-num {
+  background: rgba(217, 56, 30, 0.15);
+  color: #9C1C0D;
+}
+
+.flow-pill-btn.flow-pill-contingency.is-active .flow-pill-num {
+  background: #FFFFFF;
+  color: #9C1C0D;
+}
+
+/* Caixa de Alerta no Painel Lateral quando Etapa 8 */
+.flow-contingency-alert-box {
+  background: rgba(217, 56, 30, 0.06);
+  border: 1px solid rgba(217, 56, 30, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #9C1C0D;
+}
+
 .flowchart-controls-group {
   display: flex;
   gap: 8px;

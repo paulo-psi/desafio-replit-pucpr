@@ -69,7 +69,7 @@
       title: "1. Papel & Caneta: Definir a Dor e as 3 Telas",
       what: "Antes de encostar no teclado, defina em 1 frase quem é o cliente, qual problema real você resolve e quais são as 3 únicas telas essenciais da primeira versão (MVP).",
       where: "Fora da tela (anotação rápida ou Montador de Prompts da Seção 8 deste Kit).",
-      cost: "🟢 Custo: US$ 0,00 (Zero Tokens)",
+      cost: "🟢 Custo: US$0,00 (Zero Tokens)",
       costClass: "free",
       prompt: "Minha ideia se chama [Nome], ajuda [Público] a resolver [Problema] através de 3 telas simples: 1) Painel Resumo, 2) Cadastro Rápido e 3) Lista de Gestão."
     },
@@ -78,7 +78,7 @@
       title: "2. Planejar Escopo com o Botão 'Plan' Ativado",
       what: "Ative o modo Plan no chat do Replit Agent para alinhar a lista de telas e o banco de dados sem que a IA saia escrevendo código errado ou gastando créditos à toa.",
       where: "Canto inferior direito da caixa de chat do Replit → Ative o botão 'Plan' (ou pressione Ctrl+Shift+I).",
-      cost: "🟢 Custo: ~US$ 0,20 a US$ 0,60 (Planejamento Leve)",
+      cost: "🟢 Custo: ~US$0,20 a US$0,60 (Planejamento Leve)",
       costClass: "free",
       prompt: "Estou no Modo Plan. Analise minha ideia em português (pt-BR) e proponha um plano enxuto de 3 telas com banco de dados e 5 exemplos pré-cadastrados. Ainda não escreva o código."
     },
@@ -87,7 +87,7 @@
       title: "3. Construir o MVP Enxuto no 'Power Mode'",
       what: "Com o plano aprovado, autorize o Agent a construir o aplicativo completo já com banco de dados integrado e 5 registros realistas em português para demonstração.",
       where: "Desative o 'Plan' para entrar em Build e confirme que o seletor está em 'Power Mode' (o substituto oficial do antigo Economy Mode).",
-      cost: "🟡 Custo: ~US$ 6,00 a US$ 10,00 (Construção Principal)",
+      cost: "🟡 Custo: ~US$6,00 a US$10,00 (Construção Principal)",
       costClass: "moderate",
       prompt: "Aprovo o plano! Agora construa o MVP completo em português (pt-BR) com visual moderno em modo claro e deixe 5 registros brasileiros realistas pré-cadastrados no banco de dados."
     },
@@ -96,16 +96,16 @@
       title: "4. Funcionou no Preview? (O Ponto de Decisão)",
       what: "Teste o aplicativo ao vivo na janela direita (Preview): clique nos botões, cadastre um item novo e veja se ele permanece salvo ao recarregar.",
       where: "Painel direito 'Preview' (Webview) do Replit. Se funcionar, avance para a Etapa 5! Se der erro 1x ou 2x, envie o erro exato. Na 3ª falha seguida, vá para a Etapa 8 (Rollback).",
-      cost: "🟢 Custo de testar no Preview: US$ 0,00",
+      cost: "🟢 Custo de testar no Preview: US$0,00",
       costClass: "free",
       prompt: "Na tela [Nome da Tela], ao clicar no botão [Nome do Botão], apareceu este erro: [Colar Erro]. Corrija apenas essa função sem alterar o restante do layout."
     },
     5: {
       badge: "Etapa 5 de 8 • Dia 3 (19/11)",
       title: "5. Polimento Visual Grátis ('Visual Editor' + 'Free Mode')",
-      what: "Ajuste títulos, textos em português, cores de botões e espaçamentos clicando diretamente nos elementos da tela — sem gastar 1 centavo dos seus US$ 20!",
+      what: "Ajuste títulos, textos em português, cores de botões e espaçamentos clicando diretamente nos elementos da tela — sem gastar 1 centavo dos seus US$20,00!",
       where: "Barra da janela Preview → Clique no ícone 'Visual Editor' (edição direta a custo zero) ou use o 'Free Mode' (cota gratuita renovada a cada 5h).",
-      cost: "🟢 Custo: US$ 0,00 (100% Grátis no Visual Editor / Free Mode)",
+      cost: "🟢 Custo: US$0,00 (100% Grátis no Visual Editor / Free Mode)",
       costClass: "free",
       prompt: "No modo Free Mode: revise todos os rótulos e botões da tela inicial para português do Brasil claro e garanta ótimo contraste de leitura."
     },
@@ -128,11 +128,11 @@
       prompt: "Roteiro de Pitch (3 min): 1) Qual problema real descobrimos; 2) Demonstração ao vivo das 3 telas no link publicado; 3) Como essa solução gera valor imediato."
     },
     8: {
-      badge: "Desvio de Segurança Anti-Pânico • Qualquer Dia",
-      title: "8. Saída de Emergência: Rollback (+ Caixinha 'Database')",
-      what: "Se a IA errou 2 vezes seguidas a mesma coisa, PARE imediatamente de mandar mensagens! Volte o projeto no tempo para o último ponto que funcionava.",
+      badge: "🚨 Rota de Contingência • A Qualquer Momento em Caso de Erro",
+      title: "8. Deu Erro? Rollback + Database (Salvação da Equipe)",
+      what: "⚠️ ATENÇÃO: Esta NÃO é uma etapa final do evento! É o protocolo de segurança que você aciona a qualquer momento se a IA insistir no mesmo erro 2 vezes seguidas. Volte o projeto no tempo para o último ponto estável e evite queimar créditos.",
       where: "Role o chat do Agent até a última versão estável → Clique em 'Rollback here' → Abra 'Additional rollback options' e MARQUE a caixinha 'Database'!",
-      cost: "🛡️ Economia: Salva de US$ 5 a US$ 12 que seriam queimados em loop",
+      cost: "🛡️ Economia: Salva de US$5,00 a US$12,00 que seriam queimados em loop",
       costClass: "burn",
       prompt: "[Após fazer Rollback + Database]: Vamos tentar um caminho mais simples. Implemente apenas [Ação Simplificada] mantendo o banco de dados atual intacto."
     }
@@ -151,6 +151,13 @@
       const n = Number(node.getAttribute("data-flow-step"));
       node.classList.toggle("is-active", n === currentFlowStep);
       node.classList.toggle("is-dimmed", !showAll && n !== currentFlowStep);
+    });
+
+    const pills = document.querySelectorAll("[data-flow-pill]");
+    pills.forEach((p) => {
+      const isActive = Number(p.getAttribute("data-flow-pill")) === currentFlowStep;
+      p.classList.toggle("is-active", isActive);
+      p.setAttribute("aria-selected", isActive ? "true" : "false");
     });
 
     const badgeEl = document.getElementById("flow-detail-badge");
@@ -184,6 +191,14 @@
           stopFlowTour();
           renderFlowStep(Number(node.getAttribute("data-flow-step")), false);
         }
+      });
+    });
+
+    const pills = document.querySelectorAll("[data-flow-pill]");
+    pills.forEach((p) => {
+      p.addEventListener("click", () => {
+        stopFlowTour();
+        renderFlowStep(Number(p.getAttribute("data-flow-pill")), false);
       });
     });
 
@@ -284,13 +299,13 @@
       tip: "💡 Atalho Rápido: Você também pode alternar os modos no teclado pressionando Ctrl+Shift+I (ou Cmd+Shift+I no Mac)."
     },
     3: {
-      badge: "Ponto 3 de 6 • Controle de Créditos (US$ 20)",
+      badge: "Ponto 3 de 6 • Controle de Créditos (US$20,00)",
       title: "Seletor de Modo: Free Mode / Power Mode / Max Mode",
       body: "Na versão 2026 do Replit, o antigo Economy Mode foi substituído pelo 'Power Mode' (equilíbrio ideal para criar o MVP). Já o 'Free Mode' usa uma franquia gratuita renovada a cada 5 horas para dúvidas e ajustes rápidos!",
       tip: "⚠️ Cuidado: Evite deixar no 'Max Mode' para tarefas comuns — ele usa os modelos mais caros e pode consumir vários dólares em poucos minutos."
     },
     4: {
-      badge: "Ponto 4 de 6 • Segredo Custo Zero (US$ 0,00)",
+      badge: "Ponto 4 de 6 • Segredo Custo Zero (US$0,00)",
       title: "Botão 'Visual Editor' (Edição Direta na Tela)",
       body: "Quer trocar um título em inglês para português, mudar a cor de um botão, ajustar o tamanho da letra ou a margem de um cartão? Clique no 'Visual Editor' na barra do Preview e edite direto na tela!",
       tip: "🟢 Economia Total: Alterações feitas pelo Visual Editor modificam o código instantaneamente e custam ZERO tokens de IA!"
@@ -305,7 +320,7 @@
       badge: "Ponto 6 de 6 • Colocando o App na Internet",
       title: "Botão 'Publish' (Autoscale) + Abas Database & Secrets",
       body: "No Dia 3, clique em 'Publish' (Publishing) → 'Adjust settings' → 'Deployment type' e selecione 'Autoscale'. Ele gera um link público (.replit.app) que funciona no celular da banca e escala a zero quando ninguém está usando.",
-      tip: "🚫 Nunca escolha 'Reserved VM' (que cobra US$ 20/mês fixo 24h por dia) nem 'Static' (que não suporta o banco de dados do seu app)."
+      tip: "🚫 Nunca escolha 'Reserved VM' (que cobra US$20,00/mês fixo 24h por dia) nem 'Static' (que não suporta o banco de dados do seu app)."
     }
   };
 

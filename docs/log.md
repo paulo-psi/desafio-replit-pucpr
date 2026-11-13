@@ -1,19 +1,18 @@
 # Log de Sessões e Handoff Rápido: Replit
 
 ## 📌 Estado Atual (Handoff Rápido)
-- **Última Atualização:** 2026-11-13 14:56
-- **Status Atual:** **v1.3.0 Conceitos Fundamentais no Início, Raio-X Corrigido (Simetria 3+3), Desgamificação & Botão Voltar ao Início Concluídos** 🍏✨
+- **Última Atualização:** 2026-11-13 15:25
+- **Status Atual:** **v1.3.1 Régua Seletora das Etapas 1 a 8, Destaque da Rota de Contingência e Padronização Monetária Anti-Quebra (US$20,00)** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
 - **Última Entrega Concluída:**
-  - **Seção 2: Conceitos Essenciais ("O Alfabeto do Vibe Coding"):** 10 cartões educativos em linguagem simples posicionados logo após o Hero (Vibe Coding, Replit, Aplicação Web, Banco de Dados, Hospedagem/Deploy, Prompt, MVP, Tokens US$ 20, Rollback e Dados Pré-Cadastrados), cada um com badge de contexto e analogia prática do dia a dia.
-  - **Cura do Raio-X da Interface Replit:**
-    - Fim do espaço em branco vertical gigante após o botão 1: substituído `space-between` por fluxo natural uniforme.
-    - Simetria 3+3 perfeita: 3 botões à esquerda (Área do Agent) e 3 botões à direita (Preview & Deploy) pareados com a mesma altura.
-    - Área de leitura em largura total (`.xray-detail-tray`): desacoplada do botão 5 e posicionada abaixo dos dois painéis, com controles sequenciais `[ ◀ Anterior ]` e `[ Próximo ▶ ]`.
-  - **Desgamificação e Simplicidade:** Removida a pílula de XP e videogame da navbar e do checklist, adotando formato sóbrio ("Progresso do Projeto: 0 de 6 etapas concluídas").
-  - **Botão Flutuante Voltar ao Início (Back to Top):** Botão circular daylight glass moderno e minimalista (`44x44`), fixo no canto inferior direito com fade-in suave após 400px de scroll.
-  - **Navbar Reordenada:** Sequência alinhada à jornada cognitiva (`Conceitos`, `Como Acessar`, `Raio-X`, `Fluxograma`, `Tokens`, `Cuidados`, `Exemplos`, `Prompts`, `Vídeos`, `Checklist`).
+  - **Destaque Visual e Conceitual do Item 8 (Rota de Contingência / Rollback):** O nó 8 no SVG e no painel explicativo foi reformulado com tarja rubi `🚨 ROTA DE CONTINGÊNCIA (ANTI-LOOP)` e legenda `Acionável a qualquer momento se der erro`, esclarecendo que não se trata apenas de uma etapa final, mas da salvaguarda contra queima inútil de tokens.
+  - **Régua Seletora Clicável das Etapas 1 a 8 (`.flow-steps-pillbar`):** Adicionada barra de pílulas responsivas acima do SVG permitindo escolher e saltar diretamente para qualquer etapa (1 a 7 e destaque rubi para a etapa 8 de contingência), com sincronização bidirecional do diagrama e painel de detalhes.
+  - **Padronização Monetária Estrita Anti-Quebra (`US$20,00`):** Eliminação de qualquer espaço após `US$` em todos os arquivos (`index.html`, `src/index.html`, `assets/js/app.js`), prevenindo quebras de linha entre o símbolo monetário e o valor (`US$20,00`, `US$0,00`, `US$6,00`, `US$10,00`, `US$20,00/mês`).
+  - **Seção 2: Conceitos Essenciais ("O Alfabeto do Vibe Coding"):** 10 cartões educativos em linguagem simples posicionados logo após o Hero com badges e analogias práticas.
+  - **Cura do Raio-X da Interface Replit:** Simetria 3+3 perfeita, fim do espaço vertical e bandeja de inspeção horizontal em largura total com navegação anterior/próximo.
+  - **Desgamificação & Simplicidade:** Remoção de XP e mecânica de videogame, adotando formato sóbrio ("Progresso do Projeto: 0 de 6 etapas concluídas").
+  - **Botão Flutuante Voltar ao Início (Back to Top):** Botão circular daylight glass minimalista (`44x44`) no canto inferior direito.
 - **Próximo Passo Imediato:** Divulgar o portal oficial atualizado para os inscritos e banca avaliadora.
 - **Pendências / Bloqueios:** Nenhuma pendência técnica. Projeto 100% testado e em produção.
 - **Comando de Validação:** `pytest tests/test_portal_replit.py -v && npx impeccable detect index.html`
@@ -24,6 +23,13 @@
 ---
 
 ## Histórico de Sessões
+
+### 2026-11-13 — Régua Seletora do Fluxograma, Destaque do Item 8 (Contingência) e Padronização US$ (v1.3.1)
+- **Ações Realizadas:**
+  - Reformulação visual e textual do Item 8 do Fluxograma: nó rubi `#9C1C0D` com tarja `🚨 ROTA DE CONTINGÊNCIA (ANTI-LOOP)` e aviso de que é acionável a qualquer momento para impedir loop de gasto de tokens.
+  - Implementação da régua seletora de etapas clicável (`.flow-steps-pillbar`) com pílulas táteis de 1 a 7 e destaque rubi para a etapa 8, com navegação bidirecional integrada ao SVG e ao painel lateral.
+  - Padronização monetária rigorosa sem espaços intermediários em `US$` (`US$20,00`, `US$0,00`, `US$6,00`, etc.) em todos os arquivos de marcação e script.
+  - Validação de contraste acessível (5.8:1, superando WCAG AA), 0 anti-padrões no `impeccable detect` e suíte Pytest 100% verde em 5.45s.
 
 ### 2026-11-13 — Conceitos no Início, Raio-X Simétrico 3+3, Desgamificação e Botão Back to Top (v1.3.0)
 - **Ações Realizadas:**

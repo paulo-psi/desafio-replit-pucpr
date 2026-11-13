@@ -2,6 +2,12 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [1.3.1] - 2026-11-13
+### Aprimorado
+- **Destaque de Contingência para a Etapa 8 (Rollback):** Diferenciação visual clara e alerta explícito no painel e no SVG evidenciando que o passo 8 não é a etapa final da jornada, mas sim a *Rota de Contingência / Salvação* acionável a qualquer momento se o Replit Agent falhar ou quebrar o app.
+- **Régua Seletora Clicável das Etapas 1 a 8 (`.flow-steps-pillbar`):** Nova barra de pílulas responsivas acima do SVG permitindo escolher e saltar diretamente para qualquer etapa com sincronização bidirecional do diagrama e painel de detalhes.
+- **Padronização Monetária Anti-Quebra:** Remoção de espaços entre o símbolo e o número em 100% dos textos (`US$20,00`, `US$0,00`, `US$6,00`, `US$10,00`, `US$20,00/mês`), eliminando quebras de linha feias no meio dos valores.
+
 ## [1.3.0] - 2026-11-13
 ### Adicionado
 - **Seção 2: Conceitos Fundamentais ("O Alfabeto do Vibe Coding"):** 10 cartões educativos em linguagem simples posicionados logo após o Hero (Vibe Coding, Replit, Aplicação Web, Banco de Dados, Hospedagem/Deploy, Prompt, MVP, Tokens US$ 20, Rollback e Dados Pré-Cadastrados), cada um com badge de contexto e analogia prática do dia a dia.

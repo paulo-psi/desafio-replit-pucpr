@@ -8,3 +8,4 @@
 - [x] **Task 5:** Redesign completo Apple Studio Daylight & Auditoria Multi-Personas (v1.1.0): eliminação da síndrome box-in-a-box, ritmo vertical de 140px, tipografia monumental e zero anti-padrões no Impeccable Detect.
 - [x] **Task 6:** Onboarding Dual Pré-Evento & Laboratório, Tom Cordial e Enxugamento de Excessos (v1.2.1): guia acolhedor em 2 fases, Seção 9 condensada com acordeão expansível, Missão 1 interativa e validação Playwright/Pytest em 4 viewports.
 - [x] **Task 7:** Conceitos Essenciais no Início, Raio-X Simétrico 3+3 sem Espaço em Branco, Desgamificação Completa e Botão Voltar ao Início (v1.3.0): 10 termos pedagógicos, área de leitura horizontal de largura total, botão flutuante Daylight Glass, suíte Pytest 100% verde e 0 anti-padrões.
+- [x] **Task 8:** Régua Seletora das Etapas 1 a 8 no Fluxograma, Destaque da Rota de Contingência no Item 8 e Padronização Monetária Anti-Quebra (`US$20,00`) em 100% do Portal (v1.3.1).
