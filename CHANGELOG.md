@@ -2,6 +2,13 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [1.2.0] - 2026-11-13
+### Adicionado (Onboarding Guiado do Inscrito)
+- Módulo de **Onboarding Oficial ("Como Usar Este Kit: Seu Ponto de Partida")** posicionado logo no início da experiência para participantes leigos (Administração, Negócios e Engenharias).
+- 3 passos claros e acionáveis: (1) Entenda a Trilha dos 3 Dias no Fluxograma, (2) Gere o 1º Prompt Mestre com dados pré-cadastrados, (3) Economize os US$ 20 de tokens e acompanhe o Checklist de XP.
+- Botão "Comece por Aqui (3 Passos) ↓" no Hero e nova âncora "Como Usar o Kit" (`#onboarding`) na barra superior com rolagem suave.
+- Integração da barra de logística rápida (Datas, Laboratório Watts Humphrey e Créditos de US$ 20) com harmonia total ao padrão Apple Studio Daylight.
+
 ## [1.1.1] - 2026-11-13
 ### Removido
 - Removida linha inferior do rodapé contendo o copyright `© 2026 Pontifícia Universidade Católica do Paraná (PUCPR).` e a legenda `Kit Oficial do Inscrito • Padrão Apple Studio Daylight`.

@@ -33,7 +33,7 @@
 
       <nav class="main-nav" aria-label="Navegação das seções do Kit">
         <a href="#fluxograma" class="nav-link">Fluxograma</a>
-        <a href="#como-usar" class="nav-link">Como Usar</a>
+        <a href="#onboarding" class="nav-link">Como Usar o Kit</a>
         <a href="#economia" class="nav-link">Tokens</a>
         <a href="#cuidados" class="nav-link">Cuidados</a>
         <a href="#exemplos" class="nav-link">Exemplos</a>
@@ -115,42 +115,86 @@
       </div>
     </section>
 
-    <!-- ======================================================================
-         FAIXA ESPAÇOSA: LOGÍSTICA & AS 3 TARDES
+        <!-- ======================================================================
+         2. ONBOARDING: POR ONDE COMEÇAR (GUIA RÁPIDO DO INSCRITO)
          ====================================================================== -->
-    <section class="logistics-strip-section">
+    <section id="onboarding" class="section-block section-stage">
       <div class="container">
-        <div class="logistics-grid">
-          <div class="logistic-item">
-            <span class="logistic-eyebrow">Datas &amp; Horário</span>
-            <span class="logistic-main">17, 18 e 19 de novembro • 14h às 17h</span>
-          </div>
-          <div class="logistic-item">
-            <span class="logistic-eyebrow">Local Presencial</span>
-            <span class="logistic-main">Bloco 10 (Politécnica) • Lab. Watts Humphrey</span>
-          </div>
-          <div class="logistic-item">
-            <span class="logistic-eyebrow">Benefícios ao Inscrito</span>
-            <span class="logistic-main">US$ 20 Replit • Mentoria • 20h • Premiação</span>
-          </div>
+        <div class="section-header">
+          <span class="eyebrow-text">Guia de Boas-Vindas</span>
+          <h2 class="section-title">Como Usar Este Kit: Seu Ponto de Partida</h2>
+          <p class="section-subtitle">
+            Você nunca programou na vida? Sem problemas. Este portal foi construído pela equipe de Empreendedorismo PUCPR e Curso de Administração para ser seu guia prático nos 3 dias. Siga a ordem recomendada abaixo:
+          </p>
         </div>
 
-        <div class="days-triptych">
-          <article class="day-card">
-            <span class="day-eyebrow">Tarde 1 • 17/11 (Terça)</span>
-            <h2>Ideia &amp; Modo Plan</h2>
-            <p>Descobrir a dor do cliente, escolher 3 telas essenciais e planejar a arquitetura no Replit gastando menos de US$ 1 em tokens.</p>
+        <div class="onboarding-steps-grid">
+          <article class="onboarding-step-card">
+            <div class="step-badge-row">
+              <span class="step-num-circle">1</span>
+              <span class="step-timing-pill">Antes de Começar</span>
+            </div>
+            <h3 class="step-title">Veja a Trilha dos 3 Dias</h3>
+            <p class="step-desc">
+              Antes de abrir o computador, consulte o <strong>Fluxograma Didático</strong>. Ele mostra exatamente o que fazer em cada tarde, quando parar para não queimar tokens e como usar o Rollback se algo quebrar.
+            </p>
+            <div class="step-footer-link">
+              <a href="#fluxograma" class="btn btn-secondary btn-sm">Ver o Fluxograma ↓</a>
+            </div>
           </article>
-          <article class="day-card">
-            <span class="day-eyebrow">Tarde 2 • 18/11 (Quarta)</span>
-            <h2>Construção do MVP</h2>
-            <p>Construir a aplicação com banco de dados funcional usando o Power Mode e garantir 5 registros realistas cadastrados.</p>
+
+          <article class="onboarding-step-card step-highlight">
+            <div class="step-badge-row">
+              <span class="step-num-circle" style="background:var(--apple-blue);color:#FFFFFF;">2</span>
+              <span class="step-timing-pill" style="background:var(--apple-blue-soft);color:var(--apple-blue);">No Início da Tarde</span>
+            </div>
+            <h3 class="step-title">Gere seu 1º Prompt Mestre</h3>
+            <p class="step-desc">
+              Não tente pedir "um sistema gigante". Use a <strong>Oficina de Prompts</strong> para gerar em 1 clique um pedido cirúrgico de 3 telas com dados de teste já cadastrados para encantar a banca.
+            </p>
+            <div class="step-footer-link">
+              <a href="#prompts" class="btn btn-safira btn-sm">Montar Meu Prompt ↓</a>
+            </div>
           </article>
-          <article class="day-card">
-            <span class="day-eyebrow">Tarde 3 • 19/11 (Quinta)</span>
-            <h2>Polimento &amp; Pitch</h2>
-            <p>Ajustar textos e cores no Visual Editor (US$ 0), publicar em Autoscale (.replit.app) e encantar a banca avaliadora!</p>
+
+          <article class="onboarding-step-card">
+            <div class="step-badge-row">
+              <span class="step-num-circle">3</span>
+              <span class="step-timing-pill">Durante o Laboratório</span>
+            </div>
+            <h3 class="step-title">Economize US$ 20 &amp; Ganhe XP</h3>
+            <p class="step-desc">
+              Use o botão <em>Plan</em> para alinhar tarefas a custo quase zero, altere textos no <em>Visual Editor</em> sem gastar nada e acompanhe seu progresso marcando as missões no <strong>Checklist do Inscrito</strong>.
+            </p>
+            <div class="step-footer-link">
+              <a href="#economia" class="btn btn-secondary btn-sm">Ver Guia de Tokens ↓</a>
+            </div>
           </article>
+        </div>
+
+        <!-- Logística dos 3 Dias em Faixa Discreta -->
+        <div class="onboarding-logistics-bar">
+          <div class="logistics-quick-item">
+            <span class="logistics-quick-icon">📅</span>
+            <div>
+              <strong>17, 18 e 19 de novembro • 14h às 17h</strong>
+              <small>3 tardes presenciais no campus</small>
+            </div>
+          </div>
+          <div class="logistics-quick-item">
+            <span class="logistics-quick-icon">📍</span>
+            <div>
+              <strong>Bloco 10 (Politécnica) • Lab. Watts Humphrey</strong>
+              <small>1º andar • PUCPR Campus Curitiba</small>
+            </div>
+          </div>
+          <div class="logistics-quick-item">
+            <span class="logistics-quick-icon">🎁</span>
+            <div>
+              <strong>US$ 20 Replit + Mentoria + 20h + Prêmios</strong>
+              <small>Créditos concedidos para a maratona</small>
+            </div>
+          </div>
         </div>
       </div>
     </section>

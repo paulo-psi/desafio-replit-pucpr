@@ -1,13 +1,14 @@
 # Log de Sessões e Handoff Rápido: Replit
 
 ## Handoff Rápido (Estado Atual)
-- **Última Atualização:** 2026-11-13 10:12
-- **Status Atual:** **v1.1.1 Rodapé Limpo: Menção de Copyright e Label de Tema Removidos & Publicado no GitHub Pages** 🍏✨
+- **Última Atualização:** 2026-11-13 10:22
+- **Status Atual:** **v1.2.0 Onboarding Guiado ("Como Usar Este Kit em 3 Passos") Implementado & Publicado no GitHub Pages** 🍏✨
   - **URL Pública Oficial:** [`https://paulo-psi.github.io/desafio-replit-pucpr/`](https://paulo-psi.github.io/desafio-replit-pucpr/)
   - **Repositório GitHub:** [`https://github.com/paulo-psi/desafio-replit-pucpr`](https://github.com/paulo-psi/desafio-replit-pucpr)
-- **Ajuste Realizado (Nível 1 — Express):**
-  - Removida a linha inferior do rodapé contendo `© 2026 Pontifícia Universidade Católica do Paraná (PUCPR).` e `Kit Oficial do Inscrito • Padrão Apple Studio Daylight`.
-  - Mantidas as 3 colunas institucionais de realização (Empreendedorismo PUCPR + Curso de Administração + Replit), links oficiais e contatos do Laboratório Watts Humphrey.
+- **Nova Funcionalidade Entregue:**
+  - **Seção de Onboarding Inicial (`#onboarding`):** Cartão de acolhimento para alunos leigos em 3 passos sequenciais com links de atalho para as ferramentas (`Fluxograma`, `Oficina de Prompts`, `Tokens & Checklist`).
+  - **CTA Hero e Navbar Atualizados:** Botão primário do Hero aponta para o Onboarding e a barra superior agora inclui o atalho `Como Usar o Kit`.
+  - **Faixa de Logística Elegante:** Informações de datas (17 a 19/11), local (Lab. Watts Humphrey) e benefícios integradas sem poluição visual.
 - **Métricas de Qualidade Aprovadas:**
   - **0 Anti-patterns no Impeccable Detect:** Zerado tanto em `./index.html` quanto em `./src/index.html`.
   - **Suíte Pytest 100% Verde:** Aprovado em todas as 4 viewports (1440, 768, 390 e 320px).
