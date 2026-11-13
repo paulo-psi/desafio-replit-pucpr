@@ -1,30 +1,7 @@
-# Plano de Execução — Landing Page Replit
+# Plano de Execução: Kit Oficial do Inscrito — Desafio Replit + PUCPR
 
-## Visão Geral
-Construção iterativa e cirúrgica da landing page sobre o Replit com base nas informações a serem fornecidas pelo Paulo.
-
----
-
-## Fases de Implementação
-
-### Fase 1: Coleta de Requisitos & Wireframe Estrutural
-- [x] Preparação do ambiente de governança (`Sites/Replit`).
-- [ ] Recepção e análise das informações sobre o site fornecidas pelo Paulo.
-- [ ] Atualização do `docs/brief.md` com a narrativa e seções aprovadas.
-- [ ] Definição do wireframe e paleta de cores / tipografia (alinhada à identidade visual Replit).
-
-### Fase 2: Construção da Estrutura Semântica & Estilos Base
-- [ ] Criação do HTML semântico base (`src/index.html`).
-- [ ] Implementação da folha de estilos responsiva (`assets/css/style.css`) com design tokens em variáveis CSS.
-- [ ] Estruturação do Hero e seções informativas.
-
-### Fase 3: Interatividade & Elementos Visuais
-- [ ] Inclusão de mockups/ilustrações representativas (`assets/img/`).
-- [ ] Implementação de interações leves em JavaScript vanilla (`assets/js/main.js`).
-- [ ] Efeitos de microinteração (hover states, transições suaves).
-
-### Fase 4: Auditoria de Qualidade & Testes
-- [ ] Auditoria de responsividade em 3 viewports (Mobile, Tablet, Desktop).
-- [ ] Auditoria de acessibilidade e contraste de cores.
-- [ ] Validação de links, assets locais e tempo de carregamento.
-- [ ] Fechamento de ciclo via `/salvar-checkpoint`.
+## Status das Tarefas
+- [x] **Task 1:** Preparação de ativos oficiais (`cartaz-desafio-replit.jpg`, `logo-pucpr-selo.png`, `logo-pucpr-marista.jpg`) e configuração `.nojekyll` para GitHub Pages.
+- [x] **Task 2:** Criação da suíte automatizada E2E e acessibilidade em `./tests/test_portal_replit.py` (Playwright + Pytest).
+- [x] **Task 3:** Implementação completa de `./index.html`, `./assets/css/styles.css` e `./assets/js/app.js` (espelhado em `./src/index.html`) no tema `100% Apple Studio Daylight`, aprovada em `pytest` e `npx impeccable detect index.html` (0 anti-padrões).
+- [x] **Task 4:** Atualização da documentação de governança (`docs/brief.md`, `docs/plan.md`, `docs/log.md`, `docs/adr/0002-kit-inscrito-apple-daylight-fluxograma.md`, `CHANGELOG.md`, `README.md`) e verificação via `project_doctor.py`.

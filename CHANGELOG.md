@@ -1,10 +1,16 @@
-# Changelog — Landing Page Replit
+# Changelog — Replit (Kit Oficial do Inscrito PUCPR)
 
-Todas as mudanças notáveis deste projeto serão registradas neste arquivo.
+Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
+
+## [1.0.0] - 2026-11-12
+### Adicionado
+- Portal completo **Kit Oficial do Inscrito — Desafio Replit + PUCPR** em `./index.html` (espelhado em `./src/index.html`), `./assets/css/styles.css` e `./assets/js/app.js`, pronto para GitHub Pages (`./.nojekyll`).
+- Paleta **100% Apple Studio Daylight** (`#F6F7FA` / `#E9EDF3` / `#FFFFFF`) com contraste WCAG AA/AAA verificado e 0 anti-padrões no `npx impeccable detect`.
+- Integração das 2 marcas oficiais da PUCPR (`./assets/img/logo-pucpr-selo.png` e `./assets/img/logo-pucpr-marista.jpg`) e do cartaz oficial (`./assets/img/cartaz-desafio-replit.jpg`), destacando a realização **Empreendedorismo PUCPR** (`https://empreendedorismo.pucpr.br/`) em parceria com o **Curso de Administração da PUCPR** e **Replit**, além do botão direto para o **Edital PDF Oficial**.
+- **Fluxograma Didático Interativo em SVG (8 etapas)** seguindo a gramática `diagram-design` (`type-flowchart.md`), com controlador passo a passo e painel sincronizado de ação, custo em tokens e prompt.
+- **Raio-X Interativo da Tela do Replit 2026 (6 hotspots)**, **Manual de Economia dos US$ 20 de Tokens**, **Central Anti-Pânico (4 cuidados forenses)**, **4 Exemplos Práticos de Administração/Negócios**, **Oficina de Prompts** (Montador + Duelo + 4 Etapas em abas), **Videoteca de 13 vídeos auditados em PT-BR com Player YouTube Embutido (`<dialog closedby="any">`)**, **16 documentos/guias oficiais** e **Checklist Gamificado de 6 missões (`localStorage`)**.
+- Suíte automatizada de testes E2E (`./tests/test_portal_replit.py`) e registro arquitetural `docs/adr/0002-kit-inscrito-apple-daylight-fluxograma.md`.
 
 ## [0.1.0] - 2026-11-12
 ### Adicionado
-- Scaffolding inicial da governança sob o arquétipo `software-app`.
-- Criação das árvores de diretórios (`src/`, `assets/`, `docs/`, `_backup/`, `.agents/`).
-- Documentação inicial (`AGENTS.md`, `docs/brief.md`, `docs/plan.md`, `docs/log.md`, `docs/adr/0001-arquitetura-inicial.md`).
-- Estruturação do hub de sites em `C:\Users\Paulo\Antigravity\Sites`.
+- Criação da estrutura inicial do workspace `C:\Users\Paulo\Antigravity\Sites\Replit` e coleta dos documentos base em `./docs/kit/`.
