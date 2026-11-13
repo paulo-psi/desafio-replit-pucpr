@@ -2,6 +2,7 @@
 
 Portal pedagógico e interativo construído para os estudantes inscritos no **Desafio Replit + PUCPR: Da ideia ao software** (**17, 18 e 19 de novembro de 2026, das 14h às 17h**, no **Laboratório Watts Humphrey — Escola Politécnica, Bloco 10, 1º andar**, Campus Curitiba).
 
+- **🌐 Site Publicado (GitHub Pages):** [https://paulo-psi.github.io/desafio-replit-pucpr/](https://paulo-psi.github.io/desafio-replit-pucpr/)
 - **Realização:** [Empreendedorismo PUCPR](https://empreendedorismo.pucpr.br/) em parceria com o **Curso de Administração da PUCPR** (Escola de Negócios) e [Replit](https://replit.com/).
 - **Documento Oficial:** [Edital Desafio Replit PUCPR 2026 (PDF)](https://empreendedorismo.pucpr.br/wp-content/uploads/2026/11/Edital_Desafio-Replit-PUCPR-2026.pdf).
 
