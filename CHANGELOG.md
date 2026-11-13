@@ -2,6 +2,14 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [1.1.0] - 2026-11-13
+### Alterado & Polimento Estético (Apple Studio Daylight)
+- Redesign completo da hierarquia visual, espaçamentos e ritmo vertical seguindo a diretriz autêntica da Apple: seções com `padding: clamp(96px, 10vw, 140px) 24px` e remoção da sensação de "caixas empilhadas".
+- Tipografia monumental no Hero (`font-size: clamp(2.6rem, 5vw, 4.4rem)`, `letter-spacing: -0.04em`, `line-height: 1.05`), pedestal para o cartaz oficial do evento com iluminação suave e banner refinado do Grupo Marista.
+- Eliminação de 100% dos 26 anti-padrões reportados por `impeccable detect` (remoção de `border-left: 3px` em cards, `border-top: 4px` em cartões arredondados, kickers soltos e ajuste de hierarquia semântica de headings).
+- Contraste WCAG AA/AAA aprimorado: texto principal em `#1D1D1F`, texto secundário em `#3A3A3C` (10.2:1) e legendas em `#59595E` (5.2:1).
+- Cartões com backgrounds suaves (`#FFFFFF` sobre `#F5F5F7`), sombras hiper-realistas difusas e eliminação de bordas rígidas artificiais.
+
 ## [1.0.1] - 2026-11-12
 ### Melhorado
 - Sincronização integral de `./src/index.html` com `./index.html` (0 anti-padrões no `npx impeccable detect` em ambos).
