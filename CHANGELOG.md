@@ -2,6 +2,16 @@
 
 Todas as mudanças relevantes deste projeto são documentadas neste arquivo.
 
+## [1.2.1] - 2026-11-13
+### Aprimorado (Onboarding Dual: Pré-Evento & No Laboratório)
+- Reestruturação do módulo de Onboarding em 2 momentos didáticos claros e cordiais:
+  1. **Preparação Prévia (Em Casa • 10 min):** Criação de conta Replit gratuita, ambientação sem medo na tela (Raio-X/Vídeo 2 min) e escolha da dor real.
+  2. **Durante a Jornada (Nas 3 Tardes Presenciais • Bloco 10):** Roteiro objetivo para Tarde 1 (Plan), Tarde 2 (Power Mode) e Tarde 3 (Visual Editor & Pitch).
+- Suavização de tom: linguagem acolhedora, remoção de termos alarmistas ("sobrevivência", "anti-pânico", "megalomaníaco") e foco na capacitação de alunos leigos de Administração e Negócios.
+- Enxugamento de excessos: Seção de Documentação condensada (3 atalhos essenciais visíveis e 9 módulos complementares organizados em acordeão limpo).
+- Missão 1 do Checklist reconfigurada para "Preparação Prévia", permitindo interação imediata antes do evento.
+- Navbar com ordenação alinhada à leitura e cache-busting `?v=1.2.1`.
+
 ## [1.2.0] - 2026-11-13
 ### Adicionado (Onboarding Guiado do Inscrito)
 - Módulo de **Onboarding Oficial ("Como Usar Este Kit: Seu Ponto de Partida")** posicionado logo no início da experiência para participantes leigos (Administração, Negócios e Engenharias).
